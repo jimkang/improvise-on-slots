@@ -99,7 +99,12 @@ function Improvise({ seed }) {
 
     function passCategoryPages(pages, done) {
       console.log('pages', pages);
-      callNextTick(done, null, { category, pages });
+      var filteredPages = pages.filter(pageIsOK);
+      if (filteredPages.length < 2) {
+        callNextTick(done, new Error(`Not enough suitable pages found in ${category}.`));
+      } else {
+        callNextTick(done, null, { category, pages: filteredPages });
+      }
     }
   }
 
@@ -126,6 +131,10 @@ function Improvise({ seed }) {
       }
     }
   }
+}
+
+function pageIsOK(page) {
+  return page && page.title && page.title.indexOf('Category:') === -1;
 }
 
 module.exports = Improvise;
