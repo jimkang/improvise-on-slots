@@ -32,6 +32,7 @@
     "probable": "^2.1.1",
     "seedrandom": "^2.4.3",
     "standard-bail": "^2.0.1",
-    "verror": "^1.10.0"
+    "verror": "^1.10.0",
+    "wordnok": "^3.3.1"
   }
 }

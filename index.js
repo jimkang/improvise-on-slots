@@ -10,12 +10,15 @@ var waterfall = require('async-waterfall');
 var callNextTick = require('call-next-tick');
 var VError = require('verror');
 var pluck = require('lodash.pluck');
+var Wordnok = require('wordnok');
 
 var lineOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
 );
 
 const categoriesLineCount = 1698389;
+
+var wordnok = Wordnok(config.wordnik);
 
 function Improvise({ seed }) {
   var probable;
@@ -39,6 +42,7 @@ function Improvise({ seed }) {
     if (method === 'wikipedia-categories') {
       improviseWiki({ keys, relateValuesToKeys }, improviseDone);
     } else {
+      improviseRelatedWords({ keys, relateValuesToKeys }, improviseDone);
     }
   }
 
@@ -130,6 +134,9 @@ function Improvise({ seed }) {
         done(null, lines[0]);
       }
     }
+  }
+
+  function improviseRelatedWords({ keys, relateValuesToKeys }, relatedWordsDone) {
   }
 }
 
