@@ -1,4 +1,7 @@
+/* global process */
+
 var Improvise = require('../index');
+var config = require('../config');
 
 var states = [
   'AK',
@@ -53,11 +56,15 @@ var states = [
   'WY'
 ];
 
-var improvise = Improvise({});
+if (process.argv.length > 2) {
+  var method = process.argv[2];
+}
+
+var improvise = Improvise({ wordnikAPIKey: config.wordnik.apiKey });
 
 var opts = {
   keys: states,
-  method: 'wikipedia-categories'
+  method: method || 'wikipedia-categories'
 };
 improvise(opts, logResult);
 

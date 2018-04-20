@@ -15,6 +15,7 @@ var flatten = require('lodash.flatten');
 var pick = require('lodash.pick');
 var Wordnok = require('wordnok').createWordnok;
 var canonicalizer = require('canonicalizer');
+var range = require('d3-array').range;
 var iscool = require('iscool')();
 
 var lineOffsets = jsonfile.readFileSync(
@@ -33,6 +34,33 @@ function Improvise({ seed, wordnikAPIKey }) {
     probable = createProbable();
   }
 
+  var improvMethodKits = {
+    'wikipedia-categories': {
+      getASet: getASetOfWikipediaPages,
+      fillSlots
+    },
+    'related-words': {
+      getASet: getASetOfRelatedWords,
+      fillSlots
+    },
+    'verbal-rating-of-keys': {
+      getASet: GetASetOfRatings({ theme: 'rating', verbal: true }),
+      fillSlots
+    },
+    'verbal-rating-of-topic': {
+      getASet: GetASetOfRatings({ verbal: true }),
+      fillSlots
+    },
+    'numeric-rating-of-topic': {
+      getASet: GetASetOfRatings({ verbal: false }),
+      fillSlots: fillSlotsInOrder
+    },
+    'ranking-of-keys': {
+      getASet: GetASetOfRatings({ verbal: false, ranking: true }),
+      fillSlots: fillSlotsInOrder
+    }
+  };
+
   var mediawiki = new MediaWiki({
     protocol: 'https',
     server: 'en.wikipedia.org',
@@ -45,17 +73,11 @@ function Improvise({ seed, wordnikAPIKey }) {
   return improvise;
 
   function improvise({ keys, method, relateValuesToKeys }, improviseDone) {
-    if (method === 'wikipedia-categories') {
-      improviseWiki({ keys, relateValuesToKeys }, improviseDone);
-    } else {
-      improviseRelatedWords({ keys, relateValuesToKeys }, improviseDone);
-    }
-  }
-
-  function improviseWithSetGetter({ keys, relateValuesToKeys, getASet }, improviseDone) {
     var tries = 0;
     const maxTries = 10;
-    getASet(decideOnResult);
+    var improvKit = improvMethodKits[method];
+    var getASet = improvKit.getASet;
+    getASet(keys, decideOnResult);
 
     function decideOnResult(error, result) {
       if (error) {
@@ -68,20 +90,12 @@ function Improvise({ seed, wordnikAPIKey }) {
           improviseDone(new VError(error, 'Reached max attempts.'));
         }
       } else {
-        improviseDone(null, { theme: result.theme, slots: fillSlots(keys, result.values) });
+        improviseDone(null, { theme: result.theme, slots: improvKit.fillSlots(keys, result.values) });
       }
     }
   }
 
-  function improviseWiki({ keys, relateValuesToKeys }, improviseDone) {
-    improviseWithSetGetter({ keys, relateValuesToKeys, getASet: getASetOfWikipediaPages }, improviseDone);
-  }
-
-  function improviseRelatedWords({ keys, relateValuesToKeys }, improviseDone) {
-    improviseWithSetGetter({ keys, relateValuesToKeys, getASet: getASetOfRelatedWords }, improviseDone);
-  }
-
-  function getASetOfWikipediaPages(getDone) {
+  function getASetOfWikipediaPages(keys, getDone) {
     var category;
 
     waterfall(
@@ -137,7 +151,7 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
   }
 
-  function getASetOfRelatedWords(getDone) { 
+  function getASetOfRelatedWords(keys, getDone) { 
     var baseWord;
 
     waterfall(
@@ -170,6 +184,38 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
   }
 
+  function GetASetOfRatings({ theme, verbal, ranking = false }) {
+    return getASetOfRatings;
+
+    function getASetOfRatings(keys, getDone) { 
+      if (!theme) {
+        wordnok.getTopic(sb(proceedWithTopic, getDone));
+      } else {
+        callNextTick(proceedWithTopic, theme);
+      }
+
+      function proceedWithTopic(topic) {
+        var values;
+        if (ranking) {
+          values = probable.shuffle(range(1, keys.length + 1));
+        } else if (verbal) {
+          // TODO: Other verbal ratings.
+          values = ['good', 'ok', 'shit'];
+        } else {
+          var floor = 1000000 - probable.roll(2000000);
+          var span = probable.rollDie(2000000);
+          values = range(keys.length).map(getNumericRating);
+        }
+
+        getDone(null, { theme: topic, values });
+
+        function getNumericRating() {
+          return floor + probable.rollDie(span);
+        }
+      }
+    }
+  }
+
   function fillSlots(keys, values) {
     var slots = {};
     keys.forEach(assignSlot);
@@ -177,6 +223,16 @@ function Improvise({ seed, wordnikAPIKey }) {
 
     function assignSlot(key) {
       slots[key] = probable.pickFromArray(values);
+    }
+  }
+  
+  function fillSlotsInOrder(keys, values) {
+    var slots = {};
+    keys.forEach(assignSlot);
+    return slots;
+
+    function assignSlot(key, i) {
+      slots[key] = values[i];
     }
   }
 }

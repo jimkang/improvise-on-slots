@@ -28,6 +28,44 @@ var testCases = [
       relateValuesToKeys: false
     },
     expected: 'randomized'
+  },
+  {
+    opts: {
+      keys: ['Canada', 'Mexico', 'US'],
+      method: 'verbal-rating-of-keys'
+    },
+    expected: {
+      theme: 'rating',
+      slots: { Canada: 'good', Mexico: 'ok', US: 'shit' }
+    }
+  },
+  {
+    opts: {
+      keys: ['Canada', 'Mexico', 'US'],
+      method: 'verbal-rating-of-topic'
+    },
+    expected: 'randomized'
+  },
+  {
+    opts: {
+      keys: ['Canada', 'Mexico', 'US'],
+      method: 'numeric-rating-of-topic'
+    },
+    expected: 'randomized'
+  },
+  {
+    opts: {
+      keys: ['Canada', 'Mexico', 'US'],
+      method: 'ranking-of-keys'
+    },
+    expected: 'randomized'
+  },
+  {
+    opts: {
+      keys: ['Canada', 'Mexico', 'US'],
+      method: 'numeric-rating-of-topic'
+    },
+    expected: 'randomized'
   }
 ];
 
