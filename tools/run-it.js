@@ -63,6 +63,7 @@ if (process.argv.length > 2) {
 var improvise = Improvise({ wordnikAPIKey: config.wordnik.apiKey });
 
 var opts = {
+  keyType: 'state',
   keys: states,
   method: method || 'wikipedia-categories'
 };

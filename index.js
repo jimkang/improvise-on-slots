@@ -265,7 +265,7 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRankings(keyType, theme) {
-    return `The ${canonicalizer.getSingularAndPluralForms(theme)[1]} ranked by ${keyType}`;
+    return `The ${canonicalizer.getSingularAndPluralForms(keyType)[1]} ranked by ${theme}`;
   }
 }
 
