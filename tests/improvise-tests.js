@@ -4,25 +4,24 @@ var assertNoError = require('assert-no-error');
 var values = require('lodash.values');
 var config = require('../config');
 
-const seed = 'seed';
+const seed = 'test';
 
 var testCases = [
   {
     opts: {
+      keyType: 'state',
       keys: ['IL', 'MA', 'CA'],
       method: 'wikipedia-categories'
     },
     expected: {
-      theme: 'Royal Horse Artillery soldiers',
-      slots: {
-        IL: 'Barry Urban',
-        MA: 'George Thomas Dorrell',
-        CA: 'David Nelson (VC)'
-      }
+      theme: 'Hill forts in Derbyshire',
+      title: 'Favorite Hill forts in Derbyshire by state',
+      slots: { IL: 'Mam Tor', MA: 'Fin Cop', CA: 'Fin Cop' }
     }
   },
   {
     opts: {
+      keyType: 'cat',
       keys: ['Bonus Cat', 'Dr. Wily', 'Smidgeo', 'SmallCat Labs'],
       method: 'related-words',
       relateValuesToKeys: false
@@ -31,16 +30,19 @@ var testCases = [
   },
   {
     opts: {
+      keyType: 'country',
       keys: ['Canada', 'Mexico', 'US'],
       method: 'verbal-rating-of-keys'
     },
     expected: {
       theme: 'rating',
-      slots: { Canada: 'good', Mexico: 'ok', US: 'shit' }
+      title: 'The countries',
+      slots: { Canada: 'shit', Mexico: 'ok', US: 'shit' }
     }
   },
   {
     opts: {
+      keyType: 'country',
       keys: ['Canada', 'Mexico', 'US'],
       method: 'verbal-rating-of-topic'
     },
@@ -48,13 +50,15 @@ var testCases = [
   },
   {
     opts: {
+      keyType: 'country',
       keys: ['Canada', 'Mexico', 'US'],
-      method: 'numeric-rating-of-topic'
+      method: 'counts-of-topic'
     },
     expected: 'randomized'
   },
   {
     opts: {
+      keyType: 'country',
       keys: ['Canada', 'Mexico', 'US'],
       method: 'ranking-of-keys'
     },
@@ -62,8 +66,9 @@ var testCases = [
   },
   {
     opts: {
+      keyType: 'country',
       keys: ['Canada', 'Mexico', 'US'],
-      method: 'numeric-rating-of-topic'
+      method: 'counts-of-topic'
     },
     expected: 'randomized'
   }

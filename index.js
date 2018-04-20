@@ -22,7 +22,7 @@ var lineOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
 );
 
-const categoriesLineCount = 1698389;
+const categoriesLineCount = 1242340;
 var favoredRelatedWordTypes = ['synonym', 'variant', 'equivalent', 'related-word', 'etymologically-related-term', 'hypernym', 'hyponym', 'same-context'];
 
 function Improvise({ seed, wordnikAPIKey }) {
@@ -37,27 +37,33 @@ function Improvise({ seed, wordnikAPIKey }) {
   var improvMethodKits = {
     'wikipedia-categories': {
       getASet: getASetOfWikipediaPages,
-      fillSlots
+      fillSlots,
+      getTitleForSlots
     },
     'related-words': {
       getASet: getASetOfRelatedWords,
-      fillSlots
+      fillSlots,
+      getTitleForSlots: getTitleForRelatedWords
     },
     'verbal-rating-of-keys': {
       getASet: GetASetOfRatings({ theme: 'rating', verbal: true }),
-      fillSlots
+      fillSlots,
+      getTitleForSlots: getTitleForKeyRatings
     },
     'verbal-rating-of-topic': {
       getASet: GetASetOfRatings({ verbal: true }),
-      fillSlots
+      fillSlots,
+      getTitleForSlots: getTitleForRatings
     },
-    'numeric-rating-of-topic': {
+    'counts-of-topic': {
       getASet: GetASetOfRatings({ verbal: false }),
-      fillSlots: fillSlotsInOrder
+      fillSlots: fillSlotsInOrder,
+      getTitleForSlots: getTitleForCounts
     },
     'ranking-of-keys': {
       getASet: GetASetOfRatings({ verbal: false, ranking: true }),
-      fillSlots: fillSlotsInOrder
+      fillSlots: fillSlotsInOrder,
+      getTitleForSlots: getTitleForRankings
     }
   };
 
@@ -72,7 +78,7 @@ function Improvise({ seed, wordnikAPIKey }) {
 
   return improvise;
 
-  function improvise({ keys, method, relateValuesToKeys }, improviseDone) {
+  function improvise({ keys, keyType, method, relateValuesToKeys }, improviseDone) {
     var tries = 0;
     const maxTries = 10;
     var improvKit = improvMethodKits[method];
@@ -80,17 +86,18 @@ function Improvise({ seed, wordnikAPIKey }) {
     getASet(keys, decideOnResult);
 
     function decideOnResult(error, result) {
+      tries += 1;
       if (error) {
-        if (tries < maxTries) {
-          console.error(error);
+        console.error(error);
+
+        if (tries <= maxTries) {
           console.error(`Tried to get titles ${tries} times. Retrying.`);
-          tries += 1;
-          callNextTick(getASet, decideOnResult);
+          callNextTick(getASet, keys, decideOnResult);
         } else {
           improviseDone(new VError(error, 'Reached max attempts.'));
         }
       } else {
-        improviseDone(null, { theme: result.theme, slots: improvKit.fillSlots(keys, result.values) });
+        improviseDone(null, { theme: result.theme, title: improvKit.getTitleForSlots(keyType, result.theme), slots: improvKit.fillSlots(keys, result.values) });
       }
     }
   }
@@ -202,8 +209,8 @@ function Improvise({ seed, wordnikAPIKey }) {
           // TODO: Other verbal ratings.
           values = ['good', 'ok', 'shit'];
         } else {
-          var floor = 1000000 - probable.roll(2000000);
-          var span = probable.rollDie(2000000);
+          var floor = 1000 - probable.roll(2000);
+          var span = probable.rollDie(2000);
           values = range(keys.length).map(getNumericRating);
         }
 
@@ -234,6 +241,31 @@ function Improvise({ seed, wordnikAPIKey }) {
     function assignSlot(key, i) {
       slots[key] = values[i];
     }
+  }
+
+  function getTitleForSlots(keyType, theme) {
+    // TODO: Probable table. Adjectives, "what are" "which ___ do ___ love the most?"
+    return `Favorite ${theme} by ${keyType}`;
+  }
+
+  function getTitleForRelatedWords(keyType, theme) {
+    return `What is each ${keyType}'s term for "${theme}"?`;
+  }
+
+  function getTitleForCounts(keyType, theme) {
+    return `Number of ${canonicalizer.getSingularAndPluralForms(theme)[1]} in each ${keyType}`;
+  }
+
+  function getTitleForRatings(keyType, theme) {
+    return `Rating of ${canonicalizer.getSingularAndPluralForms(theme)[1]} by ${keyType}`;
+  }
+
+  function getTitleForKeyRatings(keyType) {
+    return `The ${canonicalizer.getSingularAndPluralForms(keyType)[1]}`;
+  }
+
+  function getTitleForRankings(keyType, theme) {
+    return `The ${canonicalizer.getSingularAndPluralForms(theme)[1]} ranked by ${keyType}`;
   }
 }
 
