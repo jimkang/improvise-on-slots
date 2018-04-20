@@ -1,6 +1,8 @@
 var test = require('tape');
 var Improvise = require('../index');
 var assertNoError = require('assert-no-error');
+var values = require('lodash.values');
+var config = require('../config');
 
 const seed = 'seed';
 
@@ -11,11 +13,11 @@ var testCases = [
       method: 'wikipedia-categories'
     },
     expected: {
-      theme: 'Sports venues in Coimbra District',
+      theme: 'Royal Horse Artillery soldiers',
       slots: {
-        IL: 'Centro de Estágios da Académica',
-        MA: 'Coimbra University Stadium',
-        CA: 'Pavilhão Multidesportos Dr. Mário Mexia'
+        IL: 'Barry Urban',
+        MA: 'George Thomas Dorrell',
+        CA: 'David Nelson (VC)'
       }
     }
   },
@@ -25,15 +27,7 @@ var testCases = [
       method: 'related-words',
       relateValuesToKeys: false
     },
-    expected: {
-      theme: '',
-      slots: {
-        'Bonus Cat': '',
-        'Dr. Wily': '',
-        Smidgeo: '',
-        'SmallCat Labs': ''
-      }
-    }
+    expected: 'randomized'
   }
 ];
 
@@ -46,13 +40,29 @@ function runTest(testCase) {
   );
 
   function improviseTest(t) {
-    var improvise = Improvise({ seed });
+    var improvise = Improvise({ seed, wordnikAPIKey: config.wordnik.apiKey });
     improvise(testCase.opts, checkResult);
 
     function checkResult(error, dict) {
       assertNoError(t.ok, error, 'No error while improvising.');
-      t.deepEqual(dict, testCase.expected, 'Result is correct.');
+      console.log('Result:', dict);
+      t.ok(dict.theme, 'Result has theme.');
+      t.ok(dict.slots, 'Result has slots.');
+      t.equal(
+        Object.keys(dict.slots).length,
+        testCase.opts.keys.length,
+        'Result has correct number of keys.'
+      );
+      values(dict.slots).forEach(checkValue);
+
+      if (testCase.expected !== 'randomized') {
+        t.deepEqual(dict, testCase.expected, 'Result is correct.');
+      }
       t.end();
+    }
+
+    function checkValue(value) {
+      t.ok(value, 'Slot value is not empty.');
     }
   }
 }

@@ -10,17 +10,21 @@ var waterfall = require('async-waterfall');
 var callNextTick = require('call-next-tick');
 var VError = require('verror');
 var pluck = require('lodash.pluck');
-var Wordnok = require('wordnok');
+var values = require('lodash.values');
+var flatten = require('lodash.flatten');
+var pick = require('lodash.pick');
+var Wordnok = require('wordnok').createWordnok;
+var canonicalizer = require('canonicalizer');
+var iscool = require('iscool')();
 
 var lineOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
 );
 
 const categoriesLineCount = 1698389;
+var favoredRelatedWordTypes = ['synonym', 'variant', 'equivalent', 'related-word', 'etymologically-related-term', 'hypernym', 'hyponym', 'same-context'];
 
-var wordnok = Wordnok(config.wordnik);
-
-function Improvise({ seed }) {
+function Improvise({ seed, wordnikAPIKey }) {
   var probable;
 
   if (seed) {
@@ -36,6 +40,8 @@ function Improvise({ seed }) {
     debug: false
   });
 
+  var wordnok = Wordnok({ apiKey: wordnikAPIKey });
+
   return improvise;
 
   function improvise({ keys, method, relateValuesToKeys }, improviseDone) {
@@ -46,10 +52,10 @@ function Improvise({ seed }) {
     }
   }
 
-  function improviseWiki({ keys, relateValuesToKeys }, improviseDone) {
+  function improviseWithSetGetter({ keys, relateValuesToKeys, getASet }, improviseDone) {
     var tries = 0;
     const maxTries = 10;
-    getASetOfWikipediaPages(decideOnResult);
+    getASet(decideOnResult);
 
     function decideOnResult(error, result) {
       if (error) {
@@ -57,25 +63,22 @@ function Improvise({ seed }) {
           console.error(error);
           console.error(`Tried to get titles ${tries} times. Retrying.`);
           tries += 1;
-          callNextTick(getASetOfWikipediaPages, decideOnResult);
+          callNextTick(getASet, decideOnResult);
         } else {
           improviseDone(new VError(error, 'Reached max attempts.'));
         }
       } else {
-        assignTitlesToKeys(result);
+        improviseDone(null, { theme: result.theme, slots: fillSlots(keys, result.values) });
       }
     }
+  }
 
-    function assignTitlesToKeys(result) {
-      var titles = pluck(result.pages, 'title');
-      var slots = {};
-      keys.forEach(assignSlot);
-      improviseDone(null, { theme: result.category, slots });
+  function improviseWiki({ keys, relateValuesToKeys }, improviseDone) {
+    improviseWithSetGetter({ keys, relateValuesToKeys, getASet: getASetOfWikipediaPages }, improviseDone);
+  }
 
-      function assignSlot(key) {
-        slots[key] = probable.pickFromArray(titles);
-      }
-    }
+  function improviseRelatedWords({ keys, relateValuesToKeys }, improviseDone) {
+    improviseWithSetGetter({ keys, relateValuesToKeys, getASet: getASetOfRelatedWords }, improviseDone);
   }
 
   function getASetOfWikipediaPages(getDone) {
@@ -96,18 +99,16 @@ function Improvise({ seed }) {
         callNextTick(done, new Error('Stub category.'));
       } else {
         category = theCategory;
-        console.log('category:', category);
         callNextTick(done, null, category);
       }
     }
 
     function passCategoryPages(pages, done) {
-      console.log('pages', pages);
       var filteredPages = pages.filter(pageIsOK);
       if (filteredPages.length < 2) {
         callNextTick(done, new Error(`Not enough suitable pages found in ${category}.`));
       } else {
-        callNextTick(done, null, { category, pages: filteredPages });
+        callNextTick(done, null, { theme: category, values: pluck(filteredPages, 'title') });
       }
     }
   }
@@ -136,7 +137,47 @@ function Improvise({ seed }) {
     }
   }
 
-  function improviseRelatedWords({ keys, relateValuesToKeys }, relatedWordsDone) {
+  function getASetOfRelatedWords(getDone) { 
+    var baseWord;
+
+    waterfall(
+      [
+        wordnok.getTopic,
+        saveBase,
+        getRelatedWords,
+        passWords
+      ],
+      getDone 
+    );
+
+    function saveBase(word, done) {
+      baseWord = canonicalizer.getSingularAndPluralForms(word)[0];
+      callNextTick(done);
+    }
+
+    function getRelatedWords(done) {
+      wordnok.getRelatedWords({ word: baseWord }, done);
+    }
+
+    function passWords(wordDict, done) {
+      var words = flatten(values(pick.apply(pick, [wordDict].concat(favoredRelatedWordTypes))));
+      var filteredWords = words.filter(iscool);
+      if (filteredWords.length < 2) {
+        callNextTick(done, new Error(`Not enough suitable words found for ${baseWord}.`));
+      } else {
+        callNextTick(done, null, { theme: baseWord, values: filteredWords });
+      }
+    }
+  }
+
+  function fillSlots(keys, values) {
+    var slots = {};
+    keys.forEach(assignSlot);
+    return slots;
+
+    function assignSlot(key) {
+      slots[key] = probable.pickFromArray(values);
+    }
   }
 }
 
