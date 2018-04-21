@@ -71,6 +71,14 @@ var testCases = [
       method: 'counts-of-topic'
     },
     expected: 'randomized'
+  },
+  {
+    opts: {
+      keyType: 'Wu-Tang Clan member',
+      keys: ['RZA', 'GZA', 'Inspectah Deck', 'Masta Killa', 'U-God', 'Ol\' Dirty Bastard', 'Method Man', 'Raekwon', 'Ghostface Killah'],
+      method: 'related-words'
+    },
+    expected: 'randomized'
   }
 ];
 

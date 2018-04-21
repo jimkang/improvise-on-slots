@@ -6,33 +6,62 @@ Given slots, fill each in with pieces of text that relate to each other.
 Installation
 ------------
 
-First, install Node. Then:
-
-    npm install
-    npm install wzrd -g
+npm install --save improvise-on-slots
 
 Usage
 -----
 
-    make run    
+    var Improvise = require('improvise-on-slots');
+    var improvise = Improvise({ wordnikAPIKey: config.wordnik.apiKey });
 
-Then, wzrd will say something like:
+    var opts = {
+      keyType: 'Wu-Tang Clan member',
+      keys: ['RZA', 'GZA', 'Inspectah Deck', 'Masta Killa', 'U-God', 'Ol\' Dirty Bastard', 'Method Man', 'Raekwon', 'Ghostface Killah'],
+      method: 'wikipedia-categories'
+    };
+    improvise(opts, logResult);
 
-    wzrd index.js
-    server started at http://localhost:9966
+    function logResult(error, dict) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log(dict);
+      }
+    }
 
-You can open your browser to that.
+Output:
 
-You can then add code starting in app.js. This won't compile down to ES 5 – expects clients to support ES 6. You can check out an earlier commit of this repo - d227984628e258a2cf82fa14926b0e452fe4f5f9 or earlier - if you want support for that.
+    { 
+      theme: 'Journalism adapted into films',
+      title: 'Favorite Journalism adapted into films by Wu-Tang Clan member',
+      slots: {
+        RZA: 'Phantom (2015 film)',
+        GZA: 'Kavan (film)',
+        'Inspectah Deck': 'Bangaram (film)',
+        'Masta Killa': 'Mission Istaanbul',
+        'U-God': 'News (film)',
+        'Ol\' Dirty Bastard': 'Kanithan',
+        'Method Man': 'Ism (film)',
+        Raekwon: 'Ism (film)',
+        'Ghostface Killah': 'Vangaveeti (film)'
+      } 
+    }
 
-Run `make prettier` (expects you to have run `npm install -g prettier`) and `eslint .` before committing.
+Possible `method` values:
+
+    'wikipedia-categories',
+    'related-words',
+    'verbal-rating-of-keys',
+    'verbal-rating-of-topic',
+    'counts-of-topic',
+    'ranking-of-keys'
 
 License
 -------
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Jim Kang
+Copyright (c) 2018 Jim Kang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
