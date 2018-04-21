@@ -13,10 +13,12 @@ var pluck = require('lodash.pluck');
 var values = require('lodash.values');
 var flatten = require('lodash.flatten');
 var pick = require('lodash.pick');
+var curry = require('lodash.curry');
 var Wordnok = require('wordnok').createWordnok;
 var canonicalizer = require('canonicalizer');
 var range = require('d3-array').range;
 var iscool = require('iscool')();
+var request = require('request');
 
 var lineOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
@@ -51,17 +53,18 @@ function Improvise({ seed, wordnikAPIKey }) {
       getTitleForSlots: getTitleForKeyRatings
     },
     'verbal-rating-of-topic': {
-      getASet: GetASetOfRatings({ verbal: true }),
+      getASet: GetASetOfRatings({ verbal: true, themePartOfSpeech: 'noun' }),
       fillSlots,
       getTitleForSlots: getTitleForRatings
     },
+    // This one doesn't seem very good?
     'counts-of-topic': {
-      getASet: GetASetOfRatings({ verbal: false }),
+      getASet: GetASetOfRatings({ verbal: false, themePartOfSpeech: 'noun' }),
       fillSlots: fillSlotsInOrder,
       getTitleForSlots: getTitleForCounts
     },
     'ranking-of-keys': {
-      getASet: GetASetOfRatings({ verbal: false, ranking: true }),
+      getASet: GetASetOfRatings({ verbal: false, ranking: true, themePartOfSpeech: 'adjective' }),
       fillSlots: fillSlotsInOrder,
       getTitleForSlots: getTitleForRankings
     }
@@ -163,7 +166,7 @@ function Improvise({ seed, wordnikAPIKey }) {
 
     waterfall(
       [
-        wordnok.getTopic,
+        curry(getTopicWord)('noun'),
         saveBase,
         getRelatedWords,
         passWords
@@ -191,12 +194,12 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
   }
 
-  function GetASetOfRatings({ theme, verbal, ranking = false }) {
+  function GetASetOfRatings({ theme, themePartOfSpeech = 'noun', verbal, ranking = false }) {
     return getASetOfRatings;
 
     function getASetOfRatings(keys, getDone) { 
       if (!theme) {
-        wordnok.getTopic(sb(proceedWithTopic, getDone));
+        getTopicWord(themePartOfSpeech, sb(proceedWithTopic, getDone));
       } else {
         callNextTick(proceedWithTopic, theme);
       }
@@ -209,15 +212,13 @@ function Improvise({ seed, wordnikAPIKey }) {
           // TODO: Other verbal ratings.
           values = ['good', 'ok', 'shit'];
         } else {
-          var floor = 1000 - probable.roll(2000);
-          var span = probable.rollDie(2000);
           values = range(keys.length).map(getNumericRating);
         }
 
         getDone(null, { theme: topic, values });
 
         function getNumericRating() {
-          return floor + probable.rollDie(span);
+          return probable.rollDie(100);
         }
       }
     }
@@ -249,11 +250,11 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRelatedWords(keyType, theme) {
-    return `What is each ${keyType}'s term for "${theme}"?`;
+    return `What is each ${keyType}'s most popular word for "${theme}"?`;
   }
 
   function getTitleForCounts(keyType, theme) {
-    return `Number of ${canonicalizer.getSingularAndPluralForms(theme)[1]} in each ${keyType}`;
+    return `${canonicalizer.getSingularAndPluralForms(theme)[1]} in each ${keyType}`;
   }
 
   function getTitleForRatings(keyType, theme) {
@@ -265,7 +266,28 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRankings(keyType, theme) {
-    return `The ${canonicalizer.getSingularAndPluralForms(keyType)[1]} ranked by ${theme}`;
+    return `What are the most ${theme} ${canonicalizer.getSingularAndPluralForms(keyType)[1]}? Here they are ranked!`;
+  }
+
+  function getTopicWord(partOfSpeech, done) {
+    var reqOpts = {
+      method: 'GET',
+      url: 'http://api.wordnik.com:80/v4/words.json/randomWords?' +
+      'hasDictionaryDef=false&' + 
+      `includePartOfSpeech=${partOfSpeech}&` +
+      'excludePartOfSpeech=proper-noun&' + 
+      'minCorpusCount=1000&maxCorpusCount=-1&' + 
+      'minDictionaryCount=1&maxDictionaryCount=-1&' + 
+      'minLength=3&maxLength=-1&' +
+      'api_key=' + wordnikAPIKey,
+      json: true
+    };
+    request(reqOpts, sb(pickWord, done));
+
+    function pickWord(res, wordObjects) {
+      var okWords = pluck(wordObjects, 'word').filter(iscool);
+      done(null, probable.pickFromArray(okWords));
+    }
   }
 }
 

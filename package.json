@@ -30,6 +30,7 @@
     "iscool": "^1.1.61",
     "jsonfile": "^4.0.0",
     "line-chomper": "^0.5.0",
+    "lodash.curry": "^4.1.1",
     "lodash.flatten": "^4.4.0",
     "lodash.pick": "^4.4.0",
     "lodash.pluck": "^3.1.2",
