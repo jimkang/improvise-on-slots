@@ -70,6 +70,15 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
   };
 
+  var methodTable = probable.createTableFromSizes([
+    [2, 'wikipedia-categories'],
+    [5, 'related-words'],
+    [4, 'verbal-rating-of-keys'],
+    [5, 'verbal-rating-of-topic'],
+    // [5, 'counts-of-topic'],
+    [5, 'ranking-of-keys']
+  ]);
+
   var mediawiki = new MediaWiki({
     protocol: 'https',
     server: 'en.wikipedia.org',
@@ -84,6 +93,9 @@ function Improvise({ seed, wordnikAPIKey }) {
   function improvise({ keys, keyType, method, relateValuesToKeys }, improviseDone) {
     var tries = 0;
     const maxTries = 10;
+    if (!method) {
+      method = methodTable.roll();
+    }
     var improvKit = improvMethodKits[method];
     var getASet = improvKit.getASet;
     getASet(keys, decideOnResult);
@@ -250,7 +262,7 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRelatedWords(keyType, theme) {
-    return `What is each ${keyType}'s most popular word for "${theme}"?`;
+    return `What word does each ${keyType} prefer to use to refer to "${theme}"?`;
   }
 
   function getTitleForCounts(keyType, theme) {
@@ -258,7 +270,7 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRatings(keyType, theme) {
-    return `Rating of ${canonicalizer.getSingularAndPluralForms(theme)[1]} by ${keyType}`;
+    return `What do the ${canonicalizer.getSingularAndPluralForms(keyType)[1]} think of ${canonicalizer.getSingularAndPluralForms(theme)[1]}?`;
   }
 
   function getTitleForKeyRatings(keyType) {

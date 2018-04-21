@@ -56,31 +56,18 @@ var states = [
   'WY'
 ];
 
-var methods = [
-  'wikipedia-categories',
-  'related-words',
-  'verbal-rating-of-keys',
-  'verbal-rating-of-topic',
-  'counts-of-topic',
-  'ranking-of-keys'
-];
-
 if (process.argv.length > 2) {
   var method = process.argv[2];
-  if (!isNaN(method)) {
-    method = methods[method];
-  }
-} else {
-  console.log('Usage: node tools/run-it.js <method number, 0-5>');
-  process.exit();
 }
+
+console.log('Usage: node tools/run-it.js <method number, 0-5>');
 
 var improvise = Improvise({ wordnikAPIKey: config.wordnik.apiKey });
 
 var opts = {
   keyType: 'state',
   keys: states,
-  method: method || 'wikipedia-categories'
+  method
 };
 improvise(opts, logResult);
 

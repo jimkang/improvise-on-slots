@@ -75,7 +75,17 @@ var testCases = [
   {
     opts: {
       keyType: 'Wu-Tang Clan member',
-      keys: ['RZA', 'GZA', 'Inspectah Deck', 'Masta Killa', 'U-God', 'Ol\' Dirty Bastard', 'Method Man', 'Raekwon', 'Ghostface Killah'],
+      keys: [
+        'RZA',
+        'GZA',
+        'Inspectah Deck',
+        'Masta Killa',
+        'U-God',
+        "Ol' Dirty Bastard",
+        'Method Man',
+        'Raekwon',
+        'Ghostface Killah'
+      ],
       method: 'related-words'
     },
     expected: 'randomized'
