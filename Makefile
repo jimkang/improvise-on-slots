@@ -9,4 +9,5 @@ prettier:
 
 build-category-file-offsets:
 	node node_modules/.bin/get-file-line-offsets-in-json data/categories.txt > data/categories-line-offsets.json
+	node node_modules/.bin/get-file-line-offsets-in-json data/parts-categories.txt > data/parts-categories-line-offsets.json
 

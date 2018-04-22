@@ -20,11 +20,16 @@ var range = require('d3-array').range;
 var iscool = require('iscool')();
 var request = require('request');
 
-var lineOffsets = jsonfile.readFileSync(
+var allCategoriesOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
 );
+var partsLineOffsets = jsonfile.readFileSync(
+  __dirname + '/data/parts-categories-line-offsets.json'
+);
 
-const categoriesLineCount = 1242340;
+const allCategoriesLineCount = 1242340;
+const partsCategoriesLineCount = 39;
+
 var favoredRelatedWordTypes = ['synonym', 'variant', 'equivalent', 'related-word', 'etymologically-related-term', 'hypernym', 'hyponym', 'same-context'];
 
 function Improvise({ seed, wordnikAPIKey }) {
@@ -38,7 +43,12 @@ function Improvise({ seed, wordnikAPIKey }) {
 
   var improvMethodKits = {
     'wikipedia-categories': {
-      getASet: getASetOfWikipediaPages,
+      getASet: GetASetOfWikipediaPages({ categoryFile: 'categories.txt', lineOffsets: allCategoriesOffsets, numberOfLinesInFile: allCategoriesLineCount }),
+      fillSlots,
+      getTitleForSlots
+    },
+    'wikipedia-parts-categories': {
+      getASet: GetASetOfWikipediaPages({ categoryFile: 'parts-categories.txt', lineOffsets: partsLineOffsets, numberOfLinesInFile: partsCategoriesLineCount }),
       fillSlots,
       getTitleForSlots
     },
@@ -71,7 +81,8 @@ function Improvise({ seed, wordnikAPIKey }) {
   };
 
   var methodTable = probable.createTableFromSizes([
-    [2, 'wikipedia-categories'],
+    [3, 'wikipedia-categories'],
+    [2, 'wikipedia-parts-categories'],
     [5, 'related-words'],
     [4, 'verbal-rating-of-keys'],
     [5, 'verbal-rating-of-topic'],
@@ -117,58 +128,62 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
   }
 
-  function getASetOfWikipediaPages(keys, getDone) {
-    var category;
+  function GetASetOfWikipediaPages({ categoryFile, lineOffsets, numberOfLinesInFile }) {
+    return getASetOfWikipediaPages;
 
-    waterfall(
-      [
-        pickRandomWikipediaCategory,
-        saveCategory,
-        mediawiki.getPagesInCategory.bind(mediawiki),
-        passCategoryPages
-      ],
-      getDone
-    );
+    function getASetOfWikipediaPages(keys, getDone) {
+      var category;
 
-    function saveCategory(theCategory, done) {
-      if (theCategory.indexOf(' stubs') === theCategory.length - 6) {
-        callNextTick(done, new Error('Stub category.'));
-      } else {
-        category = theCategory;
-        callNextTick(done, null, category);
+      waterfall(
+        [
+          pickRandomWikipediaCategory,
+          saveCategory,
+          mediawiki.getPagesInCategory.bind(mediawiki),
+          passCategoryPages
+        ],
+        getDone
+      );
+
+      function saveCategory(theCategory, done) {
+        if (theCategory.indexOf(' stubs') === theCategory.length - 6) {
+          callNextTick(done, new Error('Stub category.'));
+        } else {
+          category = theCategory;
+          callNextTick(done, null, category);
+        }
+      }
+
+      function passCategoryPages(pages, done) {
+        var filteredPages = pages.filter(pageIsOK);
+        if (filteredPages.length < 2) {
+          callNextTick(done, new Error(`Not enough suitable pages found in ${category}.`));
+        } else {
+          callNextTick(done, null, { theme: category, values: pluck(filteredPages, 'title') });
+        }
       }
     }
 
-    function passCategoryPages(pages, done) {
-      var filteredPages = pages.filter(pageIsOK);
-      if (filteredPages.length < 2) {
-        callNextTick(done, new Error(`Not enough suitable pages found in ${category}.`));
-      } else {
-        callNextTick(done, null, { theme: category, values: pluck(filteredPages, 'title') });
-      }
-    }
-  }
+    function pickRandomWikipediaCategory(done) {
+      var fromLine = probable.roll(numberOfLinesInFile);
 
-  function pickRandomWikipediaCategory(done) {
-    var fromLine = probable.roll(categoriesLineCount);
+      lineChomper.chomp(
+        __dirname + '/data/' + categoryFile,
+        {
+          lineOffsets,
+          fromLine,
+          lineCount: 1 
+        },
+        sb(passLine, done)
+      );
 
-    lineChomper.chomp(
-      __dirname + '/data/categories.txt',
-      {
-        lineOffsets,
-        fromLine,
-        lineCount: 1 
-      },
-      sb(passLine, done)
-    );
-
-    function passLine(lines) {
-      if (!lines || !Array.isArray(lines) || lines.length < 1) {
-        done(new Error('Could not get valid line for line number ' + fromLine
-        ));
-      }
-      else {
-        done(null, lines[0]);
+      function passLine(lines) {
+        if (!lines || !Array.isArray(lines) || lines.length < 1) {
+          done(new Error('Could not get valid line for line number ' + fromLine
+          ));
+        }
+        else {
+          done(null, lines[0]);
+        }
       }
     }
   }
