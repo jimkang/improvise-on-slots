@@ -48,7 +48,7 @@ function Improvise({ seed, wordnikAPIKey }) {
       getTitleForSlots
     },
     'wikipedia-parts-categories': {
-      getASet: GetASetOfWikipediaPages({ categoryFile: 'parts-categories.txt', lineOffsets: partsLineOffsets, numberOfLinesInFile: partsCategoriesLineCount }),
+      getASet: GetASetOfWikipediaPages({ categoryFile: 'parts-categories.txt', lineOffsets: partsLineOffsets, numberOfLinesInFile: partsCategoriesLineCount, minKeysToSlotsRatio: 1/50 }),
       fillSlots,
       getTitleForSlots
     },
@@ -103,7 +103,7 @@ function Improvise({ seed, wordnikAPIKey }) {
 
   function improvise({ keys, keyType, method, relateValuesToKeys }, improviseDone) {
     var tries = 0;
-    const maxTries = 10;
+    const maxTries = 20;
     if (!method) {
       method = methodTable.roll();
     }
@@ -128,7 +128,7 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
   }
 
-  function GetASetOfWikipediaPages({ categoryFile, lineOffsets, numberOfLinesInFile }) {
+  function GetASetOfWikipediaPages({ categoryFile, lineOffsets, numberOfLinesInFile, minKeysToSlotsRatio = 0.3 }) {
     return getASetOfWikipediaPages;
 
     function getASetOfWikipediaPages(keys, getDone) {
@@ -155,7 +155,8 @@ function Improvise({ seed, wordnikAPIKey }) {
 
       function passCategoryPages(pages, done) {
         var filteredPages = pages.filter(pageIsOK);
-        if (filteredPages.length < 2) {
+        if (filteredPages.length < Math.round(keys.length * minKeysToSlotsRatio ||
+          filteredPages.length < 2)) {
           callNextTick(done, new Error(`Not enough suitable pages found in ${category}.`));
         } else {
           callNextTick(done, null, { theme: category, values: pluck(filteredPages, 'title') });
