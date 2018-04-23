@@ -14,7 +14,6 @@ var values = require('lodash.values');
 var flatten = require('lodash.flatten');
 var pick = require('lodash.pick');
 var curry = require('lodash.curry');
-var uniq = require('lodash.uniq');
 var Wordnok = require('wordnok').createWordnok;
 var canonicalizer = require('canonicalizer');
 var range = require('d3-array').range;
@@ -161,7 +160,6 @@ function Improvise({ seed, wordnikAPIKey }) {
           theme: result.theme,
           title: improvKit.getTitleForSlots(keyType, result.theme),
           valueType: improvKit.valueType,
-          numberOfUniqueValues: uniq(values(slots)).length,
           slots
         });
       }

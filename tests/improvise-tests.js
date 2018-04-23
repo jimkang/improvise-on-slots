@@ -17,7 +17,6 @@ var testCases = [
       theme: 'Hill forts in Derbyshire',
       title: 'Favorite Hill forts in Derbyshire by state',
       valueType: 'enum',
-      numberOfUniqueValues: 2,
       slots: { IL: 'Mam Tor', MA: 'Fin Cop', CA: 'Fin Cop' }
     }
   },
@@ -40,7 +39,6 @@ var testCases = [
       theme: 'rating',
       title: 'The countries',
       valueType: 'enum',
-      numberOfUniqueValues: 2,
       slots: { Canada: 'shit', Mexico: 'ok', US: 'shit' }
     }
   },
