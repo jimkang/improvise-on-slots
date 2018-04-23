@@ -14,6 +14,7 @@ var values = require('lodash.values');
 var flatten = require('lodash.flatten');
 var pick = require('lodash.pick');
 var curry = require('lodash.curry');
+var uniq = require('lodash.uniq');
 var Wordnok = require('wordnok').createWordnok;
 var canonicalizer = require('canonicalizer');
 var range = require('d3-array').range;
@@ -58,7 +59,8 @@ function Improvise({ seed, wordnikAPIKey }) {
         numberOfLinesInFile: allCategoriesLineCount
       }),
       fillSlots,
-      getTitleForSlots
+      getTitleForSlots,
+      valueType: 'enum'
     },
     'wikipedia-parts-categories': {
       getASet: GetASetOfWikipediaPages({
@@ -68,28 +70,33 @@ function Improvise({ seed, wordnikAPIKey }) {
         minKeysToSlotsRatio: 1 / 50
       }),
       fillSlots,
-      getTitleForSlots
+      getTitleForSlots,
+      valueType: 'enum'
     },
     'related-words': {
       getASet: getASetOfRelatedWords,
       fillSlots,
-      getTitleForSlots: getTitleForRelatedWords
+      getTitleForSlots: getTitleForRelatedWords,
+      valueType: 'enum'
     },
     'verbal-rating-of-keys': {
       getASet: GetASetOfRatings({ theme: 'rating', verbal: true }),
       fillSlots,
-      getTitleForSlots: getTitleForKeyRatings
+      getTitleForSlots: getTitleForKeyRatings,
+      valueType: 'enum'
     },
     'verbal-rating-of-topic': {
       getASet: GetASetOfRatings({ verbal: true, themePartOfSpeech: 'noun' }),
       fillSlots,
-      getTitleForSlots: getTitleForRatings
+      getTitleForSlots: getTitleForRatings,
+      valueType: 'enum'
     },
     // This one doesn't seem very good?
     'counts-of-topic': {
       getASet: GetASetOfRatings({ verbal: false, themePartOfSpeech: 'noun' }),
       fillSlots: fillSlotsInOrder,
-      getTitleForSlots: getTitleForCounts
+      getTitleForSlots: getTitleForCounts,
+      valueType: 'quantity'
     },
     'ranking-of-keys': {
       getASet: GetASetOfRatings({
@@ -98,7 +105,8 @@ function Improvise({ seed, wordnikAPIKey }) {
         themePartOfSpeech: 'adjective'
       }),
       fillSlots: fillSlotsInOrder,
-      getTitleForSlots: getTitleForRankings
+      getTitleForSlots: getTitleForRankings,
+      valueType: 'ranking'
     }
   };
 
@@ -106,10 +114,10 @@ function Improvise({ seed, wordnikAPIKey }) {
     [3, 'wikipedia-categories'],
     [2, 'wikipedia-parts-categories'],
     [5, 'related-words'],
-    [4, 'verbal-rating-of-keys'],
-    [5, 'verbal-rating-of-topic'],
+    [3, 'verbal-rating-of-keys'],
+    [4, 'verbal-rating-of-topic'],
     // [5, 'counts-of-topic'],
-    [5, 'ranking-of-keys']
+    [3, 'ranking-of-keys']
   ]);
 
   var mediawiki = new MediaWiki({
@@ -148,10 +156,13 @@ function Improvise({ seed, wordnikAPIKey }) {
           improviseDone(new VError(error, 'Reached max attempts.'));
         }
       } else {
+        let slots = improvKit.fillSlots(keys, result.values);
         improviseDone(null, {
           theme: result.theme,
           title: improvKit.getTitleForSlots(keyType, result.theme),
-          slots: improvKit.fillSlots(keys, result.values)
+          valueType: improvKit.valueType,
+          numberOfUniqueValues: uniq(values(slots)).length,
+          slots
         });
       }
     }
@@ -191,9 +202,8 @@ function Improvise({ seed, wordnikAPIKey }) {
         var filteredPages = pages.filter(pageIsOK);
         if (
           filteredPages.length <
-          Math.round(
-            keys.length * minKeysToSlotsRatio || filteredPages.length < 2
-          )
+            Math.round(keys.length * minKeysToSlotsRatio) ||
+          filteredPages.length < 2
         ) {
           callNextTick(
             done,

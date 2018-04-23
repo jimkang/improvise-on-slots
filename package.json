@@ -34,6 +34,7 @@
     "lodash.flatten": "^4.4.0",
     "lodash.pick": "^4.4.0",
     "lodash.pluck": "^3.1.2",
+    "lodash.uniq": "^4.5.0",
     "lodash.values": "^4.3.0",
     "nodemw": "^0.12.0",
     "probable": "^2.1.1",
