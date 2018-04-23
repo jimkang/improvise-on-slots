@@ -16,6 +16,8 @@ var testCases = [
     expected: {
       theme: 'Hill forts in Derbyshire',
       title: 'Favorite Hill forts in Derbyshire by state',
+      valueType: 'enum',
+      numberOfUniqueValues: 3,
       slots: { IL: 'Mam Tor', MA: 'Fin Cop', CA: 'Fin Cop' }
     }
   },

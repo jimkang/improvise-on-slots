@@ -30,7 +30,16 @@ var partsLineOffsets = jsonfile.readFileSync(
 const allCategoriesLineCount = 1242340;
 const partsCategoriesLineCount = 39;
 
-var favoredRelatedWordTypes = ['synonym', 'variant', 'equivalent', 'related-word', 'etymologically-related-term', 'hypernym', 'hyponym', 'same-context'];
+var favoredRelatedWordTypes = [
+  'synonym',
+  'variant',
+  'equivalent',
+  'related-word',
+  'etymologically-related-term',
+  'hypernym',
+  'hyponym',
+  'same-context'
+];
 
 function Improvise({ seed, wordnikAPIKey }) {
   var probable;
@@ -43,12 +52,21 @@ function Improvise({ seed, wordnikAPIKey }) {
 
   var improvMethodKits = {
     'wikipedia-categories': {
-      getASet: GetASetOfWikipediaPages({ categoryFile: 'categories.txt', lineOffsets: allCategoriesOffsets, numberOfLinesInFile: allCategoriesLineCount }),
+      getASet: GetASetOfWikipediaPages({
+        categoryFile: 'categories.txt',
+        lineOffsets: allCategoriesOffsets,
+        numberOfLinesInFile: allCategoriesLineCount
+      }),
       fillSlots,
       getTitleForSlots
     },
     'wikipedia-parts-categories': {
-      getASet: GetASetOfWikipediaPages({ categoryFile: 'parts-categories.txt', lineOffsets: partsLineOffsets, numberOfLinesInFile: partsCategoriesLineCount, minKeysToSlotsRatio: 1/50 }),
+      getASet: GetASetOfWikipediaPages({
+        categoryFile: 'parts-categories.txt',
+        lineOffsets: partsLineOffsets,
+        numberOfLinesInFile: partsCategoriesLineCount,
+        minKeysToSlotsRatio: 1 / 50
+      }),
       fillSlots,
       getTitleForSlots
     },
@@ -74,7 +92,11 @@ function Improvise({ seed, wordnikAPIKey }) {
       getTitleForSlots: getTitleForCounts
     },
     'ranking-of-keys': {
-      getASet: GetASetOfRatings({ verbal: false, ranking: true, themePartOfSpeech: 'adjective' }),
+      getASet: GetASetOfRatings({
+        verbal: false,
+        ranking: true,
+        themePartOfSpeech: 'adjective'
+      }),
       fillSlots: fillSlotsInOrder,
       getTitleForSlots: getTitleForRankings
     }
@@ -101,7 +123,10 @@ function Improvise({ seed, wordnikAPIKey }) {
 
   return improvise;
 
-  function improvise({ keys, keyType, method, relateValuesToKeys }, improviseDone) {
+  function improvise(
+    { keys, keyType, method, relateValuesToKeys },
+    improviseDone
+  ) {
     var tries = 0;
     const maxTries = 20;
     if (!method) {
@@ -123,12 +148,21 @@ function Improvise({ seed, wordnikAPIKey }) {
           improviseDone(new VError(error, 'Reached max attempts.'));
         }
       } else {
-        improviseDone(null, { theme: result.theme, title: improvKit.getTitleForSlots(keyType, result.theme), slots: improvKit.fillSlots(keys, result.values) });
+        improviseDone(null, {
+          theme: result.theme,
+          title: improvKit.getTitleForSlots(keyType, result.theme),
+          slots: improvKit.fillSlots(keys, result.values)
+        });
       }
     }
   }
 
-  function GetASetOfWikipediaPages({ categoryFile, lineOffsets, numberOfLinesInFile, minKeysToSlotsRatio = 0.3 }) {
+  function GetASetOfWikipediaPages({
+    categoryFile,
+    lineOffsets,
+    numberOfLinesInFile,
+    minKeysToSlotsRatio = 0.3
+  }) {
     return getASetOfWikipediaPages;
 
     function getASetOfWikipediaPages(keys, getDone) {
@@ -155,11 +189,21 @@ function Improvise({ seed, wordnikAPIKey }) {
 
       function passCategoryPages(pages, done) {
         var filteredPages = pages.filter(pageIsOK);
-        if (filteredPages.length < Math.round(keys.length * minKeysToSlotsRatio ||
-          filteredPages.length < 2)) {
-          callNextTick(done, new Error(`Not enough suitable pages found in ${category}.`));
+        if (
+          filteredPages.length <
+          Math.round(
+            keys.length * minKeysToSlotsRatio || filteredPages.length < 2
+          )
+        ) {
+          callNextTick(
+            done,
+            new Error(`Not enough suitable pages found in ${category}.`)
+          );
         } else {
-          callNextTick(done, null, { theme: category, values: pluck(filteredPages, 'title') });
+          callNextTick(done, null, {
+            theme: category,
+            values: pluck(filteredPages, 'title')
+          });
         }
       }
     }
@@ -172,34 +216,29 @@ function Improvise({ seed, wordnikAPIKey }) {
         {
           lineOffsets,
           fromLine,
-          lineCount: 1 
+          lineCount: 1
         },
         sb(passLine, done)
       );
 
       function passLine(lines) {
         if (!lines || !Array.isArray(lines) || lines.length < 1) {
-          done(new Error('Could not get valid line for line number ' + fromLine
-          ));
-        }
-        else {
+          done(
+            new Error('Could not get valid line for line number ' + fromLine)
+          );
+        } else {
           done(null, lines[0]);
         }
       }
     }
   }
 
-  function getASetOfRelatedWords(keys, getDone) { 
+  function getASetOfRelatedWords(keys, getDone) {
     var baseWord;
 
     waterfall(
-      [
-        curry(getTopicWord)('noun'),
-        saveBase,
-        getRelatedWords,
-        passWords
-      ],
-      getDone 
+      [curry(getTopicWord)('noun'), saveBase, getRelatedWords, passWords],
+      getDone
     );
 
     function saveBase(word, done) {
@@ -212,20 +251,30 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
 
     function passWords(wordDict, done) {
-      var words = flatten(values(pick.apply(pick, [wordDict].concat(favoredRelatedWordTypes))));
+      var words = flatten(
+        values(pick.apply(pick, [wordDict].concat(favoredRelatedWordTypes)))
+      );
       var filteredWords = words.filter(iscool);
       if (filteredWords.length < 2) {
-        callNextTick(done, new Error(`Not enough suitable words found for ${baseWord}.`));
+        callNextTick(
+          done,
+          new Error(`Not enough suitable words found for ${baseWord}.`)
+        );
       } else {
         callNextTick(done, null, { theme: baseWord, values: filteredWords });
       }
     }
   }
 
-  function GetASetOfRatings({ theme, themePartOfSpeech = 'noun', verbal, ranking = false }) {
+  function GetASetOfRatings({
+    theme,
+    themePartOfSpeech = 'noun',
+    verbal,
+    ranking = false
+  }) {
     return getASetOfRatings;
 
-    function getASetOfRatings(keys, getDone) { 
+    function getASetOfRatings(keys, getDone) {
       if (!theme) {
         getTopicWord(themePartOfSpeech, sb(proceedWithTopic, getDone));
       } else {
@@ -261,7 +310,7 @@ function Improvise({ seed, wordnikAPIKey }) {
       slots[key] = probable.pickFromArray(values);
     }
   }
-  
+
   function fillSlotsInOrder(keys, values) {
     var slots = {};
     keys.forEach(assignSlot);
@@ -278,15 +327,21 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRelatedWords(keyType, theme) {
-    return `What word does each ${keyType} prefer to use to refer to "${theme}"?`;
+    return `What word does each ${keyType} prefer to use to refer to "${
+      theme
+    }"?`;
   }
 
   function getTitleForCounts(keyType, theme) {
-    return `${canonicalizer.getSingularAndPluralForms(theme)[1]} in each ${keyType}`;
+    return `${canonicalizer.getSingularAndPluralForms(theme)[1]} in each ${
+      keyType
+    }`;
   }
 
   function getTitleForRatings(keyType, theme) {
-    return `What do the ${canonicalizer.getSingularAndPluralForms(keyType)[1]} think of ${canonicalizer.getSingularAndPluralForms(theme)[1]}?`;
+    return `What do the ${
+      canonicalizer.getSingularAndPluralForms(keyType)[1]
+    } think of ${canonicalizer.getSingularAndPluralForms(theme)[1]}?`;
   }
 
   function getTitleForKeyRatings(keyType) {
@@ -294,20 +349,24 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRankings(keyType, theme) {
-    return `What are the most ${theme} ${canonicalizer.getSingularAndPluralForms(keyType)[1]}? Here they are ranked!`;
+    return `What are the most ${theme} ${
+      canonicalizer.getSingularAndPluralForms(keyType)[1]
+    }? Here they are ranked!`;
   }
 
   function getTopicWord(partOfSpeech, done) {
     var reqOpts = {
       method: 'GET',
-      url: 'http://api.wordnik.com:80/v4/words.json/randomWords?' +
-      'hasDictionaryDef=false&' + 
-      `includePartOfSpeech=${partOfSpeech}&` +
-      'excludePartOfSpeech=proper-noun&' + 
-      'minCorpusCount=1000&maxCorpusCount=-1&' + 
-      'minDictionaryCount=1&maxDictionaryCount=-1&' + 
-      'minLength=3&maxLength=-1&' +
-      'api_key=' + wordnikAPIKey,
+      url:
+        'http://api.wordnik.com:80/v4/words.json/randomWords?' +
+        'hasDictionaryDef=false&' +
+        `includePartOfSpeech=${partOfSpeech}&` +
+        'excludePartOfSpeech=proper-noun&' +
+        'minCorpusCount=1000&maxCorpusCount=-1&' +
+        'minDictionaryCount=1&maxDictionaryCount=-1&' +
+        'minLength=3&maxLength=-1&' +
+        'api_key=' +
+        wordnikAPIKey,
       json: true
     };
     request(reqOpts, sb(pickWord, done));
@@ -324,4 +383,3 @@ function pageIsOK(page) {
 }
 
 module.exports = Improvise;
-
