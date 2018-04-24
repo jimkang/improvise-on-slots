@@ -32,6 +32,8 @@ var prefixesOfTheUnusable = ['Category:', 'File:', 'Template:', 'User:'];
 const allCategoriesLineCount = 1242340;
 const partsCategoriesLineCount = 39;
 
+var topicPlaceholderRegex = /\<topic\>/g;
+
 var favoredRelatedWordTypes = [
   'synonym',
   'variant',
@@ -120,6 +122,34 @@ function Improvise({ seed, wordnikAPIKey }) {
     // [5, 'counts-of-topic'],
     [3, 'ranking-of-keys']
   ]);
+
+  var verbalRatings = [
+    'good',
+    'ok',
+    'shit',
+    'amaze',
+    'woh',
+    'whoa',
+    'so good',
+    'GTFO',
+    'goddamn',
+    'whatevs',
+    'balls',
+    "ballin'",
+    'eh',
+    'meh',
+    'weak',
+    "Fuckin' A",
+    'garbage',
+    'tasty',
+    'gross',
+    'what is a "<topic>"?',
+    'wow',
+    'no',
+    'abstain',
+    '💯',
+    'I saw a <topic> once'
+  ];
 
   var mediawiki = new MediaWiki({
     protocol: 'https',
@@ -297,7 +327,10 @@ function Improvise({ seed, wordnikAPIKey }) {
           values = probable.shuffle(range(1, keys.length + 1));
         } else if (verbal) {
           // TODO: Other verbal ratings.
-          values = ['good', 'ok', 'shit'];
+          values = probable
+            .shuffle(verbalRatings)
+            .slice(0, 2 + probable.roll(verbalRatings.length - 1))
+            .map(fillInTopic);
         } else {
           values = range(keys.length).map(getNumericRating);
         }
@@ -306,6 +339,10 @@ function Improvise({ seed, wordnikAPIKey }) {
 
         function getNumericRating() {
           return probable.rollDie(100);
+        }
+
+        function fillInTopic(rating) {
+          return rating.replace(topicPlaceholderRegex, topic);
         }
       }
     }
@@ -337,9 +374,7 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRelatedWords(keyType, theme) {
-    return `What word does each ${keyType} prefer to use to refer to "${
-      theme
-    }"?`;
+    return `What word does each ${keyType} use to refer to "${theme}"?`;
   }
 
   function getTitleForCounts(keyType, theme) {
@@ -355,7 +390,9 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForKeyRatings(keyType) {
-    return `The ${canonicalizer.getSingularAndPluralForms(keyType)[1]}`;
+    return `Current ratings of the ${
+      canonicalizer.getSingularAndPluralForms(keyType)[1]
+    }`;
   }
 
   function getTitleForRankings(keyType, theme) {
