@@ -115,12 +115,12 @@ function Improvise({ seed, wordnikAPIKey }) {
 
   var methodTable = probable.createTableFromSizes([
     [3, 'wikipedia-categories'],
-    [2, 'wikipedia-parts-categories'],
-    [5, 'related-words'],
-    [3, 'verbal-rating-of-keys'],
+    [1, 'wikipedia-parts-categories'],
+    [4, 'related-words'],
+    [2, 'verbal-rating-of-keys'],
     [4, 'verbal-rating-of-topic'],
     // [5, 'counts-of-topic'],
-    [3, 'ranking-of-keys']
+    [1, 'ranking-of-keys']
   ]);
 
   var verbalRatings = [
