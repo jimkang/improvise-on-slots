@@ -14,10 +14,14 @@ var testCases = [
       method: 'wikipedia-categories'
     },
     expected: {
-      theme: 'Hill forts in Derbyshire',
-      title: 'Favorite Hill forts in Derbyshire by state',
+      theme: 'Teresa Teng albums',
+      title: 'Favorite Teresa Teng albums by state',
       valueType: 'enum',
-      slots: { IL: 'Mam Tor', MA: 'Fin Cop', CA: 'Fin Cop' }
+      slots: {
+        IL: 'If I Were for Real (album)',
+        MA: 'My Native Land (film)',
+        CA: 'Dandan youqing'
+      }
     }
   },
   {

@@ -27,6 +27,8 @@ var partsLineOffsets = jsonfile.readFileSync(
   __dirname + '/data/parts-categories-line-offsets.json'
 );
 
+var prefixesOfTheUnusable = ['Category:', 'File:', 'Template:', 'User:'];
+
 const allCategoriesLineCount = 1242340;
 const partsCategoriesLineCount = 39;
 
@@ -387,7 +389,14 @@ function Improvise({ seed, wordnikAPIKey }) {
 }
 
 function pageIsOK(page) {
-  return page && page.title && page.title.indexOf('Category:') === -1;
+  if (page && page.title) {
+    return !prefixesOfTheUnusable.some(isInTitle);
+  }
+  return false;
+
+  function isInTitle(prefix) {
+    return page.title.indexOf(prefix) === 0;
+  }
 }
 
 module.exports = Improvise;
