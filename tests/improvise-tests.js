@@ -41,11 +41,12 @@ var testCases = [
     },
     expected: {
       theme: 'rating',
-      title: 'The countries',
+      title: 'Current ratings of the countries',
       valueType: 'enum',
-      slots: { Canada: 'shit', Mexico: 'ok', US: 'shit' }
+      slots: { Canada: 'good', Mexico: 'whoa', US: 'amaze' }
     }
   },
+
   {
     opts: {
       keyType: 'country',

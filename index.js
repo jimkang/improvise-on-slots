@@ -117,7 +117,7 @@ function Improvise({ seed, wordnikAPIKey }) {
     [3, 'wikipedia-categories'],
     [1, 'wikipedia-parts-categories'],
     [4, 'related-words'],
-    [2, 'verbal-rating-of-keys'],
+    [1, 'verbal-rating-of-keys'],
     [4, 'verbal-rating-of-topic'],
     // [5, 'counts-of-topic'],
     [1, 'ranking-of-keys']
@@ -132,7 +132,6 @@ function Improvise({ seed, wordnikAPIKey }) {
     'whoa',
     'so good',
     'GTFO',
-    'goddamn',
     'whatevs',
     'balls',
     "ballin'",
@@ -147,7 +146,6 @@ function Improvise({ seed, wordnikAPIKey }) {
     'wow',
     'no',
     'abstain',
-    '💯',
     'I saw a <topic> once'
   ];
 
@@ -326,10 +324,13 @@ function Improvise({ seed, wordnikAPIKey }) {
         if (ranking) {
           values = probable.shuffle(range(1, keys.length + 1));
         } else if (verbal) {
-          // TODO: Other verbal ratings.
+          let ratings = verbalRatings;
+          if (topic === 'rating') {
+            ratings = verbalRatings.filter(doesNotHaveATopicPlaceholder);
+          }
           values = probable
-            .shuffle(verbalRatings)
-            .slice(0, 2 + probable.roll(verbalRatings.length - 1))
+            .shuffle(ratings)
+            .slice(0, 2 + probable.roll(ratings.length - 1))
             .map(fillInTopic);
         } else {
           values = range(keys.length).map(getNumericRating);
@@ -374,7 +375,7 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForRelatedWords(keyType, theme) {
-    return `What word does each ${keyType} use to refer to "${theme}"?`;
+    return `What word does each ${keyType} use for "${theme}"?`;
   }
 
   function getTitleForCounts(keyType, theme) {
@@ -434,6 +435,10 @@ function pageIsOK(page) {
   function isInTitle(prefix) {
     return page.title.indexOf(prefix) === 0;
   }
+}
+
+function doesNotHaveATopicPlaceholder(s) {
+  return s.indexOf('<topic>') === -1;
 }
 
 module.exports = Improvise;
