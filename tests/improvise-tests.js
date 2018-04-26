@@ -14,13 +14,14 @@ var testCases = [
       method: 'wikipedia-categories'
     },
     expected: {
-      theme: 'Teresa Teng albums',
-      title: 'Favorite Teresa Teng albums by state',
+      theme: 'Historic districts in Newberry County, South Carolina',
+      title:
+        'Favorite Historic districts in Newberry County, South Carolina by state',
       valueType: 'enum',
       slots: {
-        IL: 'If I Were for Real (album)',
-        MA: 'My Native Land (film)',
-        CA: 'Dandan youqing'
+        IL: 'West Boundary Street Historic District',
+        MA: 'Harrington Street Historic District',
+        CA: 'Harrington Street Historic District'
       }
     }
   },
@@ -43,7 +44,11 @@ var testCases = [
       theme: 'rating',
       title: 'Current ratings of the countries',
       valueType: 'enum',
-      slots: { Canada: 'good', Mexico: 'whoa', US: 'amaze' }
+      slots: {
+        Canada: 'subscribes to newsletter',
+        Mexico: 'subscribes to newsletter',
+        US: 'tasty'
+      }
     }
   },
 

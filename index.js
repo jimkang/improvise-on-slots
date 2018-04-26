@@ -45,6 +45,33 @@ var favoredRelatedWordTypes = [
   'same-context'
 ];
 
+var verbalRatings = [
+  'good',
+  'ok',
+  'shit',
+  'amaze',
+  'woh',
+  'whoa',
+  'so good',
+  'whatevs',
+  'balls',
+  "ballin'",
+  'eh',
+  'meh',
+  'weak',
+  "Fuckin' A",
+  'garbage',
+  'tasty',
+  'gross',
+  'what is a "<topic>"?',
+  'wow',
+  'no',
+  'abstain',
+  'I saw a <topic> once',
+  '14/10',
+  'subscribes to newsletter'
+];
+
 function Improvise({ seed, wordnikAPIKey }) {
   var probable;
 
@@ -114,40 +141,22 @@ function Improvise({ seed, wordnikAPIKey }) {
   };
 
   var methodTable = probable.createTableFromSizes([
-    [3, 'wikipedia-categories'],
+    [4, 'wikipedia-categories'],
     [1, 'wikipedia-parts-categories'],
     [4, 'related-words'],
-    [1, 'verbal-rating-of-keys'],
-    [4, 'verbal-rating-of-topic'],
+    [2, 'verbal-rating-of-keys'],
+    [7, 'verbal-rating-of-topic'],
     // [5, 'counts-of-topic'],
     [1, 'ranking-of-keys']
   ]);
 
-  var verbalRatings = [
-    'good',
-    'ok',
-    'shit',
-    'amaze',
-    'woh',
-    'whoa',
-    'so good',
-    'GTFO',
-    'whatevs',
-    'balls',
-    "ballin'",
-    'eh',
-    'meh',
-    'weak',
-    "Fuckin' A",
-    'garbage',
-    'tasty',
-    'gross',
-    'what is a "<topic>"?',
-    'wow',
-    'no',
-    'abstain',
-    'I saw a <topic> once'
-  ];
+  var numberOfRatingsTable = probable.createTableFromSizes([
+    [12, 3],
+    [5, 2],
+    [6, 4],
+    [6, 5],
+    [2, probable.rollDie(verbalRatings.length)]
+  ]);
 
   var mediawiki = new MediaWiki({
     protocol: 'https',
@@ -328,9 +337,10 @@ function Improvise({ seed, wordnikAPIKey }) {
           if (topic === 'rating') {
             ratings = verbalRatings.filter(doesNotHaveATopicPlaceholder);
           }
+          let numberOfRatings = numberOfRatingsTable.roll();
           values = probable
             .shuffle(ratings)
-            .slice(0, 2 + probable.roll(ratings.length - 1))
+            .slice(0, numberOfRatings)
             .map(fillInTopic);
         } else {
           values = range(keys.length).map(getNumericRating);
