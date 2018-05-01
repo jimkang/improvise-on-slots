@@ -9,6 +9,7 @@ var jsonfile = require('jsonfile');
 var GetASetOfWikipediaPages = require('./sets/get-a-set-of-wikipedia-pages');
 var GetASetOfRelatedWords = require('./sets/get-a-set-of-related-words');
 var GetASetOfRatings = require('./sets/get-a-set-of-ratings');
+var GetASetOfConcepts = require('./sets/get-a-set-of-concepts');
 
 var allCategoriesOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
@@ -104,6 +105,12 @@ function Improvise({ seed, wordnikAPIKey }) {
       fillSlots: fillSlotsInOrder,
       getTitleForSlots: getTitleForRankings,
       valueType: 'ranking'
+    },
+    'conceptnet-parts': {
+      getASet: GetASetOfConcepts({ probable, relationshipPath: 'r/PartOf' }),
+      fillSlots,
+      getTitleForSlots,
+      valueType: 'enum'
     }
   };
 
