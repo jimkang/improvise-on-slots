@@ -4,7 +4,7 @@ var assertNoError = require('assert-no-error');
 var values = require('lodash.values');
 var config = require('../config');
 
-const seed = 'test';
+const seed = 'seed';
 
 var testCases = [
   {
@@ -14,14 +14,13 @@ var testCases = [
       method: 'wikipedia-categories'
     },
     expected: {
-      theme: 'Historic districts in Newberry County, South Carolina',
-      title:
-        'Favorite Historic districts in Newberry County, South Carolina by state',
+      theme: 'Works about the military',
+      title: 'Favorite Works about the military by state',
       valueType: 'enum',
       slots: {
-        IL: 'West Boundary Street Historic District',
-        MA: 'Harrington Street Historic District',
-        CA: 'Harrington Street Historic District'
+        IL: 'American Heroes Channel',
+        MA: 'Military History (TV channel)',
+        CA: 'American Heroes Channel'
       }
     }
   },
@@ -44,11 +43,7 @@ var testCases = [
       theme: 'rating',
       title: 'Current ratings of the countries',
       valueType: 'enum',
-      slots: {
-        Canada: 'subscribes to newsletter',
-        Mexico: 'subscribes to newsletter',
-        US: 'tasty'
-      }
+      slots: { Canada: 'weak', Mexico: 'ok', US: 'shit' }
     }
   },
 

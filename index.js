@@ -2,23 +2,13 @@
 
 var seedrandom = require('seedrandom');
 var createProbable = require('probable').createProbable;
-var MediaWiki = require('nodemw');
-var sb = require('standard-bail')();
-var lineChomper = require('line-chomper');
-var jsonfile = require('jsonfile');
-var waterfall = require('async-waterfall');
 var callNextTick = require('call-next-tick');
 var VError = require('verror');
-var pluck = require('lodash.pluck');
-var values = require('lodash.values');
-var flatten = require('lodash.flatten');
-var pick = require('lodash.pick');
-var curry = require('lodash.curry');
-var Wordnok = require('wordnok').createWordnok;
 var canonicalizer = require('canonicalizer');
-var range = require('d3-array').range;
-var iscool = require('iscool')();
-var request = require('request');
+var jsonfile = require('jsonfile');
+var GetASetOfWikipediaPages = require('./sets/get-a-set-of-wikipedia-pages');
+var GetASetOfRelatedWords = require('./sets/get-a-set-of-related-words');
+var GetASetOfRatings = require('./sets/get-a-set-of-ratings');
 
 var allCategoriesOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
@@ -27,50 +17,8 @@ var partsLineOffsets = jsonfile.readFileSync(
   __dirname + '/data/parts-categories-line-offsets.json'
 );
 
-var prefixesOfTheUnusable = ['Category:', 'File:', 'Template:', 'User:'];
-
 const allCategoriesLineCount = 1242340;
 const partsCategoriesLineCount = 39;
-
-var topicPlaceholderRegex = /\<topic\>/g;
-
-var favoredRelatedWordTypes = [
-  'synonym',
-  'variant',
-  'equivalent',
-  'related-word',
-  'etymologically-related-term',
-  'hypernym',
-  'hyponym',
-  'same-context'
-];
-
-var verbalRatings = [
-  'good',
-  'ok',
-  'shit',
-  'amaze',
-  'woh',
-  'whoa',
-  'so good',
-  'whatevs',
-  'balls',
-  "ballin'",
-  'eh',
-  'meh',
-  'weak',
-  "Fuckin' A",
-  'garbage',
-  'tasty',
-  'gross',
-  'what is a "<topic>"?',
-  'wow',
-  'no',
-  'abstain',
-  'I saw a <topic> once',
-  '14/10',
-  'subscribes to newsletter'
-];
 
 function Improvise({ seed, wordnikAPIKey }) {
   var probable;
@@ -86,7 +34,8 @@ function Improvise({ seed, wordnikAPIKey }) {
       getASet: GetASetOfWikipediaPages({
         categoryFile: 'categories.txt',
         lineOffsets: allCategoriesOffsets,
-        numberOfLinesInFile: allCategoriesLineCount
+        numberOfLinesInFile: allCategoriesLineCount,
+        probable
       }),
       fillSlots,
       getTitleForSlots,
@@ -97,33 +46,49 @@ function Improvise({ seed, wordnikAPIKey }) {
         categoryFile: 'parts-categories.txt',
         lineOffsets: partsLineOffsets,
         numberOfLinesInFile: partsCategoriesLineCount,
-        minKeysToSlotsRatio: 1 / 50
+        minKeysToSlotsRatio: 1 / 50,
+        probable
       }),
       fillSlots,
       getTitleForSlots,
       valueType: 'enum'
     },
     'related-words': {
-      getASet: getASetOfRelatedWords,
+      getASet: GetASetOfRelatedWords({ wordnikAPIKey }),
       fillSlots,
       getTitleForSlots: getTitleForRelatedWords,
       valueType: 'enum'
     },
     'verbal-rating-of-keys': {
-      getASet: GetASetOfRatings({ theme: 'rating', verbal: true }),
+      getASet: GetASetOfRatings({
+        theme: 'rating',
+        verbal: true,
+        probable,
+        wordnikAPIKey
+      }),
       fillSlots,
       getTitleForSlots: getTitleForKeyRatings,
       valueType: 'enum'
     },
     'verbal-rating-of-topic': {
-      getASet: GetASetOfRatings({ verbal: true, themePartOfSpeech: 'noun' }),
+      getASet: GetASetOfRatings({
+        verbal: true,
+        themePartOfSpeech: 'noun',
+        probable,
+        wordnikAPIKey
+      }),
       fillSlots,
       getTitleForSlots: getTitleForRatings,
       valueType: 'enum'
     },
     // This one doesn't seem very good?
     'counts-of-topic': {
-      getASet: GetASetOfRatings({ verbal: false, themePartOfSpeech: 'noun' }),
+      getASet: GetASetOfRatings({
+        verbal: false,
+        themePartOfSpeech: 'noun',
+        probable,
+        wordnikAPIKey
+      }),
       fillSlots: fillSlotsInOrder,
       getTitleForSlots: getTitleForCounts,
       valueType: 'quantity'
@@ -132,7 +97,9 @@ function Improvise({ seed, wordnikAPIKey }) {
       getASet: GetASetOfRatings({
         verbal: false,
         ranking: true,
-        themePartOfSpeech: 'adjective'
+        themePartOfSpeech: 'adjective',
+        probable,
+        wordnikAPIKey
       }),
       fillSlots: fillSlotsInOrder,
       getTitleForSlots: getTitleForRankings,
@@ -149,23 +116,6 @@ function Improvise({ seed, wordnikAPIKey }) {
     // [5, 'counts-of-topic'],
     [1, 'ranking-of-keys']
   ]);
-
-  var numberOfRatingsTable = probable.createTableFromSizes([
-    [12, 3],
-    [5, 2],
-    [6, 4],
-    [6, 5],
-    [2, probable.rollDie(verbalRatings.length)]
-  ]);
-
-  var mediawiki = new MediaWiki({
-    protocol: 'https',
-    server: 'en.wikipedia.org',
-    path: '/w',
-    debug: false
-  });
-
-  var wordnok = Wordnok({ apiKey: wordnikAPIKey });
 
   return improvise;
 
@@ -201,160 +151,6 @@ function Improvise({ seed, wordnikAPIKey }) {
           valueType: improvKit.valueType,
           slots
         });
-      }
-    }
-  }
-
-  function GetASetOfWikipediaPages({
-    categoryFile,
-    lineOffsets,
-    numberOfLinesInFile,
-    minKeysToSlotsRatio = 0.3
-  }) {
-    return getASetOfWikipediaPages;
-
-    function getASetOfWikipediaPages(keys, getDone) {
-      var category;
-
-      waterfall(
-        [
-          pickRandomWikipediaCategory,
-          saveCategory,
-          mediawiki.getPagesInCategory.bind(mediawiki),
-          passCategoryPages
-        ],
-        getDone
-      );
-
-      function saveCategory(theCategory, done) {
-        if (theCategory.indexOf(' stubs') === theCategory.length - 6) {
-          callNextTick(done, new Error('Stub category.'));
-        } else {
-          category = theCategory;
-          callNextTick(done, null, category);
-        }
-      }
-
-      function passCategoryPages(pages, done) {
-        var filteredPages = pages.filter(pageIsOK);
-        if (
-          filteredPages.length <
-            Math.round(keys.length * minKeysToSlotsRatio) ||
-          filteredPages.length < 2
-        ) {
-          callNextTick(
-            done,
-            new Error(`Not enough suitable pages found in ${category}.`)
-          );
-        } else {
-          callNextTick(done, null, {
-            theme: category,
-            values: pluck(filteredPages, 'title')
-          });
-        }
-      }
-    }
-
-    function pickRandomWikipediaCategory(done) {
-      var fromLine = probable.roll(numberOfLinesInFile);
-
-      lineChomper.chomp(
-        __dirname + '/data/' + categoryFile,
-        {
-          lineOffsets,
-          fromLine,
-          lineCount: 1
-        },
-        sb(passLine, done)
-      );
-
-      function passLine(lines) {
-        if (!lines || !Array.isArray(lines) || lines.length < 1) {
-          done(
-            new Error('Could not get valid line for line number ' + fromLine)
-          );
-        } else {
-          done(null, lines[0]);
-        }
-      }
-    }
-  }
-
-  function getASetOfRelatedWords(keys, getDone) {
-    var baseWord;
-
-    waterfall(
-      [curry(getTopicWord)('noun'), saveBase, getRelatedWords, passWords],
-      getDone
-    );
-
-    function saveBase(word, done) {
-      baseWord = canonicalizer.getSingularAndPluralForms(word)[0];
-      callNextTick(done);
-    }
-
-    function getRelatedWords(done) {
-      wordnok.getRelatedWords({ word: baseWord }, done);
-    }
-
-    function passWords(wordDict, done) {
-      var words = flatten(
-        values(pick.apply(pick, [wordDict].concat(favoredRelatedWordTypes)))
-      );
-      var filteredWords = words.filter(iscool);
-      if (filteredWords.length < 2) {
-        callNextTick(
-          done,
-          new Error(`Not enough suitable words found for ${baseWord}.`)
-        );
-      } else {
-        callNextTick(done, null, { theme: baseWord, values: filteredWords });
-      }
-    }
-  }
-
-  function GetASetOfRatings({
-    theme,
-    themePartOfSpeech = 'noun',
-    verbal,
-    ranking = false
-  }) {
-    return getASetOfRatings;
-
-    function getASetOfRatings(keys, getDone) {
-      if (!theme) {
-        getTopicWord(themePartOfSpeech, sb(proceedWithTopic, getDone));
-      } else {
-        callNextTick(proceedWithTopic, theme);
-      }
-
-      function proceedWithTopic(topic) {
-        var values;
-        if (ranking) {
-          values = probable.shuffle(range(1, keys.length + 1));
-        } else if (verbal) {
-          let ratings = verbalRatings;
-          if (topic === 'rating') {
-            ratings = verbalRatings.filter(doesNotHaveATopicPlaceholder);
-          }
-          let numberOfRatings = numberOfRatingsTable.roll();
-          values = probable
-            .shuffle(ratings)
-            .slice(0, numberOfRatings)
-            .map(fillInTopic);
-        } else {
-          values = range(keys.length).map(getNumericRating);
-        }
-
-        getDone(null, { theme: topic, values });
-
-        function getNumericRating() {
-          return probable.rollDie(100);
-        }
-
-        function fillInTopic(rating) {
-          return rating.replace(topicPlaceholderRegex, topic);
-        }
       }
     }
   }
@@ -411,44 +207,6 @@ function Improvise({ seed, wordnikAPIKey }) {
       canonicalizer.getSingularAndPluralForms(keyType)[1]
     }? Here they are ranked!`;
   }
-
-  function getTopicWord(partOfSpeech, done) {
-    var reqOpts = {
-      method: 'GET',
-      url:
-        'http://api.wordnik.com:80/v4/words.json/randomWords?' +
-        'hasDictionaryDef=false&' +
-        `includePartOfSpeech=${partOfSpeech}&` +
-        'excludePartOfSpeech=proper-noun&' +
-        'minCorpusCount=1000&maxCorpusCount=-1&' +
-        'minDictionaryCount=1&maxDictionaryCount=-1&' +
-        'minLength=3&maxLength=-1&' +
-        'api_key=' +
-        wordnikAPIKey,
-      json: true
-    };
-    request(reqOpts, sb(pickWord, done));
-
-    function pickWord(res, wordObjects) {
-      var okWords = pluck(wordObjects, 'word').filter(iscool);
-      done(null, probable.pickFromArray(okWords));
-    }
-  }
-}
-
-function pageIsOK(page) {
-  if (page && page.title) {
-    return !prefixesOfTheUnusable.some(isInTitle);
-  }
-  return false;
-
-  function isInTitle(prefix) {
-    return page.title.indexOf(prefix) === 0;
-  }
-}
-
-function doesNotHaveATopicPlaceholder(s) {
-  return s.indexOf('<topic>') === -1;
 }
 
 module.exports = Improvise;

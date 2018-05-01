@@ -37,6 +37,7 @@
     "lodash.values": "^4.3.0",
     "nodemw": "^0.12.0",
     "probable": "^2.1.1",
+    "request": "^2.85.0",
     "seedrandom": "^2.4.3",
     "standard-bail": "^2.0.1",
     "verror": "^1.10.0",
