@@ -15,15 +15,15 @@ save-part-of-relationships:
 	node tools/get-conceptnet-relationship.js PartOf > data/conceptnet/partof-relationships.json
 
 save-has-a-relationships:
-	node tools/get-conceptnet-relationship.js HasA > data/conceptnet/partof-relationships.json
+	node tools/get-conceptnet-relationship.js HasA > data/conceptnet/hasa-relationships.json
 
 save-used-for-relationships:
-	node tools/get-conceptnet-relationship.js UsedFor > data/conceptnet/partof-relationships.json
+	node tools/get-conceptnet-relationship.js UsedFor > data/conceptnet/usedfor-relationships.json
 save-capable-of-relationships:
-	node tools/get-conceptnet-relationship.js CapableOf > data/conceptnet/partof-relationships.json
+	node tools/get-conceptnet-relationship.js CapableOf > data/conceptnet/capableof-relationships.json
 save-at-location-relationships:
-	node tools/get-conceptnet-relationship.js AtLocation > data/conceptnet/partof-relationships.json
+	node tools/get-conceptnet-relationship.js AtLocation > data/conceptnet/atlocation-relationships.json
 save-causes-relationships:
-	node tools/get-conceptnet-relationship.js Causes > data/conceptnet/partof-relationships.json
+	node tools/get-conceptnet-relationship.js Causes > data/conceptnet/causes-relationships.json
 
 # TODO: The rest.
