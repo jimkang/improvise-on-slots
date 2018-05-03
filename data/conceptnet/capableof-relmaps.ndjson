@@ -1,0 +1,414 @@
+{"concept":"alcohol","rel":"CapableOf","receivingConcepts":["cloud your judgement","slow your thinking","burn","cloud your mind","lead to drunken behavior","cause you to snore","fool you","lower your inhibitions","lower your intelligence quotient"],"emittingConcepts":[]}
+{"concept":"a baby","rel":"CapableOf","receivingConcepts":["wet his diaper","cry loudly","cry","cry a lot","arrive on time","begin to talk","belong to a mother","be a boy or a girl","bring joy","cry all night","cry for a long time","be crying loud","be crying when it is hungry","cry that loud","delight its parents","drink from a bottle","learn to speak","nurse","play pat-a-cake","pull hair","rest all night","shake a rattle","talk nonsense","throw food everywhere","wave his hand"],"emittingConcepts":[]}
+{"concept":"A baby","rel":"CapableOf","receivingConcepts":["wet his/her diapers","sleep in a crib","arrive early","brown a diaper","cry all night long","cry when it's unhappy","decide whether to spit it out","fear loud noises","laugh at its mother","learn to walk","need milk","need to burp","play peekaboo","play with a rattle","be speaking in gibberish","swallow a toy marble","wave to its mother"],"emittingConcepts":[]}
+{"concept":"bombs","rel":"CapableOf","receivingConcepts":["destroy buildings","explode","destroy a city","destroy cities"],"emittingConcepts":[]}
+{"concept":"a bird","rel":"CapableOf","receivingConcepts":["sing","build a nest","chirp","fly high","learn to fly","prepare a nest","call with chirps","eat a grasshopper","eye a fish","feed worms to its young","kill a fish","land on a beach","note the presence of worms","be a person's pet","be resting on a telephone wire","sing some notes","sing to his mate","sing to other birds","is squawk","watch the land below it"],"emittingConcepts":[]}
+{"concept":"sing","rel":"CapableOf","emittingConcepts":["a bird","both men and woman"],"receivingConcepts":[]}
+{"concept":"Babies","rel":"CapableOf","receivingConcepts":["cry loud","begin crying","bottle feed","cry","drop food","need feeding","speak gibberish"],"emittingConcepts":[]}
+{"concept":"Blood","rel":"CapableOf","receivingConcepts":["be coursing through your veins","can be coursing through your veins","course through a vein","be given intraveinous","stream from a serious wound"],"emittingConcepts":[]}
+{"concept":"explode","rel":"CapableOf","emittingConcepts":["bombs","buttons"],"receivingConcepts":[]}
+{"concept":"An author","rel":"CapableOf","receivingConcepts":["write a book","begin to write a book","complete a book","continue a story","be ending a story","word a passage in her novel"],"emittingConcepts":[]}
+{"concept":"authors","rel":"CapableOf","receivingConcepts":["write that book","write poems","write books","complete writing","start a book","word a passage"],"emittingConcepts":[]}
+{"concept":"a ball","rel":"CapableOf","receivingConcepts":["bounce","hit the wall","roll down stairs","roll very well","strike a windows","happen to roll","be a toy"],"emittingConcepts":[]}
+{"concept":"an apple","rel":"CapableOf","receivingConcepts":["fall from a tree","fall off a tree"],"emittingConcepts":[]}
+{"concept":"Bad things","rel":"CapableOf","receivingConcepts":["happen to good people","happen to anyone"],"emittingConcepts":[]}
+{"concept":"A ball","rel":"CapableOf","receivingConcepts":["roll down hill","roll","break a window","roll under a table","bounces","be rolling downhill"],"emittingConcepts":[]}
+{"concept":"a battery","rel":"CapableOf","receivingConcepts":["power a flashlight","power a radio","power a toy","fail to work","power a toothbrush","start an engine"],"emittingConcepts":[]}
+{"concept":"bottle beer","rel":"CapableOf","emittingConcepts":["A brewer","a brewery","brewers"],"receivingConcepts":[]}
+{"concept":"Butter","rel":"CapableOf","receivingConcepts":["spread at room temperature","spread on bread","coat a frying pan"],"emittingConcepts":[]}
+{"concept":"an artist","rel":"CapableOf","receivingConcepts":["paint a portrait","paint","create","perfect their technique","attempt to sell a painting","color a picture","letter a poster","make a painting","paint a landscape","paint a masterpiece","perfect a painting","picture a model","produce a painting","sculpt","show his work","sign a painting","work on a painting"],"emittingConcepts":[]}
+{"concept":"atheists","rel":"CapableOf","receivingConcepts":["doubt the existence of god","agree that God does not exist"],"emittingConcepts":[]}
+{"concept":"a babysitter","rel":"CapableOf","receivingConcepts":["mind a baby","mind the children","mind a child"],"emittingConcepts":[]}
+{"concept":"a blacksmith","rel":"CapableOf","receivingConcepts":["shoe a horse","fix a horseshoe","shoe the mule"],"emittingConcepts":[]}
+{"concept":"A bomb","rel":"CapableOf","receivingConcepts":["destroy a city","destroy anything","destroy a town","go boom","go kaboom"],"emittingConcepts":[]}
+{"concept":"destroy a city","rel":"CapableOf","emittingConcepts":["A bomb","bombs"],"receivingConcepts":[]}
+{"concept":"a boss","rel":"CapableOf","receivingConcepts":["page an employee","advance an employee's salary","busy his employee","busy a secretary","busy his workers","control an employee","demand to see results","fire a white man","measure an empolyee","out an underling"],"emittingConcepts":[]}
+{"concept":"Brakes","rel":"CapableOf","receivingConcepts":["slow a car","slow cars","slow vehicles"],"emittingConcepts":[]}
+{"concept":"slow a car","rel":"CapableOf","emittingConcepts":["Brakes","A brake"],"receivingConcepts":[]}
+{"concept":"An actor","rel":"CapableOf","receivingConcepts":["star in a movie","star in a film","act poorly","enter the scene","face the audience","play a part","star in a play","star in a television show","star a movie","wear a costume"],"emittingConcepts":[]}
+{"concept":"star in a movie","rel":"CapableOf","emittingConcepts":["An actor","An actress","aqn actor","A barbie"],"receivingConcepts":[]}
+{"concept":"An alcoholic","rel":"CapableOf","receivingConcepts":["bottom out","drink a lot of booze"],"emittingConcepts":[]}
+{"concept":"bottom out","rel":"CapableOf","emittingConcepts":["An alcoholic","a boat","a boat in shallow water"],"receivingConcepts":[]}
+{"concept":"cry","rel":"CapableOf","emittingConcepts":["a baby","Babies"],"receivingConcepts":[]}
+{"concept":"a baker","rel":"CapableOf","receivingConcepts":["roll dough","add water to flour","bake bread","bake a cake","cake a wedding cake","flower a table","visit a website"],"emittingConcepts":[]}
+{"concept":"a band","rel":"CapableOf","receivingConcepts":["play music","hold a concert","include a drummer"],"emittingConcepts":[]}
+{"concept":"a bat","rel":"CapableOf","receivingConcepts":["strike a ball","eat mosquitoes","fly","be hanging upside down","hit a ball"],"emittingConcepts":[]}
+{"concept":"a batter","rel":"CapableOf","receivingConcepts":["strike out","hit a ball"],"emittingConcepts":[]}
+{"concept":"strike out","rel":"CapableOf","emittingConcepts":["a batter","Baseball players"],"receivingConcepts":[]}
+{"concept":"beavers","rel":"CapableOf","receivingConcepts":["build dams","slow rivers"],"emittingConcepts":[]}
+{"concept":"a brewery","rel":"CapableOf","receivingConcepts":["bottle beer","bottle soda"],"emittingConcepts":[]}
+{"concept":"a","rel":"CapableOf","receivingConcepts":["is a container","can begin to leak","can return five cents","is a form of a vessle","is a mammal"],"emittingConcepts":[]}
+{"concept":"star in a film","rel":"CapableOf","emittingConcepts":["An actor","an actress"],"receivingConcepts":[]}
+{"concept":"an animal","rel":"CapableOf","receivingConcepts":["move itself about","live","hear other voices","hear its own voice","leave its home","run after its prey","step into a trap"],"emittingConcepts":[]}
+{"concept":"artists","rel":"CapableOf","receivingConcepts":["paint portraits","letter signs","record music","try painting"],"emittingConcepts":[]}
+{"concept":"lend money","rel":"CapableOf","emittingConcepts":["bankers","a banker"],"receivingConcepts":[]}
+{"concept":"bats","rel":"CapableOf","receivingConcepts":["hang upside down","hit balls","fly at night"],"emittingConcepts":[]}
+{"concept":"cover a bed","rel":"CapableOf","emittingConcepts":["Blankets","A blanket"],"receivingConcepts":[]}
+{"concept":"A brother","rel":"CapableOf","receivingConcepts":["bug his sister","help his sister","protect you"],"emittingConcepts":[]}
+{"concept":"an accident","rel":"CapableOf","receivingConcepts":["slow traffic","happen to a clumsy person","stop traffic"],"emittingConcepts":[]}
+{"concept":"slow traffic","rel":"CapableOf","emittingConcepts":["an accident","accidents","Bad drivers","Bad weather"],"receivingConcepts":[]}
+{"concept":"accidents","rel":"CapableOf","receivingConcepts":["happen anytime","happen to anyone","cause injury and death","happen anywhere","hurt people","slow traffic"],"emittingConcepts":[]}
+{"concept":"Acid","rel":"CapableOf","receivingConcepts":["burn the skin","burn flesh"],"emittingConcepts":[]}
+{"concept":"Actors","rel":"CapableOf","receivingConcepts":["star in films","act badly","expect praise from the audience","mimic unhealthy people","work in a theater"],"emittingConcepts":[]}
+{"concept":"star in films","rel":"CapableOf","emittingConcepts":["Actors","Animals"],"receivingConcepts":[]}
+{"concept":"an adult","rel":"CapableOf","receivingConcepts":["help a child","sign a contract","drink beer","drive a train","keep property","marry","read to a child","sign a form"],"emittingConcepts":[]}
+{"concept":"market a product","rel":"CapableOf","emittingConcepts":["An advertising agency","an advertiser"],"receivingConcepts":[]}
+{"concept":"an airplane","rel":"CapableOf","receivingConcepts":["arrive at the airport","circle an airport","carry immigrants","crash if something goes wrong","fly upwards","land in the field","lift a person","seat passengers"],"emittingConcepts":[]}
+{"concept":"animal","rel":"CapableOf","receivingConcepts":["eating","live long"],"emittingConcepts":[]}
+{"concept":"Animals","rel":"CapableOf","receivingConcepts":["sense danger","feel pain","sense their environment","bleed when cut","defend other animals","dream and do other activities","drink","eat spaghetti","feel emotions","feel pleasure","fight each other","get cold","get a disease","hunt humans","keep alive","move","need to eat","resist other animals","'scape the zoo","sense a change in the weather","sense their owners' feelings","sleep in the daylight hours","star in films","travel","trip people"],"emittingConcepts":[]}
+{"concept":"animals","rel":"CapableOf","receivingConcepts":["sense fear","bite","procreate","attack","bathe","carry infections","copulate","die of cancer","die only once","gain wieght","be gay","kill people","lie down","listen to each other","listen to sounds","live lives","be males","be mammals","move from one place to another","move from place to place","pass water","reproduce","sense earthquakes","sense rain"],"emittingConcepts":[]}
+{"concept":"anyone","rel":"CapableOf","receivingConcepts":["voice an opinion","join a club","voice their opinions","appear awkward","attempt to better themselves","be awesome","battle racism","become a scientist","better themselves","breathe","call 911","call on a friend","can some vegetables","chair a meeting","choose to die","close a window","complete a task","contract HIV","cross the street","dare anyone else","die at any time","doubt that claim","enter a shop","experience what they can sense","find a newspaper","fish at a lake","floss teeth after meals","fool an idiot","fool someone stupid","be gay","hang pictures","head a line","iron their clothes","joy life","judge beauty pageants","judge a favorite food","judge a person","kiss anyone","laugh at a joke","make a mixed media sculpture","object that statement","object to being yelled at","order a pizza","pay a cashier","pick their nose","play the fool","put on items","question authority","question that belief is fact","read a book","record anything","remember that word","ring their mother","say anything","settle a debt","spot a tall person","start over","steal, lie, and cheat","step on a step","store cans of beans","succeed at a task","succeed in life","suffer from the flu","teach a computer common sense","tell that story","think","trigger an event","visit their home","waste time","write a poem"],"emittingConcepts":[]}
+{"concept":"An army","rel":"CapableOf","receivingConcepts":["storm a castle","battle its enemies","battle its enemy","storm a city","advance across the countryside","advance on a front","arm its troops","fight its enemy","mine a battlefield","shore up their defences"],"emittingConcepts":[]}
+{"concept":"an arrow","rel":"CapableOf","receivingConcepts":["hit a target","be pointing ain a direction"],"emittingConcepts":[]}
+{"concept":"An artist","rel":"CapableOf","receivingConcepts":["shade a drawing","draw someone","paint a canvas","letter a sign","creates music","master watercolor","paint a person","perfect a masterpiece","perfect her work of art","shade a picture","specialize in printing etchings"],"emittingConcepts":[]}
+{"concept":"an author","rel":"CapableOf","receivingConcepts":["write a poem","father a novel","finish a book","perfect a manuscript","write","write an essay"],"emittingConcepts":[]}
+{"concept":"write a poem","rel":"CapableOf","emittingConcepts":["an author","anyone"],"receivingConcepts":[]}
+{"concept":"babies","rel":"CapableOf","receivingConcepts":["wave bye-bye","ball their eyes out","clap hands","cry because their mouths hurt","be crying tears","experience hunger","giggle","like spinach","sleep for a long time","sleep soundly","smile and coo","trust their parents","wet their nappy","wet themselves"],"emittingConcepts":[]}
+{"concept":"a bank","rel":"CapableOf","receivingConcepts":["store your money","charge interest","back a loan","demand that a customer repays money","increase interest rates","keep your money","offer to lend money","require a signature"],"emittingConcepts":[]}
+{"concept":"a banker","rel":"CapableOf","receivingConcepts":["lend money","consider a loan"],"emittingConcepts":[]}
+{"concept":"A baseball player","rel":"CapableOf","receivingConcepts":["hit a home run","drop a fly ball","field a fly ball","hit a triple","steal a base"],"emittingConcepts":[]}
+{"concept":"A batter","rel":"CapableOf","receivingConcepts":["crowd the plate","hit a foul ball","miss the ball","step up to the plate"],"emittingConcepts":[]}
+{"concept":"Batters","rel":"CapableOf","receivingConcepts":["hit baseballs","hit the ball"],"emittingConcepts":[]}
+{"concept":"dress himself","rel":"CapableOf","emittingConcepts":["A big boy","An adult"],"receivingConcepts":[]}
+{"concept":"A bird","rel":"CapableOf","receivingConcepts":["spread the wings","be a pet","sing a song","land on a branch","attempt to fly","experience flight","fall from the sky","grow to a larger size","injur it's wing if it falls","land on a tree","listen to an insect","tell insects from plants","travel across the world","travel faster than a slug"],"emittingConcepts":[]}
+{"concept":"A blanket","rel":"CapableOf","receivingConcepts":["warm a person","cover a bed","cover my head","be covering a bed","keep a person warm"],"emittingConcepts":[]}
+{"concept":"a boat","rel":"CapableOf","receivingConcepts":["ship cargo","bottom out","bottom out in shallow water","bottom out on a sand bar","get to a floating football","list to one side","be sailing against the wind","sail through the sea","settle lower","take you to an island"],"emittingConcepts":[]}
+{"concept":"a boxer","rel":"CapableOf","receivingConcepts":["fight an opponent","hurt an opponent","strike the opponent","best an opponent","box another boxer","deal a punch to the opponent","fight a boxer","fight for a title","punch"],"emittingConcepts":[]}
+{"concept":"bridges","rel":"CapableOf","receivingConcepts":["cross rivers","ice in the winter"],"emittingConcepts":[]}
+{"concept":"buckets","rel":"CapableOf","receivingConcepts":["carry water","hold water","carry watrer"],"emittingConcepts":[]}
+{"concept":"carry water","rel":"CapableOf","emittingConcepts":["buckets","a bucket"],"receivingConcepts":[]}
+{"concept":"a building","rel":"CapableOf","receivingConcepts":["weather a storm","be a target"],"emittingConcepts":[]}
+{"concept":"a bull","rel":"CapableOf","receivingConcepts":["charge that matador","charge","charge the rider","be servicing a cow"],"emittingConcepts":[]}
+{"concept":"a bulldozer","rel":"CapableOf","receivingConcepts":["move dirt","even the ground","move earth","be tearing up the trees"],"emittingConcepts":[]}
+{"concept":"a burglar","rel":"CapableOf","receivingConcepts":["case a joint","break the law","case a building","case a house","force open a lock","force a window","surprise a homeowner","take one's belongings"],"emittingConcepts":[]}
+{"concept":"An accident","rel":"CapableOf","receivingConcepts":["happen to anyone","slow down traffic","cause injuries","happen to anybody","cause acquired brain injury","cause you to defecate from fear","happen on a toll road","happen to a careless driver","hold up traffic","result in a fatality","tie up traffic"],"emittingConcepts":[]}
+{"concept":"happen to anyone","rel":"CapableOf","emittingConcepts":["An accident","accidents","Bad things"],"receivingConcepts":[]}
+{"concept":"an actor","rel":"CapableOf","receivingConcepts":["act badly","appear in a movie","act scene in a play","pretend","act in a play","branch out","cake on make-up","milk a part","picture that scene","picture that scenery","present an award","put on a costume","sign his name","sing songs","star in a Broadway show"],"emittingConcepts":[]}
+{"concept":"act badly","rel":"CapableOf","emittingConcepts":["an actor","Actors"],"receivingConcepts":[]}
+{"concept":"An actress","rel":"CapableOf","receivingConcepts":["star in a movie","star in a Shakespeare play","cry convincingly on cue","further her career","star in a play","star in a show"],"emittingConcepts":[]}
+{"concept":"An adult","rel":"CapableOf","receivingConcepts":["dress herself","act like a child","dress himself","drive a car","explain the rules to a child","feed and take care of itself","gift knowledge to a child","hand a toy to a child","lead a child by the hand","learn to mend their ways","remember her childhood","settle a childrens' argument","sleep for an average of hours","use a lawn mower","wait to go to the bathroom"],"emittingConcepts":[]}
+{"concept":"adults","rel":"CapableOf","receivingConcepts":["dress themselves","care for babies","carry infants","demand respect from children","drive a vehicle","fight like children","mother children","own autos","smoke cigarettes","tell right from wrong"],"emittingConcepts":[]}
+{"concept":"airplanes","rel":"CapableOf","receivingConcepts":["arrive at airports","circle an airport","crash","accelerate","arrive late","bomb","carry freight","carry people","catch on fire","enter a hangar","land on runways","lower their landing gear","near airports","plan to bomb targets","raise their landing gear","raise people","run out of fuel","slow down","speed up","stall","taxi"],"emittingConcepts":[]}
+{"concept":"All living things","rel":"CapableOf","receivingConcepts":["grow","die"],"emittingConcepts":[]}
+{"concept":"grow","rel":"CapableOf","emittingConcepts":["All living things","Something alive","birds"],"receivingConcepts":[]}
+{"concept":"feel pain","rel":"CapableOf","emittingConcepts":["Animals","An animal"],"receivingConcepts":[]}
+{"concept":"voice their opinions","rel":"CapableOf","emittingConcepts":["anyone","Americans"],"receivingConcepts":[]}
+{"concept":"An athlete","rel":"CapableOf","receivingConcepts":["attempt to break the world record","attempt to set a record","best her previous record","decide to train","letter in football","lose a game","ready for a race","watch his weight"],"emittingConcepts":[]}
+{"concept":"jump high","rel":"CapableOf","emittingConcepts":["athlete","Basketball players"],"receivingConcepts":[]}
+{"concept":"An audience","rel":"CapableOf","receivingConcepts":["laugh at a comedian","experience a concert","hear music","laugh at a comedian's jokes","watch a ballet"],"emittingConcepts":[]}
+{"concept":"break a window","rel":"CapableOf","emittingConcepts":["A ball","a brick"],"receivingConcepts":[]}
+{"concept":"fly","rel":"CapableOf","emittingConcepts":["Bats","bird","a butterfly","Some animals","some ants","a bat","Bats and birds","a bee","some beetles"],"receivingConcepts":[]}
+{"concept":"A bell","rel":"CapableOf","receivingConcepts":["ring","sound alarming","sound either loud or quiet"],"emittingConcepts":[]}
+{"concept":"chirp","rel":"CapableOf","emittingConcepts":["a bird","birds"],"receivingConcepts":[]}
+{"concept":"bird","rel":"CapableOf","receivingConcepts":["fly","head south"],"emittingConcepts":[]}
+{"concept":"birds","rel":"CapableOf","receivingConcepts":["sing songs","spread their wings","fear cats","gather sticks to make a nest","head south","appear on legal tender","chirp","eat","fky","fly without flying machines","grieve","grow","hatch","land","land on roofs","mate","molt","peck","perch","poop","practice singing in their sleep","reproduce","rest in thier nest","sense an impending storm"],"emittingConcepts":[]}
+{"concept":"sing songs","rel":"CapableOf","emittingConcepts":["birds","an actor"],"receivingConcepts":[]}
+{"concept":"A boat","rel":"CapableOf","receivingConcepts":["go on the water","bus refugees","cross a river","go sailing on a lake","be neaped at high tide","near the dock","sail on a pond","swim on water","weather a storm on the sea"],"emittingConcepts":[]}
+{"concept":"Boats","rel":"CapableOf","receivingConcepts":["sail the ocean","be sailing across the sea","sink"],"emittingConcepts":[]}
+{"concept":"brokers","rel":"CapableOf","receivingConcepts":["be trading stocks","wedge bonds"],"emittingConcepts":[]}
+{"concept":"happen to anybody","rel":"CapableOf","emittingConcepts":["An accident","Accidents"],"receivingConcepts":[]}
+{"concept":"Accidents","rel":"CapableOf","receivingConcepts":["cause injury","happen to anybody","cause traffic jams","happen easily","happen to people"],"emittingConcepts":[]}
+{"concept":"an accountant","rel":"CapableOf","receivingConcepts":["cook the books","count numbers","count the profits"],"emittingConcepts":[]}
+{"concept":"cook the books","rel":"CapableOf","emittingConcepts":["an accountant","accountants"],"receivingConcepts":[]}
+{"concept":"accountants","rel":"CapableOf","receivingConcepts":["cook the books","count cash","count money","doctor financial reports","figure your taxes"],"emittingConcepts":[]}
+{"concept":"actors","rel":"CapableOf","receivingConcepts":["act in a movie","present a performance","be crying on screen","remember their lines","sign autographs","star in moview","strike a set"],"emittingConcepts":[]}
+{"concept":"Adding water","rel":"CapableOf","receivingConcepts":["thin the liquid","thin other liquids"],"emittingConcepts":[]}
+{"concept":"drink beer","rel":"CapableOf","emittingConcepts":["an adult","Adults"],"receivingConcepts":[]}
+{"concept":"work","rel":"CapableOf","emittingConcepts":["adult","A gundog"],"receivingConcepts":[]}
+{"concept":"Adults","rel":"CapableOf","receivingConcepts":["count","drink beer","eat sushi","act like infants","fail to pass a test","wonder about alot of things"],"emittingConcepts":[]}
+{"concept":"land on a runway","rel":"CapableOf","emittingConcepts":["An aeroplane","an aircraft"],"receivingConcepts":[]}
+{"concept":"fear open spaces","rel":"CapableOf","emittingConcepts":["agoraphobes","An agoraphobic"],"receivingConcepts":[]}
+{"concept":"circle an airport","rel":"CapableOf","emittingConcepts":["an airplane","airplanes"],"receivingConcepts":[]}
+{"concept":"crash","rel":"CapableOf","emittingConcepts":["airplanes","a bike"],"receivingConcepts":[]}
+{"concept":"Alcohol","rel":"CapableOf","receivingConcepts":["destroy friendships","cloud one's mind","come in a bottle","make one nostalgic"],"emittingConcepts":[]}
+{"concept":"amount to nothing","rel":"CapableOf","emittingConcepts":["All your efforts","All this work","a big deal"],"receivingConcepts":[]}
+{"concept":"an american","rel":"CapableOf","receivingConcepts":["speak english","understand english"],"emittingConcepts":[]}
+{"concept":"dream of electric sheep","rel":"CapableOf","emittingConcepts":["an android","Androids"],"receivingConcepts":[]}
+{"concept":"An animal","rel":"CapableOf","receivingConcepts":["feel pain","die in a laboratory","hunt for food","note food","'scape a trap","sense fear in a human","sense your presence","work for a human being"],"emittingConcepts":[]}
+{"concept":"live","rel":"CapableOf","emittingConcepts":["an animal","and on the other hand, you"],"receivingConcepts":[]}
+{"concept":"Some animals","rel":"CapableOf","receivingConcepts":["reproduce asexually","fly","run on the ground"],"emittingConcepts":[]}
+{"concept":"draw attention","rel":"CapableOf","emittingConcepts":["Animation","Adornment"],"receivingConcepts":[]}
+{"concept":"ants","rel":"CapableOf","receivingConcepts":["crawl","circle food","number many"],"emittingConcepts":[]}
+{"concept":"Anybody","rel":"CapableOf","receivingConcepts":["forget anything","buy cats at a petstore","question authority","trip over that curb"],"emittingConcepts":[]}
+{"concept":"Anyone","rel":"CapableOf","receivingConcepts":["answer that question","iron their shirts","lose his keys","age gracefully","amount to something","become an architect","become infected with the AIDS virus","become president","begin over again with new enthusiasm","borrow books from the library","bus the dishes","carry a grudge","be carrying a disease","celebrate St","cook boiled eggs","cook frozen dinners","discover an interesting bug","doctor a simple wound","doubt dogma","enter that contest","fall in love","fear the unknown","fool a one-year-old","get to Toledo","grow fingernails","iron a shirt","judge anyone else","laugh out loud","learn an art","like Jim for his good humor","mail things in this box","master computers","own a television","pass gas","plan their day in the morning","please me with love and money","promise to be good","question sincerity","sense the presence of a skunk","share their smile","star in a home movie","stay here","strike a match","teach us something","thank another person for a favor","try anything","visit the hospital on Mondays","voice their opinion on this issue","water a plant","wave a flag","win a game of chance","wonder about the existance of God","write a letter to their representive","wrong another person","wrong another person by mistake"],"emittingConcepts":[]}
+{"concept":"an appraiser","rel":"CapableOf","receivingConcepts":["value an antique","value a diamond"],"emittingConcepts":[]}
+{"concept":"value an antique","rel":"CapableOf","emittingConcepts":["an appraiser","An antiques dealer"],"receivingConcepts":[]}
+{"concept":"date an artifact","rel":"CapableOf","emittingConcepts":["a archaeologist","an archeologist"],"receivingConcepts":[]}
+{"concept":"An architect","rel":"CapableOf","receivingConcepts":["position walls and plumbing with exactness","build a house","picture a structural design"],"emittingConcepts":[]}
+{"concept":"Armies","rel":"CapableOf","receivingConcepts":["battle Armies","battle opposing armies","move on their stomaches"],"emittingConcepts":[]}
+{"concept":"armies","rel":"CapableOf","receivingConcepts":["storm cities","advance into enemy territory"],"emittingConcepts":[]}
+{"concept":"an army","rel":"CapableOf","receivingConcepts":["advance toward the enemy","advance towards the enemy","battle an army","battle another army","battle a country","include an army of ants","man the front line","press for victory","refer to ants","rise up","storm the border","storm a fortress"],"emittingConcepts":[]}
+{"concept":"Aspirin","rel":"CapableOf","receivingConcepts":["relieve headache pain","fight a headache"],"emittingConcepts":[]}
+{"concept":"an astronaut","rel":"CapableOf","receivingConcepts":["journey to the moon","space walk"],"emittingConcepts":[]}
+{"concept":"journey to the moon","rel":"CapableOf","emittingConcepts":["an astronaut","astronauts"],"receivingConcepts":[]}
+{"concept":"an athlete","rel":"CapableOf","receivingConcepts":["play a sport","bicycle for many miles","bicycle up a hill","choose to become a professional","is compete","jog","letter in a sport","lose a competition","miss the ball","play baseball","play lacrosse","run fast","run a marathon","sprint","wash a car"],"emittingConcepts":[]}
+{"concept":"An attorney","rel":"CapableOf","receivingConcepts":["prove a case","put his clients mind at ease","represent you in a lawsuit","right a wrong","state his case"],"emittingConcepts":[]}
+{"concept":"a bag","rel":"CapableOf","receivingConcepts":["carry groceries","carry groceries in it","carry something","be a goal"],"emittingConcepts":[]}
+{"concept":"A baker","rel":"CapableOf","receivingConcepts":["make a cake","box up a dozen","burn a batch of cookies","butter a roll","coat a cake with lemon-flavored frosting","piece eggs with flour","quarter a cake","roll out dough","stop the dough from raising"],"emittingConcepts":[]}
+{"concept":"dance gracefully","rel":"CapableOf","emittingConcepts":["a ballerina","Ballerinas"],"receivingConcepts":[]}
+{"concept":"Ballerinas","rel":"CapableOf","receivingConcepts":["dance gracefully","dance on pointe","dance on their toes","wear tutus when they dance"],"emittingConcepts":[]}
+{"concept":"Balls","rel":"CapableOf","receivingConcepts":["roll away","roll down a hill"],"emittingConcepts":[]}
+{"concept":"a baseball player","rel":"CapableOf","receivingConcepts":["throw","catch a baseball","catch a fly ball","charge the mound","duck a baseball","field a baseball","field a pitch","field a pop fly","field a thrown ball","hit a ball","pitch"],"emittingConcepts":[]}
+{"concept":"hit a ball","rel":"CapableOf","emittingConcepts":["a batter","a baseball player","a bat"],"receivingConcepts":[]}
+{"concept":"batteries","rel":"CapableOf","receivingConcepts":["power electronic devices","charge capacitors to saturation","die after awhile","last awhile","power a lantern"],"emittingConcepts":[]}
+{"concept":"charge a battery","rel":"CapableOf","emittingConcepts":["a battery charger","A battery recharger"],"receivingConcepts":[]}
+{"concept":"A bear","rel":"CapableOf","receivingConcepts":["fish for salmon","hunt a rabbit","winter over in his den","climb a tree","fish with his bare paws","mother a cub","mother her cubs","sleep all winter long","winter in a cave"],"emittingConcepts":[]}
+{"concept":"fish for salmon","rel":"CapableOf","emittingConcepts":["A bear","bears"],"receivingConcepts":[]}
+{"concept":"a bear","rel":"CapableOf","receivingConcepts":["fish with it's paws","eat a salmon","swim","travel 40 miles per day"],"emittingConcepts":[]}
+{"concept":"bears","rel":"CapableOf","receivingConcepts":["fish for salmon","kill humans","kill small animals","pick berries","scratch themselves on trees","winter in dens"],"emittingConcepts":[]}
+{"concept":"stop traffic","rel":"CapableOf","emittingConcepts":["A beautiful woman","an accident"],"receivingConcepts":[]}
+{"concept":"A bee","rel":"CapableOf","receivingConcepts":["sting you","sting your face","try to sting a dog"],"emittingConcepts":[]}
+{"concept":"bees","rel":"CapableOf","receivingConcepts":["live in a hive","make honey","fall into beer bottles","gather pollen"],"emittingConcepts":[]}
+{"concept":"a bicycle","rel":"CapableOf","receivingConcepts":["go over 40mph","stop short","travel on a road"],"emittingConcepts":[]}
+{"concept":"head south","rel":"CapableOf","emittingConcepts":["bird","birds"],"receivingConcepts":[]}
+{"concept":"Birds","rel":"CapableOf","receivingConcepts":["lay eggs","breathe","circle houses","fly very fast to escape danger","fly very fast to pursue prey","be heading south for the winter","head south for the winter","'scape from an empty cage","show enthusiasm when mating","sit on trees","spot prey","spread seeds","winter in the Southern hemisphere"],"emittingConcepts":[]}
+{"concept":"blind people","rel":"CapableOf","receivingConcepts":["read using the braile system","see nothing","trip on stuff"],"emittingConcepts":[]}
+{"concept":"a block of wood","rel":"CapableOf","receivingConcepts":["wedge a door","wedge in a door"],"emittingConcepts":[]}
+{"concept":"blood","rel":"CapableOf","receivingConcepts":["course through veins","course from a cut artery","be coursing through a horse's veins","be coursing through your viens"],"emittingConcepts":[]}
+{"concept":"My boss","rel":"CapableOf","receivingConcepts":["consider giving me a raise","farm work out to his underlings","fire everyone"],"emittingConcepts":[]}
+{"concept":"A boxer","rel":"CapableOf","receivingConcepts":["train for a fight","box another","box your ears","fight another boxer","be passing out","pull his punches","train to get in the ring"],"emittingConcepts":[]}
+{"concept":"boxers","rel":"CapableOf","receivingConcepts":["train to fight","lay their opponent out","strike boxers"],"emittingConcepts":[]}
+{"concept":"Boxes","rel":"CapableOf","receivingConcepts":["hold things","be opend by educators","store stuff"],"emittingConcepts":[]}
+{"concept":"hold things","rel":"CapableOf","emittingConcepts":["Boxes","A box"],"receivingConcepts":[]}
+{"concept":"brakes","rel":"CapableOf","receivingConcepts":["slow a vehicle","stop turning wheels","stop vehicles"],"emittingConcepts":[]}
+{"concept":"a bridge","rel":"CapableOf","receivingConcepts":["bridge a ravine","bridge a river","cross troubled waters"],"emittingConcepts":[]}
+{"concept":"hold water","rel":"CapableOf","emittingConcepts":["buckets","A bottle","a bucket"],"receivingConcepts":[]}
+{"concept":"A building","rel":"CapableOf","receivingConcepts":["fall down","cast a shadow","face north"],"emittingConcepts":[]}
+{"concept":"fall down","rel":"CapableOf","emittingConcepts":["A building","buildings","anything"],"receivingConcepts":[]}
+{"concept":"buildings","rel":"CapableOf","receivingConcepts":["fall down","get bombed"],"emittingConcepts":[]}
+{"concept":"Bulls","rel":"CapableOf","receivingConcepts":["charge people","charge intruders"],"emittingConcepts":[]}
+{"concept":"Bullying","rel":"CapableOf","receivingConcepts":["be costly","cause injury and illness","lead to serious psychological injury"],"emittingConcepts":[]}
+{"concept":"A butcher","rel":"CapableOf","receivingConcepts":["cut the meat","bone a peice of meat","bone a piece of meat","bone a roast","cut meat with a knife","quarter a duck","quarter a ham","quarter a slab of meat"],"emittingConcepts":[]}
+{"concept":"a butcher","rel":"CapableOf","receivingConcepts":["quarter a carcass","bone a chicken","bone the meat","dress a side of beef","man the meat grinder","quarter a chicken","quarter a cow","ready some meat","sell meat"],"emittingConcepts":[]}
+{"concept":"a butterfly","rel":"CapableOf","receivingConcepts":["fly","cause a wind","make a landing"],"emittingConcepts":[]}
+{"concept":"An abacus","rel":"CapableOf","receivingConcepts":["add a series of numbers","count that transaction"],"emittingConcepts":[]}
+{"concept":"An accountant","rel":"CapableOf","receivingConcepts":["book the returns","complete a tax return","note an error","number his accounts","prepare your income taxes"],"emittingConcepts":[]}
+{"concept":"count money","rel":"CapableOf","emittingConcepts":["accountants","Ali"],"receivingConcepts":[]}
+{"concept":"A","rel":"CapableOf","receivingConcepts":["can store food","is a metalic cylindrical container"],"emittingConcepts":[]}
+{"concept":"acid","rel":"CapableOf","receivingConcepts":["charge the mind","destroy tissue","ruin many things"],"emittingConcepts":[]}
+{"concept":"An activist","rel":"CapableOf","receivingConcepts":["battle multinational corporations","forward a cause to a politician","go into court","shake things up"],"emittingConcepts":[]}
+{"concept":"an activist","rel":"CapableOf","receivingConcepts":["fight the government","raise our consciousness"],"emittingConcepts":[]}
+{"concept":"star in a play","rel":"CapableOf","emittingConcepts":["An actor","An actress"],"receivingConcepts":[]}
+{"concept":"an actress","rel":"CapableOf","receivingConcepts":["star in a film","study her lines"],"emittingConcepts":[]}
+{"concept":"an aeroplane","rel":"CapableOf","receivingConcepts":["bank to the left","circle an airfield"],"emittingConcepts":[]}
+{"concept":"circle an airfield","rel":"CapableOf","emittingConcepts":["an aeroplane","An airplane"],"receivingConcepts":[]}
+{"concept":"some aeroplanes","rel":"CapableOf","receivingConcepts":["carry cars","carry helicopters","carry other aeroplanes"],"emittingConcepts":[]}
+{"concept":"hurt","rel":"CapableOf","emittingConcepts":["After a long day, your feet","All people"],"receivingConcepts":[]}
+{"concept":"The agent","rel":"CapableOf","receivingConcepts":["ask whether to perform a task","plant the information"],"emittingConcepts":[]}
+{"concept":"An agent","rel":"CapableOf","receivingConcepts":["book a ticket","close a deal for her client","start to act"],"emittingConcepts":[]}
+{"concept":"push you around","rel":"CapableOf","emittingConcepts":["An agressive person","a bully"],"receivingConcepts":[]}
+{"concept":"Air","rel":"CapableOf","receivingConcepts":["blow hard","raise the titanic"],"emittingConcepts":[]}
+{"concept":"air","rel":"CapableOf","receivingConcepts":["be compressed ina can","dissolve in water","dry clothes hung on a clothesline","dry the paint","transport energy"],"emittingConcepts":[]}
+{"concept":"an aircraft","rel":"CapableOf","receivingConcepts":["drop a bomb","land on a runway"],"emittingConcepts":[]}
+{"concept":"An airplane","rel":"CapableOf","receivingConcepts":["bank quickly","circle an airfield","circle the airport before landing","circle around the airport","cross the ocean","land at the airstrip","land on a landing strip","reach its destination","roll down the runway","travel across the world","travel faster than a car","travel through many time zones"],"emittingConcepts":[]}
+{"concept":"travel across the world","rel":"CapableOf","emittingConcepts":["An airplane","A bird"],"receivingConcepts":[]}
+{"concept":"Airplanes","rel":"CapableOf","receivingConcepts":["fly through clouds","haul freight as cargo","leave on time","be traveling faster"],"emittingConcepts":[]}
+{"concept":"slow down","rel":"CapableOf","emittingConcepts":["airplanes","Ali"],"receivingConcepts":[]}
+{"concept":"alchohol","rel":"CapableOf","receivingConcepts":["cloud judgement","be injested"],"emittingConcepts":[]}
+{"concept":"cloud judgement","rel":"CapableOf","emittingConcepts":["alchohol","Bigotry"],"receivingConcepts":[]}
+{"concept":"Ali","rel":"CapableOf","receivingConcepts":["allow Ahmad to help him","allow others to help him","ask a question","attempt to make friends","believe in world of peace","be blowing a candle","box very well","bridge the communication gap","burn the toast","care to go first","cause laughter","circle around the block","count money","be coursing through a course","deal with his dog","delight over the gift","double his furniture","end an arguement","explain mathematics","feed the cat","field a question","fight prejudice","fine his tennants","follow Ahmad","gain more money","gather money","give a hand","honor his word with the truth","increase intelligence","journey through the city","labor till dawn","lie to the I.R.S","mark that location","place a call","power a bicycle","pull his cart","push himself to get up","question his teacher","race with his car","say \"Hi\"","sell his car","sell products","separate fact from fiction","set an example","slow down","spread margarine","stand up for his rights","succeed in real estate","take a course","touch anything within reach","weight train","work hard"],"emittingConcepts":[]}
+{"concept":"breathe","rel":"CapableOf","emittingConcepts":["all birds","all mammals","all reptiles","anyone","Birds"],"receivingConcepts":[]}
+{"concept":"die","rel":"CapableOf","emittingConcepts":["All living things","life"],"receivingConcepts":[]}
+{"concept":"All mammals and birds","rel":"CapableOf","receivingConcepts":["reason analogically","reason causally"],"emittingConcepts":[]}
+{"concept":"All people","rel":"CapableOf","receivingConcepts":["do simple things","hurt"],"emittingConcepts":[]}
+{"concept":"Almost anyone","rel":"CapableOf","receivingConcepts":["become President","mail a letter to a friend","master their native tongue"],"emittingConcepts":[]}
+{"concept":"Aluminum","rel":"CapableOf","receivingConcepts":["be \"drop-forged .\"","side a tacky house"],"emittingConcepts":[]}
+{"concept":"Americans","rel":"CapableOf","receivingConcepts":["expect freedoms","honor the flag","pay taxes","voice their opinions"],"emittingConcepts":[]}
+{"concept":"raise a barn","rel":"CapableOf","emittingConcepts":["the amish","amish people"],"receivingConcepts":[]}
+{"concept":"An amputation","rel":"CapableOf","receivingConcepts":["happen because of a disease","happen because of a traumatic event"],"emittingConcepts":[]}
+{"concept":"An analyst","rel":"CapableOf","receivingConcepts":["study whether geography","value common stock"],"emittingConcepts":[]}
+{"concept":"Anger","rel":"CapableOf","receivingConcepts":["cause people to commit senseless acts","cause people to yell","cloud a person's thinking","kill a relationship","produce discontent"],"emittingConcepts":[]}
+{"concept":"anger","rel":"CapableOf","receivingConcepts":["divide people","be a very dangerous emotion"],"emittingConcepts":[]}
+{"concept":"divide people","rel":"CapableOf","emittingConcepts":["anger","a bone of contention"],"receivingConcepts":[]}
+{"concept":"Angry people","rel":"CapableOf","receivingConcepts":["act aggressive","raise their voices","storm out"],"emittingConcepts":[]}
+{"concept":"angry people","rel":"CapableOf","receivingConcepts":["cause riots","fire up","shout and pound on the table","storm from the room"],"emittingConcepts":[]}
+{"concept":"An angry person","rel":"CapableOf","receivingConcepts":["break a china plate to bits","raise hell"],"emittingConcepts":[]}
+{"concept":"an angry person","rel":"CapableOf","receivingConcepts":["burn with rage","raise his voice","storm away","walk away"],"emittingConcepts":[]}
+{"concept":"be gay","rel":"CapableOf","emittingConcepts":["animals","anyone"],"receivingConcepts":[]}
+{"concept":"move","rel":"CapableOf","emittingConcepts":["Animals","Another way to say \"Animals"],"receivingConcepts":[]}
+{"concept":"reproduce","rel":"CapableOf","emittingConcepts":["animals","birds"],"receivingConcepts":[]}
+{"concept":"walk","rel":"CapableOf","emittingConcepts":["Animals with legs","a bus moves faster than I"],"receivingConcepts":[]}
+{"concept":"An annoying person","rel":"CapableOf","receivingConcepts":["bug me","bug everybody","get to you"],"emittingConcepts":[]}
+{"concept":"bug me","rel":"CapableOf","emittingConcepts":["An annoying person","My brother"],"receivingConcepts":[]}
+{"concept":"Another person","rel":"CapableOf","receivingConcepts":["dare you to do something dangerous","\"side\" with you"],"emittingConcepts":[]}
+{"concept":"Answering a question","rel":"CapableOf","receivingConcepts":["give the listener knowledge","be a very complex intellectual operation"],"emittingConcepts":[]}
+{"concept":"number in the thousands","rel":"CapableOf","emittingConcepts":["An ant colony","The ants in a nest"],"receivingConcepts":[]}
+{"concept":"an antibiotic","rel":"CapableOf","receivingConcepts":["cure a bacterial infection","be prescribed"],"emittingConcepts":[]}
+{"concept":"Antibiotics","rel":"CapableOf","receivingConcepts":["battle disease","fight disease"],"emittingConcepts":[]}
+{"concept":"Ants","rel":"CapableOf","receivingConcepts":["build elaborate underground dwellings","farm fungus for food","follow one another","spread over a wide area"],"emittingConcepts":[]}
+{"concept":"some ants","rel":"CapableOf","receivingConcepts":["fly","garden fungi"],"emittingConcepts":[]}
+{"concept":"The ants in a nest","rel":"CapableOf","receivingConcepts":["number in the thosands","number in the thousands"],"emittingConcepts":[]}
+{"concept":"anybody","rel":"CapableOf","receivingConcepts":["act the fool","oil a squeaky hinge","sign a petition","travel around the world","wash dishes"],"emittingConcepts":[]}
+{"concept":"question authority","rel":"CapableOf","emittingConcepts":["Anybody","anyone"],"receivingConcepts":[]}
+{"concept":"laugh out loud","rel":"CapableOf","emittingConcepts":["Anyone","an audience"],"receivingConcepts":[]}
+{"concept":"strike a match","rel":"CapableOf","emittingConcepts":["Anyone","An arsonist"],"receivingConcepts":[]}
+{"concept":"anything","rel":"CapableOf","receivingConcepts":["fall down","surprise you","be whatever"],"emittingConcepts":[]}
+{"concept":"Anything","rel":"CapableOf","receivingConcepts":["happen and often does","matter to someone"],"emittingConcepts":[]}
+{"concept":"an applicant","rel":"CapableOf","receivingConcepts":["borrow a loan from the bank","land a job"],"emittingConcepts":[]}
+{"concept":"an arbitrator","rel":"CapableOf","receivingConcepts":["bridge differences","bridge workers and management","settle an argument"],"emittingConcepts":[]}
+{"concept":"An arbitrator","rel":"CapableOf","receivingConcepts":["bridge a gap","settle disagreements"],"emittingConcepts":[]}
+{"concept":"archaeology","rel":"CapableOf","receivingConcepts":["fill museums with curious objects","improve knowledge about past human societies"],"emittingConcepts":[]}
+{"concept":"build a house","rel":"CapableOf","emittingConcepts":["An architect","Bricklayer","Builders"],"receivingConcepts":[]}
+{"concept":"An argument","rel":"CapableOf","receivingConcepts":["prove a point","result in bad feelings"],"emittingConcepts":[]}
+{"concept":"an argument","rel":"CapableOf","receivingConcepts":["prove to be valid","result in cruel accusations"],"emittingConcepts":[]}
+{"concept":"an arm","rel":"CapableOf","receivingConcepts":["lift a fork","wave \"hello\""],"emittingConcepts":[]}
+{"concept":"An arrow","rel":"CapableOf","receivingConcepts":["miss its target","point to the right"],"emittingConcepts":[]}
+{"concept":"an arsonist","rel":"CapableOf","receivingConcepts":["burn a building","burn a house","set a building on fire"],"emittingConcepts":[]}
+{"concept":"shade a picture","rel":"CapableOf","emittingConcepts":["An artist","Atist"],"receivingConcepts":[]}
+{"concept":"Artists","rel":"CapableOf","receivingConcepts":["coat a canvas with paint","paint pictures"],"emittingConcepts":[]}
+{"concept":"paint pictures","rel":"CapableOf","emittingConcepts":["Artists","At an art class you"],"receivingConcepts":[]}
+{"concept":"An assistant","rel":"CapableOf","receivingConcepts":["hand instruments to the surgion","hand you a tool","sort your mail"],"emittingConcepts":[]}
+{"concept":"An astronaut","rel":"CapableOf","receivingConcepts":["journey to distant places","land a space shuttle","man a flight to the moon","separate himself from the space shuttle","travel into outerspace","travel to the Moon","visit space"],"emittingConcepts":[]}
+{"concept":"astronaut","rel":"CapableOf","receivingConcepts":["man spacecraft","travel through space"],"emittingConcepts":[]}
+{"concept":"Astronauts","rel":"CapableOf","receivingConcepts":["experience zero gravity","journey into space"],"emittingConcepts":[]}
+{"concept":"an astronomer","rel":"CapableOf","receivingConcepts":["look through a telescope","view a planet","watch the sky"],"emittingConcepts":[]}
+{"concept":"An astronomer","rel":"CapableOf","receivingConcepts":["look to to the stars","note a star","see the stars","spot a star"],"emittingConcepts":[]}
+{"concept":"an athelete","rel":"CapableOf","receivingConcepts":["better himself","play soccer","play tennis","wish to win"],"emittingConcepts":[]}
+{"concept":"An athelete","rel":"CapableOf","receivingConcepts":["jump over a hurdle","train to achieve more skill"],"emittingConcepts":[]}
+{"concept":"atheletes","rel":"CapableOf","receivingConcepts":["race each other","run a race"],"emittingConcepts":[]}
+{"concept":"miss the ball","rel":"CapableOf","emittingConcepts":["an athlete","A batter"],"receivingConcepts":[]}
+{"concept":"athletes","rel":"CapableOf","receivingConcepts":["bicycle forever","play sports","run races","tear a ligament"],"emittingConcepts":[]}
+{"concept":"Athletes","rel":"CapableOf","receivingConcepts":["do laps","throw pretty far","walk fast"],"emittingConcepts":[]}
+{"concept":"Some athletes","rel":"CapableOf","receivingConcepts":["jump very high","put the shot"],"emittingConcepts":[]}
+{"concept":"At Lightning Ridge, you","rel":"CapableOf","receivingConcepts":["fossick for opal","inspect displays of opal","tour an underground mine"],"emittingConcepts":[]}
+{"concept":"at night you","rel":"CapableOf","receivingConcepts":["see stars and planets","see the stars in the sky"],"emittingConcepts":[]}
+{"concept":"shake hands","rel":"CapableOf","emittingConcepts":["At parties people","Business-people"],"receivingConcepts":[]}
+{"concept":"an attendant","rel":"CapableOf","receivingConcepts":["fill a car with gas","man a toll booth"],"emittingConcepts":[]}
+{"concept":"an audience","rel":"CapableOf","receivingConcepts":["crowd around a singer","laugh out loud","listen quietly","listen to an orchestra","thank a performer","voice applause"],"emittingConcepts":[]}
+{"concept":"Audiences","rel":"CapableOf","receivingConcepts":["enjoy plays","quiet down"],"emittingConcepts":[]}
+{"concept":"an aunt","rel":"CapableOf","receivingConcepts":["cup your face in her hands","visit her niece"],"emittingConcepts":[]}
+{"concept":"write","rel":"CapableOf","emittingConcepts":["an author","a hand "],"receivingConcepts":[]}
+{"concept":"an auto mechanic","rel":"CapableOf","receivingConcepts":["fix an automobile","use tools"],"emittingConcepts":[]}
+{"concept":"automobiles","rel":"CapableOf","receivingConcepts":["burn gasoline","be making pollution"],"emittingConcepts":[]}
+{"concept":"an axe","rel":"CapableOf","receivingConcepts":["cut down a tree","divide wood logs"],"emittingConcepts":[]}
+{"concept":"mind a child","rel":"CapableOf","emittingConcepts":["a baby-sitter","a babysitter"],"receivingConcepts":[]}
+{"concept":"A backhoe","rel":"CapableOf","receivingConcepts":["dig a hole","fill a ditch"],"emittingConcepts":[]}
+{"concept":"dig a hole","rel":"CapableOf","emittingConcepts":["A backhoe","a backhoel"],"receivingConcepts":[]}
+{"concept":"anger me","rel":"CapableOf","emittingConcepts":["bad cgi forms like this","a bug"],"receivingConcepts":[]}
+{"concept":" make you throw up","rel":"CapableOf","emittingConcepts":["bad food","a bad smell"],"receivingConcepts":[]}
+{"concept":"Bad weather","rel":"CapableOf","receivingConcepts":["cloud your vision","slow traffic"],"emittingConcepts":[]}
+{"concept":"A bag","rel":"CapableOf","receivingConcepts":["hold other bags","be springing a leak"],"emittingConcepts":[]}
+{"concept":"A ballet dancer","rel":"CapableOf","receivingConcepts":["perfect his posture","turn on her toes"],"emittingConcepts":[]}
+{"concept":"A balloon","rel":"CapableOf","receivingConcepts":["be blowing in the wind","float through the air","rise into the air"],"emittingConcepts":[]}
+{"concept":"a balloon","rel":"CapableOf","receivingConcepts":["delight a child","spring a leak"],"emittingConcepts":[]}
+{"concept":"balloons","rel":"CapableOf","receivingConcepts":["go pop","go up"],"emittingConcepts":[]}
+{"concept":"a ballplayer","rel":"CapableOf","receivingConcepts":["fix a game","hit a ball with a bat"],"emittingConcepts":[]}
+{"concept":"A ballpoint pen","rel":"CapableOf","receivingConcepts":["leak","run out of ink"],"emittingConcepts":[]}
+{"concept":"A band","rel":"CapableOf","receivingConcepts":["be blaring","record an album","sing to an audience"],"emittingConcepts":[]}
+{"concept":"Bands","rel":"CapableOf","receivingConcepts":["play outside","win contests"],"emittingConcepts":[]}
+{"concept":"bands","rel":"CapableOf","receivingConcepts":["play that song","struggle to become famous"],"emittingConcepts":[]}
+{"concept":"A bank","rel":"CapableOf","receivingConcepts":["advance a loan","be lending a citizen some money","lend money on property","milk a depositor","offer several types of checking accounts","receive money from a person"],"emittingConcepts":[]}
+{"concept":"A banker","rel":"CapableOf","receivingConcepts":["advance you a loan","be lending money to somebody"],"emittingConcepts":[]}
+{"concept":"A bank teller","rel":"CapableOf","receivingConcepts":["count dollar bills","count out change to a customer"],"emittingConcepts":[]}
+{"concept":"bank tellers","rel":"CapableOf","receivingConcepts":["enter data","give money to bank robbers"],"emittingConcepts":[]}
+{"concept":"a bartender","rel":"CapableOf","receivingConcepts":["fill a glass with a drink","mix a drink","pour a beer","present a bill","serve a berry martini","shake a martini"],"emittingConcepts":[]}
+{"concept":"A bartender","rel":"CapableOf","receivingConcepts":["notice an empty glass","shake a drink"],"emittingConcepts":[]}
+{"concept":"Bartenders","rel":"CapableOf","receivingConcepts":["serve alcoholic drinks","serve beer"],"emittingConcepts":[]}
+{"concept":"field a baseball","rel":"CapableOf","emittingConcepts":["a baseball player","A baseball playerf"],"receivingConcepts":[]}
+{"concept":"a baseball team","rel":"CapableOf","receivingConcepts":["field a player","trade one player for another"],"emittingConcepts":[]}
+{"concept":"a basketball player","rel":"CapableOf","receivingConcepts":["bank a jump shot","captain a basketball team","wear high tops"],"emittingConcepts":[]}
+{"concept":"A basketball player","rel":"CapableOf","receivingConcepts":["catch a passed basketball","guard the ball","guard an opponent","hand a basketball"],"emittingConcepts":[]}
+{"concept":"Basketball players","rel":"CapableOf","receivingConcepts":["jump high","race down court"],"emittingConcepts":[]}
+{"concept":"A basketball team","rel":"CapableOf","receivingConcepts":["continue its winning streak","win a game"],"emittingConcepts":[]}
+{"concept":"A basket","rel":"CapableOf","receivingConcepts":["hold easter eggs","hold flowers"],"emittingConcepts":[]}
+{"concept":"A bather","rel":"CapableOf","receivingConcepts":["discover that soap is slippery","oil the skin"],"emittingConcepts":[]}
+{"concept":"smell bad","rel":"CapableOf","emittingConcepts":["the bathroom","Burning trash"],"receivingConcepts":[]}
+{"concept":"Batteries","rel":"CapableOf","receivingConcepts":["power a halogen torch","power an SLR camera with flash"],"emittingConcepts":[]}
+{"concept":"A battery","rel":"CapableOf","receivingConcepts":["charge electricity","power a calculator","power a camcorder","power a camera","power a digital camera","power a drill","power an emergency system","power a portable CD player","power a portable computer","power a radio controlled car","power a remote control","power a travel shaver"],"emittingConcepts":[]}
+{"concept":"Bears","rel":"CapableOf","receivingConcepts":["attack people","eat most types of food","run fast both uphill and down","stand on their hind legs","winter in a tree"],"emittingConcepts":[]}
+{"concept":"pick berries","rel":"CapableOf","emittingConcepts":["bears","Some birds"],"receivingConcepts":[]}
+{"concept":"a beaver","rel":"CapableOf","receivingConcepts":["build a dam","make a dam"],"emittingConcepts":[]}
+{"concept":"a bee sting","rel":"CapableOf","receivingConcepts":["hurt a child","result in anaphalactic shock"],"emittingConcepts":[]}
+{"concept":"a beggar","rel":"CapableOf","receivingConcepts":["beg","need clothes"],"emittingConcepts":[]}
+{"concept":"make you fat","rel":"CapableOf","emittingConcepts":["being too sedentary","Some brownies"],"receivingConcepts":[]}
+{"concept":"a bell","rel":"CapableOf","receivingConcepts":["ring the hour","ring the time","sound dinner time"],"emittingConcepts":[]}
+{"concept":"Benzodiazepines","rel":"CapableOf","receivingConcepts":["cause benzodiazepine addiction","cause physical dependence"],"emittingConcepts":[]}
+{"concept":"a bettor","rel":"CapableOf","receivingConcepts":["lose money","raise the ante"],"emittingConcepts":[]}
+{"concept":"A bicycle","rel":"CapableOf","receivingConcepts":["corner sharply","stop with its brakes"],"emittingConcepts":[]}
+{"concept":"A bicyclist","rel":"CapableOf","receivingConcepts":["oil a chain","use back roads"],"emittingConcepts":[]}
+{"concept":"a bike","rel":"CapableOf","receivingConcepts":["bunny hop","crash","do a wheelie","have gears"],"emittingConcepts":[]}
+{"concept":"a bike mechanic","rel":"CapableOf","receivingConcepts":["fix bikes","replace worn out parts"],"emittingConcepts":[]}
+{"concept":"Bill","rel":"CapableOf","receivingConcepts":["busy Sally","meet Bob"],"emittingConcepts":[]}
+{"concept":"spend money","rel":"CapableOf","emittingConcepts":["Billionaire playboys","the boss"],"receivingConcepts":[]}
+{"concept":"eat","rel":"CapableOf","emittingConcepts":["birds","some buffets are all you"],"receivingConcepts":[]}
+{"concept":"Some birds","rel":"CapableOf","receivingConcepts":["fly, other birds cannot","pick berries","see better than humans"],"emittingConcepts":[]}
+{"concept":"birds of prey","rel":"CapableOf","receivingConcepts":["\"fly in place\"","spot their prey"],"emittingConcepts":[]}
+{"concept":"a bishop","rel":"CapableOf","receivingConcepts":["kill a king","kill a knight","kill a pawn","kill a queen","kill a rook"],"emittingConcepts":[]}
+{"concept":"a bladder","rel":"CapableOf","receivingConcepts":["be empty","be filled","be full"],"emittingConcepts":[]}
+{"concept":"a blanket","rel":"CapableOf","receivingConcepts":["cover two naked people","keep you warm","put out a fire","warm a cold person"],"emittingConcepts":[]}
+{"concept":"keep you warm","rel":"CapableOf","emittingConcepts":["a blanket","blankets"],"receivingConcepts":[]}
+{"concept":"blankets","rel":"CapableOf","receivingConcepts":["be gifts at a wedding","keep you warm"],"emittingConcepts":[]}
+{"concept":"a bloodhound","rel":"CapableOf","receivingConcepts":["tail a suspect","track down missing people"],"emittingConcepts":[]}
+{"concept":"bridge a stream","rel":"CapableOf","emittingConcepts":["A board","A bridge"],"receivingConcepts":[]}
+{"concept":"boats","rel":"CapableOf","receivingConcepts":["be motorised","travel the oceans","use the wind to move"],"emittingConcepts":[]}
+{"concept":"Bob","rel":"CapableOf","receivingConcepts":["assist hunters looking to go overseas","attempt to Swim","eat an apple","machine tools","sign that paper","speak Cantonese","wedge Joe"],"emittingConcepts":[]}
+{"concept":"bob","rel":"CapableOf","receivingConcepts":["miss the bus","paint badly"],"emittingConcepts":[]}
+{"concept":"bob dylan","rel":"CapableOf","receivingConcepts":["please hippies","suck it"],"emittingConcepts":[]}
+{"concept":"a bodyguard","rel":"CapableOf","receivingConcepts":["guard a celebrity","guard a person"],"emittingConcepts":[]}
+{"concept":"a bomb","rel":"CapableOf","receivingConcepts":["arm itself","destroy a house","destroy many buildings","destroy its target","kill"],"emittingConcepts":[]}
+{"concept":"a bomber","rel":"CapableOf","receivingConcepts":["carry bombs","drop bombs"],"emittingConcepts":[]}
+{"concept":"a bone","rel":"CapableOf","receivingConcepts":["break a tooth","choke a person"],"emittingConcepts":[]}
+{"concept":"a bone of contention","rel":"CapableOf","receivingConcepts":["anger people","cause an argument","divide people","spur debate"],"emittingConcepts":[]}
+{"concept":"A book","rel":"CapableOf","receivingConcepts":["include a table of contents","teach that the earth is round","teach a person to sing"],"emittingConcepts":[]}
+{"concept":"books","rel":"CapableOf","receivingConcepts":["belong on shelves","burn quickly","explain problems","further knowledge","be gathering dust in a library","include information","include pictures","win prizes"],"emittingConcepts":[]}
+{"concept":"A boomerang","rel":"CapableOf","receivingConcepts":["return to its starting point","return to the thrower"],"emittingConcepts":[]}
+{"concept":"A bored person","rel":"CapableOf","receivingConcepts":["busy himself with mindless tasks","watch the paint dry"],"emittingConcepts":[]}
+{"concept":"a bored person","rel":"CapableOf","receivingConcepts":["play with foam cubes","watch the clock"],"emittingConcepts":[]}
+{"concept":"Your boss","rel":"CapableOf","receivingConcepts":["decide to fire you","force you to work overtime","order you to do your work"],"emittingConcepts":[]}
+{"concept":"A boss","rel":"CapableOf","receivingConcepts":["demand hard work","fire a subordinate","order you to run errands","out a future employee","page a worker","pay an employee"],"emittingConcepts":[]}
+{"concept":"The boss","rel":"CapableOf","receivingConcepts":["except people from the rule","sign that contract","view the results"],"emittingConcepts":[]}
+{"concept":"the boss","rel":"CapableOf","receivingConcepts":["spend money","storm in"],"emittingConcepts":[]}
+{"concept":"A bottle","rel":"CapableOf","receivingConcepts":["hold water","store wine"],"emittingConcepts":[]}
+{"concept":"a bouncer","rel":"CapableOf","receivingConcepts":["prevent passage","ring your neck"],"emittingConcepts":[]}
+{"concept":"a box","rel":"CapableOf","receivingConcepts":["can catch a ball","store food","store objects"],"emittingConcepts":[]}
+{"concept":"A box","rel":"CapableOf","receivingConcepts":["hold a secret","hold stuff","hold things"],"emittingConcepts":[]}
+{"concept":"box your ears","rel":"CapableOf","emittingConcepts":["A boxer","A bully"],"receivingConcepts":[]}
+{"concept":"Boy Scouts","rel":"CapableOf","receivingConcepts":["camp overnight in a tent","go to camp"],"emittingConcepts":[]}
+{"concept":"brad","rel":"CapableOf","receivingConcepts":["clean his penis","fool the irs"],"emittingConcepts":[]}
+{"concept":"Brainstorm","rel":"CapableOf","receivingConcepts":["mean a harebrained idea","mean a harebrain idea","mean a sudden bright idea","mean a violent fit"],"emittingConcepts":[]}
+{"concept":"A brave person","rel":"CapableOf","receivingConcepts":["battle cancer and win","dare to climb a mountain"],"emittingConcepts":[]}
+{"concept":"bread","rel":"CapableOf","receivingConcepts":["raise while it cooks","rise in an oven","rise overnight","rise slowly","rise until it doubles in volume","turn into toast"],"emittingConcepts":[]}
+{"concept":"slow the car","rel":"CapableOf","emittingConcepts":["the breakes","breaks"],"receivingConcepts":[]}
+{"concept":"breathing","rel":"CapableOf","receivingConcepts":["increase blood oxygen levels","require oxygen"],"emittingConcepts":[]}
+{"concept":"A brick","rel":"CapableOf","receivingConcepts":["break that window pane","double as a doorstop"],"emittingConcepts":[]}
+{"concept":"a bricklayer","rel":"CapableOf","receivingConcepts":["wall off a room","wall up an opening"],"emittingConcepts":[]}
+{"concept":"wall a garden","rel":"CapableOf","emittingConcepts":["bricks","A builder"],"receivingConcepts":[]}
+{"concept":"bridge a river","rel":"CapableOf","emittingConcepts":["a bridge","a builder"],"receivingConcepts":[]}
+{"concept":"bridge","rel":"CapableOf","receivingConcepts":["bridge routs","be crossing river"],"emittingConcepts":[]}
+{"concept":"A bridge","rel":"CapableOf","receivingConcepts":["bridge a stream","span a body of water"],"emittingConcepts":[]}
+{"concept":"Broken glass","rel":"CapableOf","receivingConcepts":["cause cuts","cut a bare foot","cut your skin","hurt a foot","be \"rounded\" in an ocean"],"emittingConcepts":[]}
+{"concept":"A broker","rel":"CapableOf","receivingConcepts":["close a deal","land a deal","trade stocks and bonds"],"emittingConcepts":[]}
+{"concept":"a broker","rel":"CapableOf","receivingConcepts":["trade commodities","trade for a client","trade stocks"],"emittingConcepts":[]}
+{"concept":"a brother","rel":"CapableOf","receivingConcepts":["better his borther","needle his sister"],"emittingConcepts":[]}
+{"concept":"My brother","rel":"CapableOf","receivingConcepts":["borrow my car","bug me","deal a deck of cards","object to anything"],"emittingConcepts":[]}
+{"concept":"Some brownies","rel":"CapableOf","receivingConcepts":["give you protein","give you Thiamin","make you fat"],"emittingConcepts":[]}
+{"concept":"Brownies","rel":"CapableOf","receivingConcepts":["taste bad","taste good"],"emittingConcepts":[]}
+{"concept":"A bubble","rel":"CapableOf","receivingConcepts":["burst","rise to the surface of water"],"emittingConcepts":[]}
+{"concept":"a bucket","rel":"CapableOf","receivingConcepts":["carry water","hold water"],"emittingConcepts":[]}
+{"concept":"a builder","rel":"CapableOf","receivingConcepts":["bridge a river","build a cathedral","hit a nail into wood","install windows","place floor tiles"],"emittingConcepts":[]}
+{"concept":"A builder","rel":"CapableOf","receivingConcepts":["glass the front","plan far ahead","position a frame","shoulder a hod","wall a garden"],"emittingConcepts":[]}
+{"concept":"Builders","rel":"CapableOf","receivingConcepts":["build a house","nail bits of wood together"],"emittingConcepts":[]}
+{"concept":"A bulldozer","rel":"CapableOf","receivingConcepts":["clear a plot of land","move that pile of dirt","push hard","shore up a riverbank"],"emittingConcepts":[]}
+{"concept":"a bullet","rel":"CapableOf","receivingConcepts":["cause a person to die","hurt or kill a person"],"emittingConcepts":[]}
+{"concept":"A bullet","rel":"CapableOf","receivingConcepts":["be dangerous is used improperly","destroy a life"],"emittingConcepts":[]}
+{"concept":"bullies","rel":"CapableOf","receivingConcepts":["become criminals","lead groups"],"emittingConcepts":[]}
+{"concept":"A bully","rel":"CapableOf","receivingConcepts":["box your ears","call you names","be starting a fight"],"emittingConcepts":[]}
+{"concept":"a bully","rel":"CapableOf","receivingConcepts":["corner someone","needle a weakling","push you around","start a fight","trip a nerd"],"emittingConcepts":[]}
+{"concept":"case a house","rel":"CapableOf","emittingConcepts":["a burglar","a burgler"],"receivingConcepts":[]}
+{"concept":"burglars","rel":"CapableOf","receivingConcepts":["case the premises","sound alarms"],"emittingConcepts":[]}
+{"concept":"a burgler","rel":"CapableOf","receivingConcepts":["case a house","fence stolen items"],"emittingConcepts":[]}
+{"concept":"Burning grease","rel":"CapableOf","receivingConcepts":["set paper on fire","set wood on fire"],"emittingConcepts":[]}
+{"concept":"a bus","rel":"CapableOf","receivingConcepts":["carry passengers","drive to the city","seat its capacity","take you across the country"],"emittingConcepts":[]}
+{"concept":"A bus","rel":"CapableOf","receivingConcepts":["drive down the street","go into town","near a terminal","stop at the corner","transport many people at once"],"emittingConcepts":[]}
+{"concept":"A bus driver","rel":"CapableOf","receivingConcepts":["bus children to school","bus school kids to school"],"emittingConcepts":[]}
+{"concept":"a bus driver","rel":"CapableOf","receivingConcepts":["bus people","collect a fare","drive bus","talk to a passenger"],"emittingConcepts":[]}
+{"concept":"the bus driver","rel":"CapableOf","receivingConcepts":["help load the wheelchair","receive change"],"emittingConcepts":[]}
+{"concept":"A business","rel":"CapableOf","receivingConcepts":["increase its sales","mail a letter to their customer","market a new product","please a customer","price above or below competition","ship packages"],"emittingConcepts":[]}
+{"concept":"A businessman","rel":"CapableOf","receivingConcepts":["eye a prospect","land a contract"],"emittingConcepts":[]}
+{"concept":"a businessman","rel":"CapableOf","receivingConcepts":["present a presentation","ship a package","shoulder strangers"],"emittingConcepts":[]}
+{"concept":"businessmen","rel":"CapableOf","receivingConcepts":["dress up","meet clients"],"emittingConcepts":[]}
+{"concept":"A busy person","rel":"CapableOf","receivingConcepts":["cross off tasks from a list","stop to smell the roses"],"emittingConcepts":[]}
+{"concept":"the butcher","rel":"CapableOf","receivingConcepts":["cut the beef quarter","salt pork"],"emittingConcepts":[]}
+{"concept":"quarter a chicken","rel":"CapableOf","emittingConcepts":["a butcher","Butchers"],"receivingConcepts":[]}
+{"concept":"Butchers","rel":"CapableOf","receivingConcepts":["quarter the animal","quarter a chicken"],"emittingConcepts":[]}
+{"concept":"A buyer","rel":"CapableOf","receivingConcepts":["condition their offer","inspect a property","look at a property"],"emittingConcepts":[]}

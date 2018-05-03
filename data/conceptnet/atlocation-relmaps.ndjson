@@ -1,0 +1,619 @@
+{"concept":"airplane","rel":"AtLocation","receivingConcepts":["the sky","a military base"],"emittingConcepts":[]}
+{"concept":"the sky","rel":"AtLocation","emittingConcepts":["airplane","a bee","airplanes","aircraft","atmosphere","balloons"],"receivingConcepts":[]}
+{"concept":"an animal","rel":"AtLocation","receivingConcepts":["a zoo","a pet store","a cafe","the Detroit zoo","every breathing thing","North America","outside","a pet shop","the wild","a woodland"],"emittingConcepts":["an artery"]}
+{"concept":"a zoo","rel":"AtLocation","emittingConcepts":["an animal","a beaver","animals in cages","animal feces","an artificial habitat"],"receivingConcepts":[]}
+{"concept":"a house","rel":"AtLocation","emittingConcepts":["your bedroom","a bathroom","a bed","a beam","an air conditioner","appliances","a back garden","a backyard","a balcony","an air conditioning","an apple","an arm","an armoire","a baby","a baking oven","a bath shower","a batten","a beanbag","a bean bag chair","beds"],"receivingConcepts":[]}
+{"concept":"the newspaper","rel":"AtLocation","emittingConcepts":["advertising","an ad","an article","ads","advertisments","articles"],"receivingConcepts":[]}
+{"concept":"an apple","rel":"AtLocation","receivingConcepts":["apple tree","a grocery store","an apple orchard","apple pie","the fridge","a greengrocer","a horses mouth","a house","an orchard","the produce section of the supermarket","the refrigerator","a toffee apple"],"emittingConcepts":[]}
+{"concept":"an audience","rel":"AtLocation","receivingConcepts":["the theatre","a hockey game","a show","a movie","an auditorium","a church","a concert hall","Las Vegas","a movie theater","New York","a presentation","a school","a sporting event","stadium","a television studio"],"emittingConcepts":[]}
+{"concept":"the theatre","rel":"AtLocation","emittingConcepts":["an audience","aisles","a backdrop","Actors putting on a play","air","a balcony railing"],"receivingConcepts":[]}
+{"concept":"a bathroom","rel":"AtLocation","receivingConcepts":["a house","a rest area","at hotel","hotel","a convenience store","a friend's house","a school","the theater","an airport","an apartment","a bookstore","a building","a flat","a gallery opening","the gym","a library","a mall","a motel","an opera","any public building","a public place","a race track","a showroom"],"emittingConcepts":["acne medication"]}
+{"concept":"a bee","rel":"AtLocation","receivingConcepts":["a meadow","any garden","the sky","an apiary","a field of flowers","a garden pollinating flowers","honeysuckle vines","an orchard","a pumpkin patch","swarm","the act of pollinating corn","the alphabet","and around your picnic area","an apple tree","an apple tree in bloom","art","some attics","a backyard","a beehiev","a bee-hive","beehouse","a beekeeper's yard","beenests","beensts","a bee super","a bee tree","a biology book","a blooming flower","a bouquet of flowers","a bubolic area","a bucolic area","Canada","a car","a cartoon","my church","clover","the countryside","a daisy","a fair","a farm","a field full of flowers","a field with many flowers","a fiels","flight","a flower collecting its pollen","a flower or a hive","a flower's blossom","a forest","the great outdoors","a group","someone's hat","an herb garden","a hive, a flower, a field","a honey factory","a honeysuckle vine","your house","a jar","a lavender garden","a meadow looking for flowers","Michigan","a movie","the nature","a nest","the outdoors","outside","your own home someday","a park","a photo","a pine tree","the process of pollinating","a rose garden","a scalamandre fabric","search of honey","the shade","a skep","your soda","your soft drink","a story book","the sunshine","a sweet smelling flower","a trash can","a tulip","the United States","a vinyard","a winnie the pooh book","a yard"],"emittingConcepts":[]}
+{"concept":"a meadow","rel":"AtLocation","emittingConcepts":["a bee","an abandoned tractor","an anemone","animals","a bear"],"receivingConcepts":[]}
+{"concept":"a bell","rel":"AtLocation","receivingConcepts":["church","school","a bellfry","a boat","a chairch","a reindeer coller"],"emittingConcepts":[]}
+{"concept":"church","rel":"AtLocation","emittingConcepts":["a bell","an alter","a believer","artwork","a ball bearing","a basket","bells"],"receivingConcepts":[]}
+{"concept":"a roof","rel":"AtLocation","emittingConcepts":["an antenna","asphalt tiles","a beam","a","arial"],"receivingConcepts":[]}
+{"concept":"an astronaut","rel":"AtLocation","receivingConcepts":["the space shuttle","orbit","the moon","a space station"],"emittingConcepts":[]}
+{"concept":"the space shuttle","rel":"AtLocation","emittingConcepts":["an astronaut","air","an astronaut's pen","an airlock","astronauts","artificial satellite","astranauts","astronaughts","astronots"],"receivingConcepts":[]}
+{"concept":"an automobile","rel":"AtLocation","receivingConcepts":["the garage","the fast lane","a street","a dealer lot","an exit ramp","a freeway","a racetrack","the shop","the side of the road","the slow lane","the driveway","the repair shop"],"emittingConcepts":[]}
+{"concept":"the garage","rel":"AtLocation","emittingConcepts":["an automobile","antifreeze","an ax","a battery charger","a battery puller","a battery tester"],"receivingConcepts":[]}
+{"concept":"a toy store","rel":"AtLocation","emittingConcepts":["barbie","action figures","an action figure","barbie doll","a ball","Barbie dolls","batz maru dolls","an American Bricks set","army men","a badminton set","a bald eagle","balls","a Barbie department","a beanbag"],"receivingConcepts":[]}
+{"concept":"a basement","rel":"AtLocation","receivingConcepts":["the closet","a building","Canada","a church","a home","an office building","your own house"],"emittingConcepts":[]}
+{"concept":"the closet","rel":"AtLocation","emittingConcepts":["a basement","an assortment of clothing and shoes","a beach towel"],"receivingConcepts":[]}
+{"concept":"beer","rel":"AtLocation","receivingConcepts":["a bar","the refrigerator","a hockey game","a bottle","a casino","a keg","a bowling alley","a brewery","a can"," the fridge","a grocery store","a shelf","a sporting event","a store","beach","a boat","a concert","a container","a friend's house","home","me","a neighbor's house","a plane","a resturant","a soccer game","mars"],"emittingConcepts":["alcohol"]}
+{"concept":"a bar","rel":"AtLocation","emittingConcepts":["beer","alcoholics","a bartender","an alcoholic beverage","an alcoholic","barstools","alcholic drinks","alcohol drinks","alcoholic beverages","an ash tray","bad judgement","a ballet dancer","a barkeeper","a bar service"],"receivingConcepts":["the city","an airport","a club","the corner of two streets","a jail","Las Vegas","Michigan","New York City","a nightclub","a restaurant","the street"]}
+{"concept":"an actor","rel":"AtLocation","receivingConcepts":["a movie","a show","television","the theater"],"emittingConcepts":[]}
+{"concept":"a movie","rel":"AtLocation","emittingConcepts":["an actor","an audience","actors","an admission ticket","a bald eagle","a battle","a bee"],"receivingConcepts":[]}
+{"concept":"the air","rel":"AtLocation","emittingConcepts":["a airplane","an aircraft","an aerial bomb","airplanes","all around you","an arm","aromas","ash","a balloon","balloons"],"receivingConcepts":[]}
+{"concept":"the moon","rel":"AtLocation","emittingConcepts":["an American flag","an astronaut"],"receivingConcepts":[]}
+{"concept":"an anemone","rel":"AtLocation","receivingConcepts":["a salt-water aquarium","tide pool","the water","an intertidal zone","a book","the Gulf of Mexico","a nursery","the oean","an aquarium store","my ass","the Atlantic ocean","Big Sur","a biology book","the bottom of the ocean","the bottom of the sea","a bug","a bulb catalog","a cartoon","a catalog","clusters of rocks","the Coral Sea","a dictionary","the dirt","the dirt, growing","someone you dont like","an encyclopedia under the letter'a'","a field of flowers","a floral arrangement","the florida keys","a flower bed","a flower pot","a flower shop","a flower vase, arranged","a forest","a gardening catalog","a garden shop","a greenhouse","it's natural habitat","Japan","a kelp forest","a lab dish","Maine","a mammoths butt","a marsh","a meadow","the the Mediterrain sea","Michigan","the oceanb","the ocean shallows","outside","place","a pond","a pool","a pot","a reef","a reef tank","a rockpool","salt water","saltwater","a saltwater aquarium","a salt water aquariumk","a salt water tank","the sea floor","a seafood restaurant","sea water","the see","a slide","the south pacific","a store","a tidal basin","a vase of flowers","the woods"],"emittingConcepts":[]}
+{"concept":"an apple tree","rel":"AtLocation","receivingConcepts":["a backyard","Washington state","the back yard","a country","field","a apple grove","the countryside","fields","the front yard","an grove","New York","a park","pennsylvania","a valley","uzbekistan","Wisconsin","anyplace south of alaska","an apple tree farm","an apple tree orched","arboratum","an arboritum","the bible","bloom","the book Johnny Appleseed","Canada","a coloring book","Detroit","the dirt","the fall","a farm area","a farmer's yard","farmland","farm town","a farm yard","a fencerow","Florida","flowers","a garden center","garden in the country","the garden of eden","the great outdoors","the ground","Idaho","Illinois","Indiana","it's natural habitat","a mail order catalog","maine","many peoples gardens","Maryland","a math problem","the meadow","Michigan","New England","New England orchard","new hampshire","New Jersey","the north","North Carolina","a nursery catalog","a nurssery","Ohio","Ohio where Johnny Appleseed lived","an orchad","an orchid","Oregon","outside","the paradise","Rhode Island","Romeo, Michigan","sardina","someones back yard","someones backyard","South Africa","Spain","the spring","the summer","the sunshine","a tree","a tree nursery","an urban setting, in the backyard","the vineyard","Winchester, Virginia","a wooded area","the woods","someone's yard"],"emittingConcepts":["apples in or rather","a bee"]}
+{"concept":"a backyard","rel":"AtLocation","emittingConcepts":["an apple tree","a bee"],"receivingConcepts":["a house","the back of a house","the country","a neighborhood","a subdivision"]}
+{"concept":"an army","rel":"AtLocation","receivingConcepts":["war","afganistan","a barracks","a battlefield","a fort","a military base","other countries","somewhere it doesn't belong"],"emittingConcepts":[]}
+{"concept":"war","rel":"AtLocation","emittingConcepts":["an army","an aerial bomb"],"receivingConcepts":[]}
+{"concept":"the Atlantic Ocean","rel":"AtLocation","receivingConcepts":["the earth","an atlas","a basin","history books","this planet","submarines","the western hemisphere"],"emittingConcepts":[]}
+{"concept":"a beaker","rel":"AtLocation","receivingConcepts":["the chemistry lab","a laboratory","a lab"],"emittingConcepts":[]}
+{"concept":"the chemistry lab","rel":"AtLocation","emittingConcepts":["a beaker","alcohol","beakers","acid","acit","amonia","argon","atomic numbers"],"receivingConcepts":[]}
+{"concept":"the refrigerator","rel":"AtLocation","emittingConcepts":["beer","bacon","an apple","artichokes"],"receivingConcepts":[]}
+{"concept":"an account book","rel":"AtLocation","receivingConcepts":["a bank","a desk","a desk drawer","a purse"],"emittingConcepts":[]}
+{"concept":"a bank","rel":"AtLocation","emittingConcepts":["an account book","a ballpoint pen"],"receivingConcepts":["a city","a park","a financial center","a grocery store","a main street","the mall","a secure place","a town"]}
+{"concept":"an adhesive bandage","rel":"AtLocation","receivingConcepts":["a first aid kit","a pharmacy","a boo boo","bookshop","the drug store","hospitals","a medicine cabinet"],"emittingConcepts":[]}
+{"concept":"a first aid kit","rel":"AtLocation","emittingConcepts":["an adhesive bandage","a band aid"],"receivingConcepts":[]}
+{"concept":"an advertisement","rel":"AtLocation","receivingConcepts":["the mail","a bus","a magazine","a comercial","your email","la ville","the mail box","a store","the TV","a web page"],"emittingConcepts":[]}
+{"concept":"the mail","rel":"AtLocation","emittingConcepts":["an advertisement","adverts","a bank statement","a baseball ticket"],"receivingConcepts":[]}
+{"concept":"air","rel":"AtLocation","receivingConcepts":["the space shuttle","a balloon","the supermarket","your house","sky","the surface of the earth","an airport","a bridge","a bus","a cupboard","the jar","lungs","the mail box","a pocket","the theatre","the top of a mountain","a train station"],"emittingConcepts":[]}
+{"concept":"an airplane seat","rel":"AtLocation","receivingConcepts":["an airplane","747","a plane"],"emittingConcepts":[]}
+{"concept":"an airplane","rel":"AtLocation","emittingConcepts":["an airplane seat","an aerial bomb"],"receivingConcepts":["a hanger","an airplane hangar","a hangar"]}
+{"concept":"alcohol","rel":"AtLocation","receivingConcepts":["a pub","beer","a fraternity house","a plane","wine","the chemistry lab","a distillery","the fridge","a friend's wedding","Restaurants","the supermarket"],"emittingConcepts":[]}
+{"concept":"a pub","rel":"AtLocation","emittingConcepts":["alcohol","an alcoholic drink","a beer mug"],"receivingConcepts":[]}
+{"concept":"alcoholics","rel":"AtLocation","receivingConcepts":["a bar","a liquor store","a fraternity house"],"emittingConcepts":[]}
+{"concept":"animals","rel":"AtLocation","receivingConcepts":["a zoo ","a park","zoos","a fair","fairgrounds","a farm","a laboratory","a meadow","a state park","the surface of the earth"],"emittingConcepts":[]}
+{"concept":"a grocery store","rel":"AtLocation","emittingConcepts":["an apple","a bag","beer","an aisle","apples","a bank","a basket with handle","beef"],"receivingConcepts":[]}
+{"concept":"Washington state","rel":"AtLocation","emittingConcepts":["an apple tree","a bald eagle"],"receivingConcepts":[]}
+{"concept":"a hockey game","rel":"AtLocation","emittingConcepts":["an audience","beer"],"receivingConcepts":[]}
+{"concept":"a show","rel":"AtLocation","emittingConcepts":["an audience","an actor","actors","a band"],"receivingConcepts":[]}
+{"concept":"bagpipes","rel":"AtLocation","receivingConcepts":["scotland","Scottland","pain","a Scotish musical instrument store","a Scottish band"],"emittingConcepts":[]}
+{"concept":"scotland","rel":"AtLocation","emittingConcepts":["bagpipes","an accordian bag"],"receivingConcepts":[]}
+{"concept":"a baking oven","rel":"AtLocation","receivingConcepts":["a kitchen","a pizza parlor","a house","a person's kitchen","a pie shop","a stove"],"emittingConcepts":[]}
+{"concept":"a kitchen","rel":"AtLocation","emittingConcepts":["a baking oven","a bar stool"],"receivingConcepts":[]}
+{"concept":"a band aid","rel":"AtLocation","receivingConcepts":["a first aid kit","the drug store","the band aid box","a doctor's office","an emergency room","a first aid box","a hospital","a medicane cabinet in the bathroom"],"emittingConcepts":[]}
+{"concept":"a bar service","rel":"AtLocation","receivingConcepts":["a hotel","a bar","a train","a wedding"],"emittingConcepts":[]}
+{"concept":"a hotel","rel":"AtLocation","emittingConcepts":["a bar service","a bathroom drawer","a bellhop","a balcony","a bar of soap","a bell hop"],"receivingConcepts":[]}
+{"concept":"a bass baritone","rel":"AtLocation","receivingConcepts":["choir","a band","a choral group","a church choir","classical music","a doo-wop group","the opera","an opera company","an opera house","an orchestra","a symphony"],"emittingConcepts":[]}
+{"concept":"a bass clarinet","rel":"AtLocation","receivingConcepts":["band","A music store","a dance band","a music stor","the opera house","an orchestra","a pawn shop","a school band"],"emittingConcepts":[]}
+{"concept":"band","rel":"AtLocation","emittingConcepts":["a bass clarinet","a bass fiddle"],"receivingConcepts":[]}
+{"concept":"a bat","rel":"AtLocation","receivingConcepts":["a belfry","cave","the attic","a bat cave","a bridge","the Carlsbad Caverns National Park","a dug out","New Mexico","a tree"],"emittingConcepts":[]}
+{"concept":"a rest area","rel":"AtLocation","emittingConcepts":["a bathroom","bed","bathrooms"],"receivingConcepts":[]}
+{"concept":"a battle","rel":"AtLocation","receivingConcepts":["a war","a battlefield","a court room","Iraq","the Middle East","Middle Eastern countries","a movie","a video game"],"emittingConcepts":[]}
+{"concept":"a war","rel":"AtLocation","emittingConcepts":["a battle","ammunition","angry soldiers","airplanes","armory","artillery shells","a battelfield"],"receivingConcepts":[]}
+{"concept":"a beach towel","rel":"AtLocation","receivingConcepts":["the linen closet","the beach","a beach bag","the closet","the hamper","a linen cupboard","a store that sells beach towels"],"emittingConcepts":[]}
+{"concept":"a beanie baby","rel":"AtLocation","receivingConcepts":["toy store","a child's room","a child's toy collectiopn","ebay","a store","a trash heap"],"emittingConcepts":[]}
+{"concept":"a beaver","rel":"AtLocation","receivingConcepts":["a zoo","a beaver's dam","canada","a beaver-dam","a beaver lodge","a beaver pond","a beaver trap","books","a lodge","Ontario","the wilderness","woodlands","the act of building a dam","america","american forests","an American pond","an American stream building a dam","australia","a beaver-built dam","Beaver College","a beaver den","Beaver Valley","a beaver warren","bed","a body of water","a book","Boston","a brass rat","British Columbia","a brook","a bwaver pond","a cartoon","comics","Coorado","the countryside","damm","a dammed-up stream in Canada","a dam on a river","a den","the dictionary","earth","your face","the forrest","a frenchmans beaver trap","fresh water","a fur trap","the great outdoors","history","a hole in a stream bank","a hut","in the wild","it's house","it's natural habitat","jungle","Kentucky","a lake or river","a low river","Mackinaw","Mackinaw, Michigan","Maine","Michigan","a Michigan river","a millpond","MIT","Montana","Montreal","Muscogee River","a museum","nature","New Jersey","New York","Ohio","a pair of pants","a park","a partially submerged lodge","Pennslyvania","a pond, lake or stream","the process of building a dam","the process of making a dam","Quebec","a river or stream","a rude joke","Saginaw, Michigan","a small river","a small river or creek","a small rivier","a small stream in the country","stew","a stream in the wilderness","a strip club","a trap","Traverse City, Michigan","the vicinty of water","Wallace Cleaver's home town","Washington","wetlands","the wild","the wilderness in North America","the wilderness of North America","Windsor","a wooded area","a wooded stream or lake","a woodland pond","the woods near a stream","the woodss"],"emittingConcepts":[]}
+{"concept":"a bed","rel":"AtLocation","receivingConcepts":["a house","a room","a hospital","a neighbor's house","an apartment","the loft","the basement","the homewares department","a hotel room","a relatives house"],"emittingConcepts":["a bed sheet"]}
+{"concept":"beds","rel":"AtLocation","receivingConcepts":["a hospital","a fraternity house","a house"],"emittingConcepts":[]}
+{"concept":"a hospital","rel":"AtLocation","emittingConcepts":["beds","a bed","an armchair","an attache case","a band aid","a bedpan","bed pans"],"receivingConcepts":[]}
+{"concept":"a fraternity house","rel":"AtLocation","emittingConcepts":["beer kegs","alcohol","a beer keg","alcohol at parties","alcoholic beverages","alcoholics","alot of empty beer bottles","bedrooms","beds"],"receivingConcepts":[]}
+{"concept":"school","rel":"AtLocation","emittingConcepts":["a bell","a #2 pencil","backpacks","a basketball gym"],"receivingConcepts":[]}
+{"concept":"a tree","rel":"AtLocation","emittingConcepts":["a acorn","a bald eagle","acorns","an ant hill","apples that have fallen","apples or other fruit","an apple tree","a bat","a bees' nest"],"receivingConcepts":[]}
+{"concept":"a meeting","rel":"AtLocation","emittingConcepts":["an agenda","an adjenda","attendees"],"receivingConcepts":[]}
+{"concept":"an aisle","rel":"AtLocation","receivingConcepts":["a church","a store","a supermarket","a building","a department store","a drugstore","a grocery store","a guide rope","a sanctuary"],"emittingConcepts":[]}
+{"concept":"a church","rel":"AtLocation","emittingConcepts":["an aisle","an altar server","an arch","an audience","a baptismal font","a basement","a bazaar"],"receivingConcepts":[]}
+{"concept":"an album","rel":"AtLocation","receivingConcepts":["record store","a cd case","a book case","book shelf","a closet","a music store","musicstore","a philatelist's shop","a photo shop","a recordstore","a scrapbook store"],"emittingConcepts":[]}
+{"concept":"a plane","rel":"AtLocation","emittingConcepts":["alcohol","aisles","an aerial bomb","an air hostess","an airplane seat","bad food","beer"],"receivingConcepts":[]}
+{"concept":"the water","rel":"AtLocation","emittingConcepts":["an anemone","algae","bacteria","aquatic birds"],"receivingConcepts":[]}
+{"concept":"apples","rel":"AtLocation","receivingConcepts":["the fridge","a farmers market","a grocery store","the market","a shop","the table"],"emittingConcepts":[]}
+{"concept":"the fridge","rel":"AtLocation","emittingConcepts":["apples","alcohol","an apple","a bad smell"],"receivingConcepts":[]}
+{"concept":"the back yard","rel":"AtLocation","emittingConcepts":["an apple tree","an apple tree in","a back garden","a back garden in"],"receivingConcepts":[]}
+{"concept":"a country","rel":"AtLocation","emittingConcepts":["an apple tree","an atlas"],"receivingConcepts":[]}
+{"concept":"an armoire","rel":"AtLocation","receivingConcepts":["a bedroom","a furniture store","a house","the living room"],"emittingConcepts":[]}
+{"concept":"a bedroom","rel":"AtLocation","emittingConcepts":["an armoire","an accommodation building","a bay window","a beanbag","a bed frame","a bed sheet","a bedstand"],"receivingConcepts":["an apartment","at hotel","the back of the house","a Canadian home","a dwelling","the loft"]}
+{"concept":"an artery","rel":"AtLocation","receivingConcepts":["a body","an animal","the heart","a mammal","your own body"],"emittingConcepts":[]}
+{"concept":"an artifact","rel":"AtLocation","receivingConcepts":["a museum","an archeological digsite"],"emittingConcepts":[]}
+{"concept":"a museum","rel":"AtLocation","emittingConcepts":["an artifact","art","archeological artifacts","antiques","archeological finds and treasures","artefacts","artifacts","an artpiece","art work","artwork","an automaton","a beaver"],"receivingConcepts":[]}
+{"concept":"artist","rel":"AtLocation","receivingConcepts":["an art show","a concert"],"emittingConcepts":[]}
+{"concept":"an art show","rel":"AtLocation","emittingConcepts":["artist","an art critic","artists","art critics","art lovers","art objects","artwork","art works"],"receivingConcepts":[]}
+{"concept":"asteroids","rel":"AtLocation","receivingConcepts":["outerspace","outer space","space","the universe"],"emittingConcepts":[]}
+{"concept":"outerspace","rel":"AtLocation","emittingConcepts":["asteroids","an asteroid","astronauts","background radiation"],"receivingConcepts":[]}
+{"concept":"audience","rel":"AtLocation","receivingConcepts":["the movies","arena","studio"],"emittingConcepts":[]}
+{"concept":"the movies","rel":"AtLocation","emittingConcepts":["audience","actors","amusement","a bag of popcorn"],"receivingConcepts":[]}
+{"concept":"an automatic gate","rel":"AtLocation","receivingConcepts":["a gated community","airport","Beverly Hills","a car park","a fence","a horse farm","a military base","a parking garage","a parking lot","a wall"],"emittingConcepts":[]}
+{"concept":"a street","rel":"AtLocation","emittingConcepts":["an automobile","asphault"],"receivingConcepts":[]}
+{"concept":"a bag","rel":"AtLocation","receivingConcepts":["a drawer","a supermarket","a grocery store","the backseat of a car","the bed","a bookstore","the desk","a fast-food restaurant","a luggage store","the mail box","a mall","the market","the shelf","your shopping cart","a shopping mall","the trash"],"emittingConcepts":[]}
+{"concept":"a drawer","rel":"AtLocation","emittingConcepts":["a bag","an address label","00t-shirts","bag twisters","a bear"],"receivingConcepts":[]}
+{"concept":"a supermarket","rel":"AtLocation","emittingConcepts":["a bag","an aisle"],"receivingConcepts":[]}
+{"concept":"a baggage","rel":"AtLocation","receivingConcepts":["the airport","a train station","an airport carousel","the baggage compartment","a cruise ship","my room"],"emittingConcepts":[]}
+{"concept":"the airport","rel":"AtLocation","emittingConcepts":["a baggage","a baggage trunk","an air traffic control tower","aiplane","an air traffic controller","baggage train"],"receivingConcepts":[]}
+{"concept":"a ball","rel":"AtLocation","receivingConcepts":["a toybox","the street","a baseball game","a basketball court","a bearing","a child's hand","a childs toybox","a closet","a cricket pitch","a hole","a playroom","a pool table","a snooker table","a soccer field","a soccer game","a sport","a toy box","a toy store","a ballroom","a baseball field","a gymnasium","the mouth of a puppy","a playground","sack","a sporting event","a sporting goods store"],"emittingConcepts":[]}
+{"concept":"a toybox","rel":"AtLocation","emittingConcepts":["a ball","an action figure"],"receivingConcepts":[]}
+{"concept":"balls","rel":"AtLocation","receivingConcepts":["the gym","a park","a soccer game","a sporting event","a toy store"],"emittingConcepts":[]}
+{"concept":"the gym","rel":"AtLocation","emittingConcepts":["balls","a basketball hoop","attractive ladies","a basketball court","a bathroom"],"receivingConcepts":[]}
+{"concept":"a park","rel":"AtLocation","emittingConcepts":["balls","an apple tree","a baseball","a baseball diamond","an amphitheatre","animals","a bank","an acorn on the ground","an alcoholic","an ant","barbecues","basketball","a bear","a beaver","a bee"],"receivingConcepts":[]}
+{"concept":"a soccer game","rel":"AtLocation","emittingConcepts":["balls","a ball","advertisements","angry mothers","beer"],"receivingConcepts":[]}
+{"concept":"jail","rel":"AtLocation","emittingConcepts":["bars","bad guys","barred rooms","arsonists","bars in the windows"],"receivingConcepts":[]}
+{"concept":"a bass fiddle","rel":"AtLocation","receivingConcepts":["band","a bluegrass band","a country band","a jazz band","a music store","a nursery rhyme","an orchestra","a string quartet","symphony"],"emittingConcepts":[]}
+{"concept":"a bath","rel":"AtLocation","receivingConcepts":["your house","Greece","a hotel room","your own home"],"emittingConcepts":[]}
+{"concept":"your house","rel":"AtLocation","emittingConcepts":["a bath","air","art work","your address","ashtrays","a bee","your belongings"],"receivingConcepts":[]}
+{"concept":"a bazaar","rel":"AtLocation","receivingConcepts":["India","Aisa","arabia","Asia","a church","a city","a festival","Istanbul","shops"],"emittingConcepts":[]}
+{"concept":"beakers","rel":"AtLocation","receivingConcepts":["a laboratory","the chemistry lab"],"emittingConcepts":[]}
+{"concept":"a laboratory","rel":"AtLocation","emittingConcepts":["beakers","a beaker","animals"],"receivingConcepts":[]}
+{"concept":"a beam","rel":"AtLocation","receivingConcepts":["a house","a bridge","the ceiling","a roof","a barn","a building, to support it","a gym"],"emittingConcepts":[]}
+{"concept":"a bean","rel":"AtLocation","receivingConcepts":["soup","a food store","a bean bag","a bean can","bean soup","a can","coffee","a cooking pot"],"emittingConcepts":[]}
+{"concept":"soup","rel":"AtLocation","emittingConcepts":["a bean","a bald eagle"],"receivingConcepts":[]}
+{"concept":"a room","rel":"AtLocation","emittingConcepts":["a bed","a beanbag","an acoustic ceiling","a beanbag chair"],"receivingConcepts":[]}
+{"concept":"an action figure","rel":"AtLocation","receivingConcepts":["the toy department","a toy store","a bathtub","a child's room","a little boy's toy box","a store4","a theater","a toybox","a toy chest"],"emittingConcepts":[]}
+{"concept":"television","rel":"AtLocation","emittingConcepts":["an actor","advertisements","actors","a beer commercial"],"receivingConcepts":[]}
+{"concept":"actors","rel":"AtLocation","receivingConcepts":["the opera","the theater","the movies","a show","a movie","a play","television"],"emittingConcepts":[]}
+{"concept":"the opera","rel":"AtLocation","emittingConcepts":["actors","Annoying loud singing","a bass baritone"],"receivingConcepts":[]}
+{"concept":"the theater","rel":"AtLocation","emittingConcepts":["actors","ballet","a bathroom","an actor","annoying people","a backdrop","a band"],"receivingConcepts":[]}
+{"concept":"an address label","rel":"AtLocation","receivingConcepts":["a drawer","a desk drawer","an envelope","your junk mail","an office","an office supply store","a parcel","a printer","the trash"],"emittingConcepts":[]}
+{"concept":"a pharmacy","rel":"AtLocation","emittingConcepts":["an adhesive bandage","acne medication","an antibiotic"],"receivingConcepts":[]}
+{"concept":"a bus","rel":"AtLocation","emittingConcepts":["an advertisement","advertisments","air","bad air quality"],"receivingConcepts":[]}
+{"concept":"a magazine","rel":"AtLocation","emittingConcepts":["an advertisement","an advertising panel","adverts","articles"],"receivingConcepts":[]}
+{"concept":"advertisements","rel":"AtLocation","receivingConcepts":["the mail box","the subway","television","mail bags","a soccer game"],"emittingConcepts":[]}
+{"concept":"the mail box","rel":"AtLocation","emittingConcepts":["advertisements","an advertisement","air","a bag"],"receivingConcepts":[]}
+{"concept":"a balloon","rel":"AtLocation","emittingConcepts":["air"],"receivingConcepts":["sky","the air","a birthday party","a child's hand","a circus","grocery store","a room with other party supplies"]}
+{"concept":"the supermarket","rel":"AtLocation","emittingConcepts":["air","a bag of chips","a bagger","alcohol"],"receivingConcepts":[]}
+{"concept":"an alcoholic","rel":"AtLocation","receivingConcepts":["a homeless shelter","a bar","a bridge","a neighbor's house","a park","prison"],"emittingConcepts":[]}
+{"concept":"algae","rel":"AtLocation","receivingConcepts":["the water","a swimming pool","a waterfall"],"emittingConcepts":[]}
+{"concept":"aliens","rel":"AtLocation","receivingConcepts":["the universe","Roswell","space","outer space","the Weekly World News"],"emittingConcepts":[]}
+{"concept":"the universe","rel":"AtLocation","emittingConcepts":["aliens","asteroids","atoms"],"receivingConcepts":[]}
+{"concept":"an alto","rel":"AtLocation","receivingConcepts":["a choir","a chior","a concerto","a marching band","a symphony"],"emittingConcepts":[]}
+{"concept":"an amphitheatre","rel":"AtLocation","receivingConcepts":["greece","a park","a movie house","outside"],"emittingConcepts":[]}
+{"concept":"greece","rel":"AtLocation","emittingConcepts":["an amphitheatre","alta","aroania","arvanitika","battle of navarino","battle of pharsalus","battle of plataea","battle of thermopylae"],"receivingConcepts":[]}
+{"concept":"an apartment","rel":"AtLocation","receivingConcepts":["a town","and apartment complex","an apartment building","an apartment complex","a budget","a building","a complex","Michigan"],"emittingConcepts":["a bedroom","a bed","an apartment number","an armchair","a bathroom","a beanbag chair"]}
+{"concept":"a town","rel":"AtLocation","emittingConcepts":["an apartment","a barbershop","an avenue","a back garden","a bank","a barber shop"],"receivingConcepts":[]}
+{"concept":"an apartment house","rel":"AtLocation","receivingConcepts":["any city","an apartment building","an apartment complex"],"emittingConcepts":[]}
+{"concept":"the jar","rel":"AtLocation","emittingConcepts":["applesauce","beets","air","almond butter","apple and tomato chutney","apple butter","apple cranberry chutney","apple nut chutney","apple peach apricot chutney","apricot pepper jelly","banana chutney","beef orange chutney","beetroot pickle"],"receivingConcepts":[]}
+{"concept":"the countryside","rel":"AtLocation","emittingConcepts":["an apple tree","bees","a bald eagle","a barn","barns and clean fresh air","a bear","a beaver","a bee"],"receivingConcepts":[]}
+{"concept":"New York","rel":"AtLocation","emittingConcepts":["an apple tree","an advertising panel","an audience","a bald eagle","a beaver"],"receivingConcepts":[]}
+{"concept":"pennsylvania","rel":"AtLocation","emittingConcepts":["an apple tree","battle of gettysburg"],"receivingConcepts":[]}
+{"concept":"an apple tree in","rel":"AtLocation","receivingConcepts":["the back yard","a large field"],"emittingConcepts":[]}
+{"concept":"an appointment book","rel":"AtLocation","receivingConcepts":["your desk","a briefcase","a briefcase or on a desk","a doctor's office","a handbag","an office supply store","your pocket"],"emittingConcepts":[]}
+{"concept":"your desk","rel":"AtLocation","emittingConcepts":["an appointment book","an assortment of office supplies"],"receivingConcepts":[]}
+{"concept":"the Arctic","rel":"AtLocation","emittingConcepts":["the Arctic fox","arctic seals","an artic fox","bears"],"receivingConcepts":[]}
+{"concept":"art","rel":"AtLocation","receivingConcepts":["a museum","a gallery opening","a fair"],"emittingConcepts":["a bald eagle","a bee"]}
+{"concept":"an article","rel":"AtLocation","receivingConcepts":["the newspaper","a magazine in the store","a magazine in stores","a newspaper in a newspaper","a magazine in a doctor's office","a magazine in Forbes Magazine","a magazine in a hospital","a magazine in an internet site","a magazine in a library","a magazine in a magazine","a magazine in a magazine rack","a magazine in most cases","a magazine in a newsstand","a magazine in Victoria","a newspaper in an editor's office","a newspaper in little time"],"emittingConcepts":[]}
+{"concept":"aspirin","rel":"AtLocation","receivingConcepts":["a medicine cabinet","a cabinet","the desk","a medicine chest","the purse","a suitcase","work"],"emittingConcepts":[]}
+{"concept":"a medicine cabinet","rel":"AtLocation","emittingConcepts":["aspirin","an adhesive bandage","an antibiotic"],"receivingConcepts":[]}
+{"concept":"orbit","rel":"AtLocation","emittingConcepts":["an astronaut","al gore","astronauts"],"receivingConcepts":[]}
+{"concept":"a sporting event","rel":"AtLocation","emittingConcepts":["an athelete","balls","an athlete","beer","an announcer","athletes","an audience","a ball","the beer guy"],"receivingConcepts":[]}
+{"concept":"an attach case","rel":"AtLocation","receivingConcepts":["a office","an airplane overhead compartment","court","a courtroom","an embassy","the hands of a traveler","a lawyer's office","your posession"],"emittingConcepts":[]}
+{"concept":"disneyland","rel":"AtLocation","emittingConcepts":["attractions","Alice in Wonderland","amusement","an amusement ride","an attraction"],"receivingConcepts":[]}
+{"concept":"a baby","rel":"AtLocation","receivingConcepts":["the womb","the backseat of a car","a cradle","a crib","a house","the rug"],"emittingConcepts":[]}
+{"concept":"a jar","rel":"AtLocation","emittingConcepts":["baby foods","beans","artichoke hearts","baby corn","baby food","a bee"],"receivingConcepts":[]}
+{"concept":"backpacks","rel":"AtLocation","receivingConcepts":["school","a sporting goods store"],"emittingConcepts":[]}
+{"concept":"bacteria","rel":"AtLocation","receivingConcepts":["the water","your finger","the ground","a lake","your mouth","a petri dish","a septic tank"],"emittingConcepts":[]}
+{"concept":"a train station","rel":"AtLocation","emittingConcepts":["a baggage","air"],"receivingConcepts":[]}
+{"concept":"a baggage trunk","rel":"AtLocation","receivingConcepts":["the airport","attic","a car","a dusty attic","a railway station","the rear of a car","socks","a steamship","a train","the train station"],"emittingConcepts":[]}
+{"concept":"a balcony","rel":"AtLocation","receivingConcepts":["an opera","a house","a theater","building","a hotel","Michigan","movie house","New Orleans","an opera house","a tall apartment building","a theatre"],"emittingConcepts":["a balcony seat","a balcony railing"]}
+{"concept":"an opera","rel":"AtLocation","emittingConcepts":["a balcony","a bathroom"],"receivingConcepts":[]}
+{"concept":"a balcony seat","rel":"AtLocation","receivingConcepts":["a balcony","theaters","a theater","the theatra","a theatre"],"emittingConcepts":[]}
+{"concept":"a bald eagle","rel":"AtLocation","receivingConcepts":["Canada","colorado","in washington","the presidential seal","Utah","an aerie","captivity","a cliff","an eagle's nest","the everglades","flight","the forrest","the grand canyon","high places","a natural habitat","a picture","a refuge","a researve","a tall tree","a tree","the U.S","Washington","western north america","an aeire","the air, flying","american history books","american mountains","the American state seal","an animal reservation","art","an aviary","the bar at the eagles club","the Bay of Fundy area","a book","british columbia","a cage at the zoo","the california sierras","a canyon","Canyon Creek, Alberta","central idaho","chemotherapy","the CIA crest","the clouds","the coastal areas of Alaska","a couboy movie","the countryside","some currency","the engraving of a coin","an eyrie","flight, very high up","flying in the sky","the forest on the coast","the great outdoors","a habitat","hells canyon","a high nest","a high tree","history","a history book","an indian movie","Iowa","isolated locales","a lake","large forests","a large nest","maine","Michigan","mid flight","Minnesota","his mountain lair","a mountainous area","mountainous terrain","the mountains above Eureka","the mountains of north america","a mountainus region","A mountanous forest","the moutains","a movie","a national emblem","nature","a nature preserve","a nature reserve","New York","Northern California","the northern forests of North America","the northwest","Ohio","the okeefenokee swamp","the open country","outside","the Pacific Northwest","a painting","a photograph","pictures of America's freedom","a pine tree","the president's seal","a protected bird sanctuary","protection","a remote mountain location","a reserve","the rock mountains","the Rocky Mountains","a rural area","a sanctuary","the seal of the United States","the Sierras","the sky soaring","soup","South Lake Tahoe","the Southwest United States","a tall treetop","a taxidermist's shop","texa","a thermal","the top of a flag pole","a toy store","a tree top","a treetop","the United States of America","the US","Washington state","the west","a wig shop","the wild blue yonder","the wilderness","a wilderness area","a wild life refuge","a wildlife refuge","wisconsin","the woods","world"],"emittingConcepts":[]}
+{"concept":"Canada","rel":"AtLocation","emittingConcepts":["a bald eagle","an accommodation","an apple tree","a barber shop","a basement","a bee"],"receivingConcepts":[]}
+{"concept":"a ball bearing","rel":"AtLocation","receivingConcepts":["a wheel","a machine","a can","church","high quality motor","machines","part of a wheel","a skateboard wheel"],"emittingConcepts":[]}
+{"concept":"the street","rel":"AtLocation","emittingConcepts":["a ball","asphalt paving","beggars","acar","automobiles","a bar","a beggar","beggers"],"receivingConcepts":[]}
+{"concept":"a ballpoint pen","rel":"AtLocation","receivingConcepts":["your drawer","a desk drawer","a backpack","a bank","your booksack","a desk","an office desk","a stationery store"],"emittingConcepts":[]}
+{"concept":"a band","rel":"AtLocation","receivingConcepts":["a wedding","a friend's wedding","a show","the theater"],"emittingConcepts":["a banjo","an accordion","an acoustic guitar","a bass baritone","a bass drum","a bassoon","a batten"]}
+{"concept":"a wedding","rel":"AtLocation","emittingConcepts":["a band","a bar service"],"receivingConcepts":[]}
+{"concept":"a barber comb","rel":"AtLocation","receivingConcepts":["the barber shop","a barbershop","a salon","a barber's hand","a barbershoop","a beauty salon","a hair salon"],"emittingConcepts":[]}
+{"concept":"a barbershop","rel":"AtLocation","receivingConcepts":["shopping mall","a town","a mall","a city","a commercial area","a large hotel","a mini-mall","a nice part of town","a razor","a small town","a village","water"],"emittingConcepts":["a barber comb"]}
+{"concept":"a barn","rel":"AtLocation","receivingConcepts":["the country","a field","the backside of a racetrack","the countryside","a farm yard","NOT \"in\"; on a farm","an open field near a farm","a place to hold unused hay"],"emittingConcepts":["a basket with handle","a beam"]}
+{"concept":"the country","rel":"AtLocation","emittingConcepts":["a barn","a backyard","a baseball field"],"receivingConcepts":[]}
+{"concept":"a military base","rel":"AtLocation","emittingConcepts":["a barracks","airplane","airplanes","an ammunition depot","armed guards","an army","an automatic gate","a barber shop","barraks"],"receivingConcepts":[]}
+{"concept":"a baseball","rel":"AtLocation","receivingConcepts":["a park","america","a baseball game","a baseball pitcher's hand","a pitchers mitt","a sporting goods store"],"emittingConcepts":[]}
+{"concept":"at hotel","rel":"AtLocation","emittingConcepts":["a bathroom","a bellhop","a bedroom","a bellboy"],"receivingConcepts":[]}
+{"concept":"hotel","rel":"AtLocation","emittingConcepts":["a bathroom","a bed sheet"],"receivingConcepts":[]}
+{"concept":"a BBQ","rel":"AtLocation","receivingConcepts":["backyard","a restaurant","a back yard","Louisiana","ribs","the summer"],"emittingConcepts":[]}
+{"concept":"a restaurant","rel":"AtLocation","emittingConcepts":["a BBQ","bad waite staff","a banquet table","a bar","a bar stool"],"receivingConcepts":[]}
+{"concept":"the beach","rel":"AtLocation","emittingConcepts":["a beachball","beach balls","a beach towel","beach towels","an alligator","ants","a babe","beach umbrellas"],"receivingConcepts":[]}
+{"concept":"beach balls","rel":"AtLocation","receivingConcepts":["the beach","a sporting goods store"],"emittingConcepts":[]}
+{"concept":"a bridge","rel":"AtLocation","emittingConcepts":["a beam","air","an alcoholic","an arch","a bat","a beehive"],"receivingConcepts":[]}
+{"concept":"an I-beam","rel":"AtLocation","receivingConcepts":["a building","a construction site","a large building","a metal shop","new construction","a warehouse"],"emittingConcepts":[]}
+{"concept":"a building","rel":"AtLocation","emittingConcepts":["an I-beam","a basement","an air conditioner","an aisle","an apartment","an apple computer","an arch","a ballroom","a bathroom"],"receivingConcepts":[]}
+{"concept":"a bean bag chair","rel":"AtLocation","receivingConcepts":["a den","a kids room","a bachelor pad","a college dorm","a college dorm room","the family room","the floor","a house","a kid's room","the living room","Office Max","a person's home","a teenager's room"],"emittingConcepts":[]}
+{"concept":"a den","rel":"AtLocation","emittingConcepts":["a bean bag chair","a beaver"],"receivingConcepts":[]}
+{"concept":"a neighbor's house","rel":"AtLocation","emittingConcepts":["a bed","an alcoholic","bathroom","beautiful gurl face","beer"],"receivingConcepts":[]}
+{"concept":"bed","rel":"AtLocation","receivingConcepts":["a rest area"],"emittingConcepts":["bed bugs","a beaver"]}
+{"concept":"a bed sheet","rel":"AtLocation","receivingConcepts":["a bed","a closet","a bedroom","hotel","a hotel's maintenance closet"],"emittingConcepts":[]}
+{"concept":"a closet","rel":"AtLocation","emittingConcepts":["a bed sheet","an acoustic guitar","a ball","an album","a belt"],"receivingConcepts":[]}
+{"concept":"beef","rel":"AtLocation","receivingConcepts":["a plate","a grocery store"],"emittingConcepts":[]}
+{"concept":"a plate","rel":"AtLocation","emittingConcepts":["beef","a baseball player","beans"],"receivingConcepts":[]}
+{"concept":"bees","rel":"AtLocation","receivingConcepts":["a swarm","the countryside"],"emittingConcepts":[]}
+{"concept":"beets","rel":"AtLocation","receivingConcepts":["the jar","a can"],"emittingConcepts":[]}
+{"concept":"the front door","rel":"AtLocation","emittingConcepts":["the bell","the Avon lady"],"receivingConcepts":[]}
+{"concept":"the bottom of the sea","rel":"AtLocation","emittingConcepts":["abyss","an anemone"],"receivingConcepts":[]}
+{"concept":"an accordian bag","rel":"AtLocation","receivingConcepts":["a music store","an accordian","a musical instrument store","a music shop","an orchestra pit","scotland"],"emittingConcepts":[]}
+{"concept":"a music store","rel":"AtLocation","emittingConcepts":["an accordian bag","a balalaika","a bass","an accordion","an album","a banjo","a bass fiddle"],"receivingConcepts":[]}
+{"concept":"a desk","rel":"AtLocation","emittingConcepts":["an account book","an address book","an air mail stamp","a 3-hole punch","an assignment","a ballpoint pen"],"receivingConcepts":[]}
+{"concept":"a medicine chest","rel":"AtLocation","emittingConcepts":["acetaminophen","a aloe vera","amoxicillin","ampicillin","an analgesic","an anesthetic","an anodyne","an antacid","an anticonvulsant","an antidote","an antiemetic","an antihistamine","an antipruritic","an antipyretic","an antiseptic","an antispasmodic","an antitussive","an antivenin","an aphrodisiac","aspirin","an astringent","a bactericide","a bacteriostat","bandaging","a barbiturate"],"receivingConcepts":[]}
+{"concept":"acne medication","rel":"AtLocation","receivingConcepts":["a drug store","a tube","a bathroom","a cupboard","a drugstore","a pharmacy","a teenage girl's bathroom drawer","a teenager's purse"],"emittingConcepts":[]}
+{"concept":"an acoustic ceiling","rel":"AtLocation","receivingConcepts":["a music hall","a concert hall","a music department","an office building","the opera house","orchestra house","a room","a theater"],"emittingConcepts":[]}
+{"concept":"a music hall","rel":"AtLocation","emittingConcepts":["an acoustic ceiling","an acoustic ceiling in"],"receivingConcepts":[]}
+{"concept":"an acoustic guitar","rel":"AtLocation","receivingConcepts":["a closet","a music shop","a band","a folk band","a folk concert","a folk group","someone's house","a lesbian bar","a music room","a rock band","a studio"],"emittingConcepts":[]}
+{"concept":"a music shop","rel":"AtLocation","emittingConcepts":["an acoustic guitar","an accordian bag","a banjo"],"receivingConcepts":[]}
+{"concept":"an address book","rel":"AtLocation","receivingConcepts":["a desk","a suitcase"],"emittingConcepts":[]}
+{"concept":"water","rel":"AtLocation","emittingConcepts":["air bubbles","an air bubble","amoeba","a barbershop","a bass","a bay"],"receivingConcepts":[]}
+{"concept":"sky","rel":"AtLocation","emittingConcepts":["air","aircraft","a balloon"],"receivingConcepts":[]}
+{"concept":"the surface of the earth","rel":"AtLocation","emittingConcepts":["air","animals"],"receivingConcepts":[]}
+{"concept":"an air conditioner","rel":"AtLocation","receivingConcepts":["a house","a building","a car","a computer room","a hard","a home","an office","an office building","the south","Texas","warm climates"],"emittingConcepts":[]}
+{"concept":"aircraft","rel":"AtLocation","receivingConcepts":["sky","the sky"],"emittingConcepts":[]}
+{"concept":"an airport","rel":"AtLocation","emittingConcepts":["airline representatives","an air terminal","an advertising panel","air","an air ticket","a baggage cart","a baggage check","a bank machine","a bar","a bathroom"],"receivingConcepts":["a city","a suitcase"]}
+{"concept":"airplanes","rel":"AtLocation","receivingConcepts":["the sky","the air","an aircraft carrier","a military base","a war"],"emittingConcepts":[]}
+{"concept":"an air terminal","rel":"AtLocation","receivingConcepts":["an airport","an air port","a city","Detroit","an international air port"],"emittingConcepts":["an air ticket"]}
+{"concept":"a store","rel":"AtLocation","emittingConcepts":["an aisle","beer","an advertisement","aisles","an anemone","bananas","a beanbag","a beanie baby"],"receivingConcepts":[]}
+{"concept":"aisles","rel":"AtLocation","receivingConcepts":["a plane","the theatre","a store"],"emittingConcepts":[]}
+{"concept":"space","rel":"AtLocation","emittingConcepts":["aliens","an asteroid","asteroids"],"receivingConcepts":[]}
+{"concept":"an altar","rel":"AtLocation","receivingConcepts":["a sanctuary","a temple","a ceremony","a synagogue"],"emittingConcepts":[]}
+{"concept":"a sanctuary","rel":"AtLocation","emittingConcepts":["an altar","an aisle","a bald eagle"],"receivingConcepts":[]}
+{"concept":"the trash","rel":"AtLocation","emittingConcepts":["aluminum foil","banana peel","banana peels","an address label","ashes","a bag","a beanbag chair"],"receivingConcepts":[]}
+{"concept":"the suface of the moon","rel":"AtLocation","emittingConcepts":["the American flag","American flags left behind by astronauts","astronauts"],"receivingConcepts":[]}
+{"concept":"ammunition","rel":"AtLocation","receivingConcepts":["a war","a gun"],"emittingConcepts":[]}
+{"concept":"an apple orchard","rel":"AtLocation","emittingConcepts":["and apple","an apple"],"receivingConcepts":[]}
+{"concept":"a book","rel":"AtLocation","emittingConcepts":["an anemone","a bald eagle","a beaver"],"receivingConcepts":[]}
+{"concept":"an ant","rel":"AtLocation","receivingConcepts":["an anthill","the carpet","a park"],"emittingConcepts":[]}
+{"concept":"an anthill","rel":"AtLocation","emittingConcepts":["an ant","ants"],"receivingConcepts":[]}
+{"concept":"a car show","rel":"AtLocation","emittingConcepts":["an antique car","antique cars","babes","beautiful women"],"receivingConcepts":[]}
+{"concept":"antiques","rel":"AtLocation","receivingConcepts":["the attic","the loft","a museum"],"emittingConcepts":[]}
+{"concept":"the attic","rel":"AtLocation","emittingConcepts":["antiques","an antique","an antique sewing machine","a baseball card collection","a bat"],"receivingConcepts":[]}
+{"concept":"an apartment building","rel":"AtLocation","emittingConcepts":["an apartment","an apartment house","a balcony railing"],"receivingConcepts":["Indiana","the suburbs","an urban area","an urban environment"]}
+{"concept":"the oven","rel":"AtLocation","emittingConcepts":["apple pie","baking bread","baked bread","baked potatoes","baking cookies","being cooked"],"receivingConcepts":[]}
+{"concept":"a state park","rel":"AtLocation","emittingConcepts":["arches","animals","a beach","bears"],"receivingConcepts":[]}
+{"concept":"an armchair","rel":"AtLocation","receivingConcepts":["furniture store","an apartment","a hospital","livin-room","a lounge","a study"],"emittingConcepts":[]}
+{"concept":"a gallery opening","rel":"AtLocation","emittingConcepts":["art","artists","artwork","art critics","an artist","art lovers","artwork being displayed","art work","attitude","a bathroom"],"receivingConcepts":[]}
+{"concept":"artists","rel":"AtLocation","receivingConcepts":["an art show","a gallery opening","Disneyland"],"emittingConcepts":[]}
+{"concept":"artwork","rel":"AtLocation","receivingConcepts":["a gallery opening","an art show","church","a museum"],"emittingConcepts":[]}
+{"concept":"art work","rel":"AtLocation","receivingConcepts":["your house","a gallery opening","a museum"],"emittingConcepts":[]}
+{"concept":"work","rel":"AtLocation","emittingConcepts":["assignments","affairs","aspirin"],"receivingConcepts":[]}
+{"concept":"an asteroid","rel":"AtLocation","receivingConcepts":["outerspace","space"],"emittingConcepts":[]}
+{"concept":"astronauts","rel":"AtLocation","receivingConcepts":["the space shuttle","orbit","outerspace","a spaceship","the suface of the moon"],"emittingConcepts":[]}
+{"concept":"an athlete","rel":"AtLocation","receivingConcepts":["a sporting event","a locker room","the olympics","the stadium"],"emittingConcepts":[]}
+{"concept":"a bookstore","rel":"AtLocation","emittingConcepts":["Atlases","antiquarian books","an atlas","authors","an author signing books","a bag","a bathroom"],"receivingConcepts":[]}
+{"concept":"an attache case","rel":"AtLocation","receivingConcepts":["an office","a business meeting","a businessperson's hand","a chair","the hands of an executive","a hospital","a lawyer's office","an overhead compartment"],"emittingConcepts":[]}
+{"concept":"an office","rel":"AtLocation","emittingConcepts":["an attache case","an address label","an air conditioner","a basket"],"receivingConcepts":[]}
+{"concept":"attendees","rel":"AtLocation","receivingConcepts":["a conference","a meeting"],"emittingConcepts":[]}
+{"concept":"a conference","rel":"AtLocation","emittingConcepts":["attendees","agendas","an attendee","bad karma"],"receivingConcepts":[]}
+{"concept":"a freeway","rel":"AtLocation","emittingConcepts":["an automobile","asphalt"],"receivingConcepts":[]}
+{"concept":"automobiles","rel":"AtLocation","receivingConcepts":["a road","the street"],"emittingConcepts":[]}
+{"concept":"an avenue","rel":"AtLocation","receivingConcepts":["a city","new york city","a town"],"emittingConcepts":[]}
+{"concept":"a city","rel":"AtLocation","emittingConcepts":["an avenue","a bank","a basketball court","an airport","an air terminal","an arena","an auditorium","a back garden","a back yard","a banker","a barbershop","a bazaar","a beauty salon","a belt highway"],"receivingConcepts":[]}
+{"concept":"new york city","rel":"AtLocation","emittingConcepts":["an avenue","60 minutes","american express","aurora"],"receivingConcepts":[]}
+{"concept":"a back courtyard","rel":"AtLocation","receivingConcepts":["a palace","a country estate","a large house","a neighborhood","a rich neighborhood","a Spanish-style home","the suburbs"],"emittingConcepts":[]}
+{"concept":"a backdrop","rel":"AtLocation","receivingConcepts":["a stage show","the theatre","the backstage","photograph","a photography studio","a photo studio","a stage setting","the theater"],"emittingConcepts":[]}
+{"concept":"a back garden","rel":"AtLocation","receivingConcepts":["the back yard","a house","the backyard","a city","england","a suburban neighborhood","a surburban neighborhood","a town","a yard"],"emittingConcepts":[]}
+{"concept":"bacon","rel":"AtLocation","receivingConcepts":["a refridgerator","the refrigerator"],"emittingConcepts":[]}
+{"concept":"a bagel","rel":"AtLocation","receivingConcepts":["a breadbox","a bakery"],"emittingConcepts":[]}
+{"concept":"a breadbox","rel":"AtLocation","emittingConcepts":["a bagel","ants","bagels"],"receivingConcepts":[]}
+{"concept":"New York City","rel":"AtLocation","emittingConcepts":["a bagel shop","a bar"],"receivingConcepts":[]}
+{"concept":"a car","rel":"AtLocation","emittingConcepts":["a baggage trunk","an air conditioner","an air conditioning","an air freshener","an armrest","a bee"],"receivingConcepts":[]}
+{"concept":"a balalaika","rel":"AtLocation","receivingConcepts":["a music store","a symphony","artist junkyard","the movie Dr","an orchestra"],"emittingConcepts":[]}
+{"concept":"a symphony","rel":"AtLocation","emittingConcepts":["a balalaika","an alto","a bass baritone"],"receivingConcepts":[]}
+{"concept":"a theater","rel":"AtLocation","emittingConcepts":["a balcony","a balcony seat","an acoustic ceiling","an action figure","an auditorium","a balcony railing","a batten"],"receivingConcepts":[]}
+{"concept":"flight","rel":"AtLocation","emittingConcepts":["a bald eagle","a bee"],"receivingConcepts":[]}
+{"concept":"the forrest","rel":"AtLocation","emittingConcepts":["a bald eagle","a beaver"],"receivingConcepts":[]}
+{"concept":"Washington","rel":"AtLocation","emittingConcepts":["a bald eagle","a beaver"],"receivingConcepts":[]}
+{"concept":"a baseball game","rel":"AtLocation","emittingConcepts":["a ball","a baseball"],"receivingConcepts":[]}
+{"concept":"a basketball court","rel":"AtLocation","emittingConcepts":["a ball","a basketball"],"receivingConcepts":["a city","Detroit, Michigan","the gym","a high school gymnasium","Los Angeles","a school","a sports arena","use"]}
+{"concept":"ball","rel":"AtLocation","receivingConcepts":["beach","a bowling alley"],"emittingConcepts":[]}
+{"concept":"beach","rel":"AtLocation","emittingConcepts":["ball","a beach umbrella","beer"],"receivingConcepts":[]}
+{"concept":"a child's hand","rel":"AtLocation","emittingConcepts":["a ball","a balloon"],"receivingConcepts":[]}
+{"concept":"a toy box","rel":"AtLocation","emittingConcepts":["a ball","a beanbag"],"receivingConcepts":[]}
+{"concept":"a carnival","rel":"AtLocation","emittingConcepts":["a ballon","an amusement ride","bearded lady"],"receivingConcepts":[]}
+{"concept":"a desk drawer","rel":"AtLocation","emittingConcepts":["a ballpoint pen","an account book","an address label"],"receivingConcepts":[]}
+{"concept":"a waste bin","rel":"AtLocation","emittingConcepts":["a banana peel","apple peels"],"receivingConcepts":[]}
+{"concept":"the drug store","rel":"AtLocation","emittingConcepts":["a band aid","an adhesive bandage"],"receivingConcepts":[]}
+{"concept":"bandaids","rel":"AtLocation","receivingConcepts":["a cabinet","a backpack","a container"],"emittingConcepts":[]}
+{"concept":"a cabinet","rel":"AtLocation","emittingConcepts":["bandaids","3-in-1 oil","3X5 cards","5x8 cards","accounting books","address books","addresses","after shave lotion","ammonia","antibiotics","art supplies","aspirin","an assortment of forms","audio tapes","automobile oil","a bag of weed","baloons","bandaides","band uniform hats","band uniforms","bells"],"receivingConcepts":[]}
+{"concept":"a banjo","rel":"AtLocation","receivingConcepts":["a band","a banjo players hands","a country band","the United States","a banjo case","Bela Fleck's hands","a country music singer's hands","a country singer's arms","a country-western band","the hands of a banjo player","a jug band","the movie, Deliverance","a music band","a music shop","a music store"],"emittingConcepts":[]}
+{"concept":"a country band","rel":"AtLocation","emittingConcepts":["a banjo","a bass fiddle"],"receivingConcepts":[]}
+{"concept":"the United States","rel":"AtLocation","emittingConcepts":["a banjo","a bee"],"receivingConcepts":[]}
+{"concept":"a pocket","rel":"AtLocation","emittingConcepts":["a banknote","air","a baseball ticket"],"receivingConcepts":[]}
+{"concept":"a barber shop","rel":"AtLocation","receivingConcepts":["a high street","Canada","comb","a mall","a military base","a neighborhood","seville","a small town","a town"],"emittingConcepts":[]}
+{"concept":"a mall","rel":"AtLocation","emittingConcepts":["a barbershop","a bath room","a beauty salon","aggravation","all types of stores","a bag","a barber shop","a bathroom"],"receivingConcepts":[]}
+{"concept":"a field","rel":"AtLocation","emittingConcepts":["a barn","ants"],"receivingConcepts":[]}
+{"concept":"a bar of soap","rel":"AtLocation","receivingConcepts":["a bathtub","a hotel","a motel"],"emittingConcepts":[]}
+{"concept":"a bathtub","rel":"AtLocation","emittingConcepts":["a bar of soap","an action figure","a bath shower"],"receivingConcepts":["a motel","a building supply store","an expensive hotel","a home improvement store"]}
+{"concept":"a roadblock","rel":"AtLocation","emittingConcepts":["a barricade","a barrier","barriers","an accident","alert police officers"],"receivingConcepts":[]}
+{"concept":"a baseball field","rel":"AtLocation","receivingConcepts":["a baseball stadium","the Bronx, New York","the country","Detroit","Japan or America"],"emittingConcepts":["a ball"]}
+{"concept":"a baseball stadium","rel":"AtLocation","emittingConcepts":["a baseball field","a baseball ticket"],"receivingConcepts":["Chicago","a large city","a major city","Phoenix","San Francisco","a sports complex","urban areas"]}
+{"concept":"a baseball ticket","rel":"AtLocation","receivingConcepts":["a baseball stadium","a boxoffice","Detroit","Fenway Park","my hand","the mail","a pocket","a scalper's hands","a trash barrell"],"emittingConcepts":[]}
+{"concept":"a basketball","rel":"AtLocation","receivingConcepts":["a basketball court","a basketball game","a boys hands","a gymnasium","a sporting goods store","store"],"emittingConcepts":[]}
+{"concept":"a basket with handle","rel":"AtLocation","receivingConcepts":["shops","a barn","a grocery store","a hen house","the kitchen","a picnic area","a shop that sells baskets"],"emittingConcepts":[]}
+{"concept":"shops","rel":"AtLocation","emittingConcepts":["a basket with handle","a bazaar"],"receivingConcepts":[]}
+{"concept":"a bass","rel":"AtLocation","receivingConcepts":["a music store","a river","a barbershop quartette","a freshwater lake","a jazz band","a lake","a quartet","water"],"emittingConcepts":[]}
+{"concept":"a bass drum","rel":"AtLocation","receivingConcepts":["a drum set","a band","a marching band","an orchestra","a rock band"],"emittingConcepts":[]}
+{"concept":"a bassoon","rel":"AtLocation","receivingConcepts":["an orchestra","a band","a high school band","A SYMPHONY"],"emittingConcepts":[]}
+{"concept":"an orchestra","rel":"AtLocation","emittingConcepts":["a bassoon","a balalaika","a bass baritone","a bass clarinet","a bass drum","a bass fiddle"],"receivingConcepts":[]}
+{"concept":"a friend's house","rel":"AtLocation","emittingConcepts":["a bathroom","beer"],"receivingConcepts":[]}
+{"concept":"a school","rel":"AtLocation","emittingConcepts":["a bathroom","an archway","an audience","a basketball court"],"receivingConcepts":[]}
+{"concept":"a motel","rel":"AtLocation","emittingConcepts":["a bathtub","accomadations","an accommodations","accomodation","baby soaps","bad food","a bar of soap","a bathroom and bedroom","a bathroom"],"receivingConcepts":[]}
+{"concept":"a bay","rel":"AtLocation","receivingConcepts":["a lake","areas below sea level","a coastal area","an inlet","manhattan","a shoreline","water"],"emittingConcepts":[]}
+{"concept":"a lake","rel":"AtLocation","emittingConcepts":["a bay","bacteria","a bald eagle","a bass"],"receivingConcepts":[]}
+{"concept":"a bay window","rel":"AtLocation","receivingConcepts":["a living room","a bedroom"],"emittingConcepts":[]}
+{"concept":"a beanbag","rel":"AtLocation","receivingConcepts":["a room","a bedroom","a childrens toy store","a child's bedroom","a house","the past","a store","stuffed animals","a toy box","a toy store","a toystore"],"emittingConcepts":[]}
+{"concept":"a beanbag chair","rel":"AtLocation","receivingConcepts":["the living room","an apartment","a beanbag house","a bedroom or living room","a college dormitory room","A DORM","front of a television set","a kid's room","a room","the trash"],"emittingConcepts":[]}
+{"concept":"the living room","rel":"AtLocation","emittingConcepts":["a beanbag chair","an armoire","a bean bag chair"],"receivingConcepts":[]}
+{"concept":"beans","rel":"AtLocation","receivingConcepts":["a jar","a can","a container","a plate"],"emittingConcepts":[]}
+{"concept":"bears","rel":"AtLocation","receivingConcepts":["the woods","the Arctic","Disneyland","a state park"],"emittingConcepts":[]}
+{"concept":"the woods","rel":"AtLocation","emittingConcepts":["bears","an anemone","an apple tree","a bald eagle"],"receivingConcepts":[]}
+{"concept":"beauty","rel":"AtLocation","receivingConcepts":["the top of a mountain","a waterfall"],"emittingConcepts":[]}
+{"concept":"the top of a mountain","rel":"AtLocation","emittingConcepts":["beauty","air","an avalanche","bad weather","bare rock and snow"],"receivingConcepts":[]}
+{"concept":"a waterfall","rel":"AtLocation","emittingConcepts":["beauty","algae"],"receivingConcepts":[]}
+{"concept":"a beauty salon","rel":"AtLocation","receivingConcepts":["a mall","a city","a clerk","a neighborhood","a strip mall"],"emittingConcepts":["a barber comb"]}
+{"concept":"the wilderness","rel":"AtLocation","emittingConcepts":["a beaver","a bald eagle"],"receivingConcepts":[]}
+{"concept":"the loft","rel":"AtLocation","emittingConcepts":["a bed","ahy","antiques","a barn owl","a bedroom","being stored"],"receivingConcepts":[]}
+{"concept":"a field of flowers","rel":"AtLocation","emittingConcepts":["a bee","an anemone"],"receivingConcepts":[]}
+{"concept":"an orchard","rel":"AtLocation","emittingConcepts":["a bee","an apple","an apply tree"],"receivingConcepts":[]}
+{"concept":"a bowling alley","rel":"AtLocation","emittingConcepts":["beer","alcoholic beverages","ball","beer drinkers"],"receivingConcepts":[]}
+{"concept":"a can","rel":"AtLocation","emittingConcepts":["beer","baby corn","baked beans","a ball bearing","a bean","beans","beets"],"receivingConcepts":[]}
+{"concept":"a bellhop","rel":"AtLocation","receivingConcepts":["at hotel","a hotel"],"emittingConcepts":[]}
+{"concept":"the corner","rel":"AtLocation","emittingConcepts":["180 degrees","a bad boy","a bad child"],"receivingConcepts":[]}
+{"concept":"the repair shop","rel":"AtLocation","emittingConcepts":["a 1976 Audi","an auto mechanic","an automobile","a basket of kittens"],"receivingConcepts":[]}
+{"concept":"your mouth","rel":"AtLocation","emittingConcepts":["32 teeth","bacteria"],"receivingConcepts":[]}
+{"concept":"the sea","rel":"AtLocation","emittingConcepts":["a 4-masted schooner","my ass"],"receivingConcepts":[]}
+{"concept":"sea","rel":"AtLocation","emittingConcepts":["above the water","angel fis"],"receivingConcepts":[]}
+{"concept":"an accommodation","rel":"AtLocation","receivingConcepts":["Canada","an inn"],"emittingConcepts":[]}
+{"concept":"an accommodations","rel":"AtLocation","receivingConcepts":["a camp ground","a motel","theater"],"emittingConcepts":[]}
+{"concept":"an accordion","rel":"AtLocation","receivingConcepts":["a band","the instrument room","a music store","a Polish wedding","a polka band","San Francisco","a variety show"],"emittingConcepts":[]}
+{"concept":"San Francisco","rel":"AtLocation","emittingConcepts":["an accordion","a baseball stadium"],"receivingConcepts":[]}
+{"concept":"a","rel":"AtLocation","receivingConcepts":["a resturant","a roof"],"emittingConcepts":[]}
+{"concept":"a resturant","rel":"AtLocation","emittingConcepts":["a","beer"],"receivingConcepts":[]}
+{"concept":"acid","rel":"AtLocation","receivingConcepts":["the chemistry lab","your stomach"],"emittingConcepts":[]}
+{"concept":"your stomach","rel":"AtLocation","emittingConcepts":["acid","a banana"],"receivingConcepts":[]}
+{"concept":"McDonalds","rel":"AtLocation","emittingConcepts":["acne","ance"],"receivingConcepts":[]}
+{"concept":"a cupboard","rel":"AtLocation","emittingConcepts":["acne medication","air","another dimension"],"receivingConcepts":[]}
+{"concept":"a drugstore","rel":"AtLocation","emittingConcepts":["acne medication","an aisle"],"receivingConcepts":[]}
+{"concept":"an acorn","rel":"AtLocation","receivingConcepts":["a forest","the ground"],"emittingConcepts":[]}
+{"concept":"a forest","rel":"AtLocation","emittingConcepts":["an acorn","an anemone","a bee"],"receivingConcepts":[]}
+{"concept":"the ground","rel":"AtLocation","emittingConcepts":["an acorn","an apple tree","bacteria"],"receivingConcepts":[]}
+{"concept":"acorns","rel":"AtLocation","receivingConcepts":["the roof","a tree"],"emittingConcepts":[]}
+{"concept":"the roof","rel":"AtLocation","emittingConcepts":["acorns","a bathroom exhaust pipe"],"receivingConcepts":[]}
+{"concept":"a concert hall","rel":"AtLocation","emittingConcepts":["an acoustic ceiling","an audience"],"receivingConcepts":[]}
+{"concept":"an office building","rel":"AtLocation","emittingConcepts":["an acoustic ceiling","an air conditioner","a basement"],"receivingConcepts":[]}
+{"concept":"the opera house","rel":"AtLocation","emittingConcepts":["an acoustic ceiling","a bass clarinet"],"receivingConcepts":[]}
+{"concept":"a rock band","rel":"AtLocation","emittingConcepts":["an acoustic guitar","a bass drum"],"receivingConcepts":[]}
+{"concept":"an acrylic","rel":"AtLocation","receivingConcepts":["an art store","a factory","paint","a painting","the paint store"],"emittingConcepts":[]}
+{"concept":"a factory","rel":"AtLocation","emittingConcepts":["an acrylic","an automaton"],"receivingConcepts":[]}
+{"concept":"a painting","rel":"AtLocation","emittingConcepts":["an acrylic","a bald eagle"],"receivingConcepts":[]}
+{"concept":"a child's room","rel":"AtLocation","emittingConcepts":["an action figure","a beanie baby"],"receivingConcepts":[]}
+{"concept":"a demonstration","rel":"AtLocation","emittingConcepts":["activists","banners"],"receivingConcepts":[]}
+{"concept":"a suitcase","rel":"AtLocation","emittingConcepts":["an address book","an airport","aspirin"],"receivingConcepts":[]}
+{"concept":"addresses","rel":"AtLocation","receivingConcepts":["a cabinet","a phonebook"],"emittingConcepts":[]}
+{"concept":"an envelope","rel":"AtLocation","emittingConcepts":["an address label","an air ticket"],"receivingConcepts":[]}
+{"concept":"an office supply store","rel":"AtLocation","emittingConcepts":["an address label","an appointment book"],"receivingConcepts":[]}
+{"concept":"the carpet","rel":"AtLocation","emittingConcepts":["an adhesive pad","an ant","ash"],"receivingConcepts":[]}
+{"concept":"a friend's wedding","rel":"AtLocation","emittingConcepts":["adultery","Alchohol","alcohol","a band"],"receivingConcepts":[]}
+{"concept":"an advertising panel","rel":"AtLocation","receivingConcepts":["an advertising agency","an airport","a hockey rink","loo in metro stations","a magazine","a newspaper","New York","the underground"],"emittingConcepts":[]}
+{"concept":"advertisments","rel":"AtLocation","receivingConcepts":["a bus","the newspaper"],"emittingConcepts":[]}
+{"concept":"adverts","rel":"AtLocation","receivingConcepts":["a magazine","the mail"],"emittingConcepts":[]}
+{"concept":"the doctor","rel":"AtLocation","emittingConcepts":["advice","a bandage"],"receivingConcepts":[]}
+{"concept":"an aerial bomb","rel":"AtLocation","receivingConcepts":["the air","the airforce","an airplane","a military bomber","a plane","a stealth bomber","war"],"emittingConcepts":[]}
+{"concept":"a home","rel":"AtLocation","emittingConcepts":["an air conditioner","an alarm clock","an area rug","an attic","a basement","a basket"],"receivingConcepts":[]}
+{"concept":"the south","rel":"AtLocation","emittingConcepts":["an air conditioner","a barbecue restaurant"],"receivingConcepts":[]}
+{"concept":"Texas","rel":"AtLocation","emittingConcepts":["an air conditioner","a barbecue restaurant"],"receivingConcepts":[]}
+{"concept":"an air conditioning","rel":"AtLocation","receivingConcepts":["a car","a hot room","a house","an icerink","a movie theatre","offices","a rich home"],"emittingConcepts":[]}
+{"concept":"a sporting goods store","rel":"AtLocation","emittingConcepts":["air hockey game set","an air rifle","amunition","archery equipment","arrows","a backpack chair","backpacks","badminton sets","ball bags","a ball","barbecue equipment","barbells","baseball bases","baseball bats","a baseball","baseball mits","baseballs","a basketball","basketball nets","beach balls","bed rolls"],"receivingConcepts":[]}
+{"concept":"an airline seat","rel":"AtLocation","receivingConcepts":["a 707","an airplane factory","the front of the plane","onboard a plane"],"emittingConcepts":[]}
+{"concept":"Detroit","rel":"AtLocation","emittingConcepts":["an air terminal","an apple tree","a barbecue","a baseball field","a baseball ticket"],"receivingConcepts":[]}
+{"concept":"an air ticket","rel":"AtLocation","receivingConcepts":["an airline terminal","an airport","an air terminal","a billfold","a briefcase","an envelope","suitcase"],"emittingConcepts":[]}
+{"concept":"a briefcase","rel":"AtLocation","emittingConcepts":["an air ticket","an appointment book"],"receivingConcepts":[]}
+{"concept":"alcoholic beverages","rel":"AtLocation","receivingConcepts":["a bar","a bowling alley","a fraternity house"],"emittingConcepts":[]}
+{"concept":"a swimming pool","rel":"AtLocation","emittingConcepts":["algae","a beach ball"],"receivingConcepts":[]}
+{"concept":"outer space","rel":"AtLocation","emittingConcepts":["aliens","asteroids"],"receivingConcepts":[]}
+{"concept":"the Weekly World News","rel":"AtLocation","emittingConcepts":["aliens","Bat Boy"],"receivingConcepts":[]}
+{"concept":"home","rel":"AtLocation","emittingConcepts":["all your books","an appliance","beer"],"receivingConcepts":[]}
+{"concept":"an alley","rel":"AtLocation","receivingConcepts":["a big city","towns"],"emittingConcepts":[]}
+{"concept":"an alligator","rel":"AtLocation","receivingConcepts":["the beach","a swamp"],"emittingConcepts":[]}
+{"concept":"a chior","rel":"AtLocation","emittingConcepts":["an alto","a baritone"],"receivingConcepts":[]}
+{"concept":"a marching band","rel":"AtLocation","emittingConcepts":["an alto","a bass drum"],"receivingConcepts":[]}
+{"concept":"outside","rel":"AtLocation","emittingConcepts":["an amphitheatre","an anemone","an animal","an apple tree","a bald eagle","a bee"],"receivingConcepts":[]}
+{"concept":"amusement","rel":"AtLocation","receivingConcepts":["a circus","disneyland","the movies"],"emittingConcepts":[]}
+{"concept":"a circus","rel":"AtLocation","emittingConcepts":["amusement","a balloon"],"receivingConcepts":[]}
+{"concept":"an amusement ride","rel":"AtLocation","receivingConcepts":["a carnival","disneyland"],"emittingConcepts":[]}
+{"concept":"fairgrounds","rel":"AtLocation","emittingConcepts":["amusements","animals","arena","balloons"],"receivingConcepts":[]}
+{"concept":"the end of a line","rel":"AtLocation","emittingConcepts":["an anchor","another line"],"receivingConcepts":[]}
+{"concept":"a biology book","rel":"AtLocation","emittingConcepts":["an anemone","a bee"],"receivingConcepts":[]}
+{"concept":"a cartoon","rel":"AtLocation","emittingConcepts":["an anemone","a beaver","a bee"],"receivingConcepts":[]}
+{"concept":"the dirt","rel":"AtLocation","emittingConcepts":["an anemone","an apple tree"],"receivingConcepts":[]}
+{"concept":"it's natural habitat","rel":"AtLocation","emittingConcepts":["an anemone","an apple tree","a beaver"],"receivingConcepts":[]}
+{"concept":"Maine","rel":"AtLocation","emittingConcepts":["an anemone","a beaver"],"receivingConcepts":[]}
+{"concept":"Michigan","rel":"AtLocation","emittingConcepts":["an anemone","an apartment","an apple tree","a balcony","a bald eagle","a banker","a bar","a beaver","a bee"],"receivingConcepts":[]}
+{"concept":"North America","rel":"AtLocation","emittingConcepts":["an animal","a beaver in a pond"],"receivingConcepts":[]}
+{"concept":"the wild","rel":"AtLocation","emittingConcepts":["an animal","a beaver"],"receivingConcepts":[]}
+{"concept":"the rug","rel":"AtLocation","emittingConcepts":["animal hair","at your feet","a baby"],"receivingConcepts":[]}
+{"concept":"a fair","rel":"AtLocation","emittingConcepts":["animals","art","a bee"],"receivingConcepts":[]}
+{"concept":"a farm","rel":"AtLocation","emittingConcepts":["animals","a bee"],"receivingConcepts":[]}
+{"concept":"a fork in the road","rel":"AtLocation","emittingConcepts":["another road","at least two separate paths"],"receivingConcepts":[]}
+{"concept":"a boat","rel":"AtLocation","emittingConcepts":["an anshor","beer","a bell"],"receivingConcepts":[]}
+{"concept":"an antibiotic","rel":"AtLocation","receivingConcepts":["a capsule","a medicine cabinet","a pharmacy"],"emittingConcepts":[]}
+{"concept":"a trunk","rel":"AtLocation","emittingConcepts":["antique","balnkets"],"receivingConcepts":[]}
+{"concept":"ants","rel":"AtLocation","receivingConcepts":["an anthill","the beach","a breadbox","a colony","the cupboard","a field","the forest","the pantry","a table"],"emittingConcepts":[]}
+{"concept":"the cupboard","rel":"AtLocation","emittingConcepts":["ants","baked beans"],"receivingConcepts":[]}
+{"concept":"the forest","rel":"AtLocation","emittingConcepts":["ants","apes","bark","a bear shitting"],"receivingConcepts":[]}
+{"concept":"a table","rel":"AtLocation","emittingConcepts":["ants","an apricot"],"receivingConcepts":[]}
+{"concept":"a container","rel":"AtLocation","emittingConcepts":["anything","bandaids","beans","beer","something being contained"],"receivingConcepts":[]}
+{"concept":"Indiana","rel":"AtLocation","emittingConcepts":["an apartment building","an apple tree"],"receivingConcepts":[]}
+{"concept":"the suburbs","rel":"AtLocation","emittingConcepts":["an apartment building","a back courtyard"],"receivingConcepts":[]}
+{"concept":"an apartment complex","rel":"AtLocation","emittingConcepts":["an apartment","an apartment house","a balcony railing"],"receivingConcepts":[]}
+{"concept":"a box","rel":"AtLocation","emittingConcepts":["a apir of shoes","a batter"],"receivingConcepts":[]}
+{"concept":"the market","rel":"AtLocation","emittingConcepts":["apples and grapes","apples","a bag","a barrel"],"receivingConcepts":[]}
+{"concept":"the table","rel":"AtLocation","emittingConcepts":["apples","an ashtray","a begging dog or cat"],"receivingConcepts":[]}
+{"concept":"a farm yard","rel":"AtLocation","emittingConcepts":["an apple tree","a barn"],"receivingConcepts":[]}
+{"concept":"the great outdoors","rel":"AtLocation","emittingConcepts":["an apple tree","a bald eagle","a beaver","a bee"],"receivingConcepts":[]}
+{"concept":"maine","rel":"AtLocation","emittingConcepts":["an apple tree","a bald eagle","acadia national park","acadian french"],"receivingConcepts":[]}
+{"concept":"New Jersey","rel":"AtLocation","emittingConcepts":["an apple tree","a beaver"],"receivingConcepts":[]}
+{"concept":"Ohio","rel":"AtLocation","emittingConcepts":["an apple tree","a bald eagle","a beaver"],"receivingConcepts":[]}
+{"concept":"the spring","rel":"AtLocation","emittingConcepts":["an apple tree","a bee in a flower"],"receivingConcepts":[]}
+{"concept":"the summer","rel":"AtLocation","emittingConcepts":["an apple tree","a BBQ"],"receivingConcepts":[]}
+{"concept":"the sunshine","rel":"AtLocation","emittingConcepts":["an apple tree","a bee"],"receivingConcepts":[]}
+{"concept":"a wooded area","rel":"AtLocation","emittingConcepts":["an apple tree","a beaver"],"receivingConcepts":[]}
+{"concept":"a doctor's office","rel":"AtLocation","emittingConcepts":["an appointment book","a band aid"],"receivingConcepts":[]}
+{"concept":"an archboard","rel":"AtLocation","receivingConcepts":["the den","the kitchen"],"emittingConcepts":[]}
+{"concept":"the kitchen","rel":"AtLocation","emittingConcepts":["an archboard","a basket","a basket with handle"],"receivingConcepts":[]}
+{"concept":"an arch","rel":"AtLocation","receivingConcepts":["ancient Rome","an archway","a bridge","a building","a cathedral","a church","a doorway","your foot","a gazebo","Paris","a shoe","St"],"emittingConcepts":[]}
+{"concept":"an archway","rel":"AtLocation","emittingConcepts":["an arch"],"receivingConcepts":["an aquaduct","an aqueduct","roman architecture","a school","St"]}
+{"concept":"St","rel":"AtLocation","emittingConcepts":["an arch","an archway"],"receivingConcepts":[]}
+{"concept":"an arena","rel":"AtLocation","receivingConcepts":["a city","a large city","Rome","a stadium"],"emittingConcepts":[]}
+{"concept":"a large city","rel":"AtLocation","emittingConcepts":["an arena","a baseball stadium","a belt highway"],"receivingConcepts":[]}
+{"concept":"a university","rel":"AtLocation","emittingConcepts":["arguments about ideas","an auditorium"],"receivingConcepts":[]}
+{"concept":"an arm","rel":"AtLocation","receivingConcepts":["the air","a chair","a coat","a house","a human","a jacket","the landfill","a socket"],"emittingConcepts":[]}
+{"concept":"a chair","rel":"AtLocation","emittingConcepts":["an arm","an attache case"],"receivingConcepts":[]}
+{"concept":"a battlefield","rel":"AtLocation","emittingConcepts":["an army","a battle"],"receivingConcepts":[]}
+{"concept":"arrows","rel":"AtLocation","receivingConcepts":["a quiver","a sporting goods store"],"emittingConcepts":[]}
+{"concept":"art critics","rel":"AtLocation","receivingConcepts":["an art show","a gallery opening"],"emittingConcepts":[]}
+{"concept":"an article in a newspaper","rel":"AtLocation","receivingConcepts":["a certain section of the newspaper","the Chicago Tribune","the classifieds","the editorial","a library","a section"],"emittingConcepts":[]}
+{"concept":"a library","rel":"AtLocation","emittingConcepts":["an article in a newspaper","a bathroom"],"receivingConcepts":[]}
+{"concept":"articles","rel":"AtLocation","receivingConcepts":["a magazine","the newspaper"],"emittingConcepts":[]}
+{"concept":"a concert","rel":"AtLocation","emittingConcepts":["artist","beer"],"receivingConcepts":[]}
+{"concept":"Disneyland","rel":"AtLocation","emittingConcepts":["artists","balloons","bears"],"receivingConcepts":[]}
+{"concept":"art lovers","rel":"AtLocation","receivingConcepts":["an art show","a gallery opening"],"emittingConcepts":[]}
+{"concept":"ash","rel":"AtLocation","receivingConcepts":["the air","the carpet"],"emittingConcepts":[]}
+{"concept":"ashes","rel":"AtLocation","receivingConcepts":["an ashtray","the trash"],"emittingConcepts":[]}
+{"concept":"asphalt","rel":"AtLocation","receivingConcepts":["a freeway","a street corner"],"emittingConcepts":[]}
+{"concept":"the desk","rel":"AtLocation","emittingConcepts":["aspirin","a bag"],"receivingConcepts":[]}
+{"concept":"the basement","rel":"AtLocation","emittingConcepts":["at the bottom","back issues of National Geographic","a baggage trunk in","a bed"],"receivingConcepts":["the cellar"]}
+{"concept":"an atlas","rel":"AtLocation","emittingConcepts":["the Atlantic Ocean"],"receivingConcepts":["a bookstore","a country"]}
+{"concept":"atoms","rel":"AtLocation","receivingConcepts":["a molecule","the universe"],"emittingConcepts":[]}
+{"concept":"a lawyer's office","rel":"AtLocation","emittingConcepts":["an attach case","an attache case"],"receivingConcepts":[]}
+{"concept":"an attic","rel":"AtLocation","receivingConcepts":["a home","older houses","your own home","the top of a home","a Victorian house","a Victorian style house"],"emittingConcepts":[]}
+{"concept":"your own home","rel":"AtLocation","emittingConcepts":["an attic","a bath"],"receivingConcepts":[]}
+{"concept":"an attribute","rel":"AtLocation","receivingConcepts":["an array","calculas","calculus","a description","a sentence where something is described"],"emittingConcepts":[]}
+{"concept":"an auditorium","rel":"AtLocation","emittingConcepts":["an audience","audience members"],"receivingConcepts":["building","a city","a crowd","a high school","lights","a theater","a university","University campus"]}
+{"concept":"Las Vegas","rel":"AtLocation","emittingConcepts":["an audience","a bar"],"receivingConcepts":[]}
+{"concept":"building","rel":"AtLocation","emittingConcepts":["an auditorium","a balcony"],"receivingConcepts":[]}
+{"concept":"a relatives house","rel":"AtLocation","emittingConcepts":["your aunt","aunts and uncles","a bed"],"receivingConcepts":[]}
+{"concept":"an automaton","rel":"AtLocation","receivingConcepts":["banking","a car assembly plant","a factory","lab","a museum","a science fiction plot"],"emittingConcepts":[]}
+{"concept":"an auto mechanic","rel":"AtLocation","receivingConcepts":["the repair shop","a service station"],"emittingConcepts":[]}
+{"concept":"the backseat of a car","rel":"AtLocation","emittingConcepts":["a baby","a bag"],"receivingConcepts":[]}
+{"concept":"baby corn","rel":"AtLocation","receivingConcepts":["a can","a jar"],"emittingConcepts":[]}
+{"concept":"your finger","rel":"AtLocation","emittingConcepts":["baby poo","bacteria and other microbes","bacteria"],"receivingConcepts":[]}
+{"concept":"a neighborhood","rel":"AtLocation","emittingConcepts":["a back courtyard","a back yard","a backyard","a barber shop","a beauty salon"],"receivingConcepts":[]}
+{"concept":"england","rel":"AtLocation","emittingConcepts":["a back garden","anarchy","anfield","bedfordshire"],"receivingConcepts":[]}
+{"concept":"a yard","rel":"AtLocation","emittingConcepts":["a back garden","a bee"],"receivingConcepts":[]}
+{"concept":"a back yard","rel":"AtLocation","receivingConcepts":["the back of a house","a city","a neighborhood","somebody's property","a suburb","yards"],"emittingConcepts":["a BBQ"]}
+{"concept":"the back of a house","rel":"AtLocation","emittingConcepts":["a back yard","a backyard"],"receivingConcepts":[]}
+{"concept":"bad food","rel":"AtLocation","receivingConcepts":["a motel","a plane"],"emittingConcepts":[]}
+{"concept":"a bad smell","rel":"AtLocation","receivingConcepts":["the fridge","a refrigerator"],"emittingConcepts":[]}
+{"concept":"a fast-food restaurant","rel":"AtLocation","emittingConcepts":["a bag","a beefburger"],"receivingConcepts":[]}
+{"concept":"the shelf","rel":"AtLocation","emittingConcepts":["a bag","a bag of chocolate chips","baking soda"],"receivingConcepts":[]}
+{"concept":"a train","rel":"AtLocation","emittingConcepts":["a baggage trunk","a bar service"],"receivingConcepts":[]}
+{"concept":"the freezer","rel":"AtLocation","emittingConcepts":["bags of frozen peas","a beer mug"],"receivingConcepts":[]}
+{"concept":"baked beans","rel":"AtLocation","receivingConcepts":["a can","the cupboard"],"emittingConcepts":[]}
+{"concept":"baked potatoes","rel":"AtLocation","receivingConcepts":["the oven","a steak house"],"emittingConcepts":[]}
+{"concept":"New Orleans","rel":"AtLocation","emittingConcepts":["a balcony","a balcony railing"],"receivingConcepts":[]}
+{"concept":"an opera house","rel":"AtLocation","emittingConcepts":["a balcony","a bass baritone"],"receivingConcepts":[]}
+{"concept":"a theatre","rel":"AtLocation","emittingConcepts":["a balcony","a balcony seat"],"receivingConcepts":[]}
+{"concept":"a balcony railing","rel":"AtLocation","receivingConcepts":["an apartment building","an apartment complex","a balcony","New Orleans","a theater","the theatre"],"emittingConcepts":[]}
+{"concept":"history","rel":"AtLocation","emittingConcepts":["a bald eagle","a beaver"],"receivingConcepts":[]}
+{"concept":"nature","rel":"AtLocation","emittingConcepts":["a bald eagle","a beaver"],"receivingConcepts":[]}
+{"concept":"a pine tree","rel":"AtLocation","emittingConcepts":["a bald eagle","a bee"],"receivingConcepts":[]}
+{"concept":"a gymnasium","rel":"AtLocation","emittingConcepts":["a ball","a basketball"],"receivingConcepts":[]}
+{"concept":"balloons","rel":"AtLocation","receivingConcepts":["the air","Disneyland","fairgrounds","the sky"],"emittingConcepts":[]}
+{"concept":"a backpack","rel":"AtLocation","emittingConcepts":["a ballpoint pen","bandaids","beef jerky","belongings"],"receivingConcepts":[]}
+{"concept":"a banana","rel":"AtLocation","receivingConcepts":["a monkey's hand","a pantry","your stomach"],"emittingConcepts":[]}
+{"concept":"a banker","rel":"AtLocation","receivingConcepts":["a city","a country club","a dark suit","Michigan","a monopoly game","wall street"],"emittingConcepts":[]}
+{"concept":"a barbecue","rel":"AtLocation","receivingConcepts":["austrailia","Australia","Detroit","a garage","a Michigan park","a retail store"],"emittingConcepts":[]}
+{"concept":"a barbecue restaurant","rel":"AtLocation","receivingConcepts":["Austin, Texas","a commercial building","the deep south","the south","Texas"],"emittingConcepts":[]}
+{"concept":"a small town","rel":"AtLocation","emittingConcepts":["a barber shop","a barbershop"],"receivingConcepts":[]}
+{"concept":"a baritone","rel":"AtLocation","receivingConcepts":["a case","a chior","a singing group"],"emittingConcepts":[]}
+{"concept":"a bar stool","rel":"AtLocation","receivingConcepts":["a drunker","a kitchen","a restaurant","a row","a saloon or cocktail lounge","a tavern"],"emittingConcepts":[]}
+{"concept":"a tavern","rel":"AtLocation","emittingConcepts":["a bar stool","a beer mug"],"receivingConcepts":[]}
+{"concept":"america","rel":"AtLocation","emittingConcepts":["a baseball","a beaver"],"receivingConcepts":[]}
+{"concept":"a ballpark","rel":"AtLocation","emittingConcepts":["baseball fans","baseball players"],"receivingConcepts":[]}
+{"concept":"store","rel":"AtLocation","emittingConcepts":["a basketball","a basket"],"receivingConcepts":[]}
+{"concept":"a basket","rel":"AtLocation","receivingConcepts":["church","the Easter Bunny's hand","a home","a home decor store","the kitchen","an office","a sewing room","store","a wicker store"],"emittingConcepts":[]}
+{"concept":"a jazz band","rel":"AtLocation","emittingConcepts":["a bass","a bass fiddle"],"receivingConcepts":[]}
+{"concept":"a hotel room","rel":"AtLocation","emittingConcepts":["a bath","a bed"],"receivingConcepts":[]}
+{"concept":"a bath shower","rel":"AtLocation","receivingConcepts":["a bath room","a bathtub","a house","toilet"],"emittingConcepts":[]}
+{"concept":"Batman","rel":"AtLocation","receivingConcepts":["Comic book","Gotham"],"emittingConcepts":[]}
+{"concept":"a batten","rel":"AtLocation","receivingConcepts":["a band","a fabic store","a floor","a hatch","a house","a pirate ship","a ship","a theater"],"emittingConcepts":[]}
+{"concept":"a battery","rel":"AtLocation","receivingConcepts":["a cell phone","a hearing aid"],"emittingConcepts":[]}
+{"concept":"a kid's room","rel":"AtLocation","emittingConcepts":["a bean bag chair","a beanbag chair"],"receivingConcepts":[]}
+{"concept":"a bear","rel":"AtLocation","receivingConcepts":["the countryside","a drawer","a meadow","a park"],"emittingConcepts":[]}
+{"concept":"australia","rel":"AtLocation","emittingConcepts":["a beaver","auslan","ball's pyramid"],"receivingConcepts":[]}
+{"concept":"a beer mug","rel":"AtLocation","receivingConcepts":["an alcaholics hand","a college boy","a drunks hand","the freezer","the freezer getting cold","your kitchen cabinet","a pub","a tavern"],"emittingConcepts":[]}
+{"concept":"a bees' nest","rel":"AtLocation","receivingConcepts":["a beekeeper's hive","a tree"],"emittingConcepts":[]}
+{"concept":"bells","rel":"AtLocation","receivingConcepts":["a cabinet","church"],"emittingConcepts":[]}
+{"concept":"a belt highway","rel":"AtLocation","receivingConcepts":["a city","a large city"],"emittingConcepts":[]}
+{"concept":"24 sussex drive","rel":"AtLocation","receivingConcepts":["ontario","ottawa"],"emittingConcepts":[]}
+{"concept":"ontario","rel":"AtLocation","emittingConcepts":["24 sussex drive","aura"],"receivingConcepts":[]}
+{"concept":"60 minutes","rel":"AtLocation","receivingConcepts":["new york","new york city"],"emittingConcepts":[]}
+{"concept":"new york","rel":"AtLocation","emittingConcepts":["60 minutes","bayonne bridge"],"receivingConcepts":[]}
+{"concept":"caribbean sea","rel":"AtLocation","emittingConcepts":["abc islands","american revolutionary war","antigua","barbuda"],"receivingConcepts":[]}
+{"concept":"abu","rel":"AtLocation","receivingConcepts":["honshu","japan"],"emittingConcepts":[]}
+{"concept":"japan","rel":"AtLocation","emittingConcepts":["abu","aria"],"receivingConcepts":[]}
+{"concept":"acadian french","rel":"AtLocation","receivingConcepts":["maine","new brunswick","nova scotia","prince edward island","united states"],"emittingConcepts":[]}
+{"concept":"united states","rel":"AtLocation","emittingConcepts":["acadian french","aetna","afro seminole creole","agco","alcon","american english","amway","arches national park","automatic data processing","badlands national park","bear lake","belk","belmont stakes"],"receivingConcepts":[]}
+{"concept":"acc","rel":"AtLocation","receivingConcepts":["india","mumbai"],"emittingConcepts":[]}
+{"concept":"india","rel":"AtLocation","emittingConcepts":["acc","kokborok"],"receivingConcepts":[]}
+{"concept":"atlantic ocean","rel":"AtLocation","emittingConcepts":["acklins","american civil war","american revolutionary war"],"receivingConcepts":[]}
+{"concept":"germany","rel":"AtLocation","emittingConcepts":["adidas","alemannic german","battle of minden"],"receivingConcepts":[]}
+{"concept":"aeolic greek","rel":"AtLocation","receivingConcepts":["aeolis","thessaly"],"emittingConcepts":[]}
+{"concept":"thessaly","rel":"AtLocation","emittingConcepts":["aeolic greek","battle of cynoscephalae"],"receivingConcepts":[]}
+{"concept":"afrikaans","rel":"AtLocation","receivingConcepts":["namibia","south africa"],"emittingConcepts":[]}
+{"concept":"afro seminole creole","rel":"AtLocation","receivingConcepts":["mexico","united states"],"emittingConcepts":[]}
+{"concept":"agent provocateur","rel":"AtLocation","receivingConcepts":["london","united kingdom"],"emittingConcepts":[]}
+{"concept":"london","rel":"AtLocation","emittingConcepts":["agent provocateur","aon","baker street"],"receivingConcepts":[]}
+{"concept":"united kingdom","rel":"AtLocation","emittingConcepts":["agent provocateur","aon","arnold","audiogenic","baker street"],"receivingConcepts":[]}
+{"concept":"agora","rel":"AtLocation","receivingConcepts":["kazan","russia"],"emittingConcepts":[]}
+{"concept":"agro","rel":"AtLocation","receivingConcepts":["kiev","ukraine"],"emittingConcepts":[]}
+{"concept":"mars","rel":"AtLocation","emittingConcepts":["airy","barnard","becquerel","beer"],"receivingConcepts":[]}
+{"concept":"aker","rel":"AtLocation","receivingConcepts":["norway","oslo"],"emittingConcepts":[]}
+{"concept":"norway","rel":"AtLocation","emittingConcepts":["aker","bellona foundation"],"receivingConcepts":[]}
+{"concept":"oslo","rel":"AtLocation","emittingConcepts":["aker","bellona foundation"],"receivingConcepts":[]}
+{"concept":"albertina","rel":"AtLocation","receivingConcepts":["austria","vienna"],"emittingConcepts":[]}
+{"concept":"austria","rel":"AtLocation","emittingConcepts":["albertina","alemannic german","austrian german"],"receivingConcepts":[]}
+{"concept":"vienna","rel":"AtLocation","emittingConcepts":["albertina","battle of wagram"],"receivingConcepts":[]}
+{"concept":"alcon","rel":"AtLocation","receivingConcepts":["switzerland","united states"],"emittingConcepts":[]}
+{"concept":"switzerland","rel":"AtLocation","emittingConcepts":["alcon","alemannic german","aletschhorn","arctic"],"receivingConcepts":[]}
+{"concept":"alemannic german","rel":"AtLocation","receivingConcepts":["austria","france","germany","italy","liechtenstein","piedmont","swabia","switzerland","venezuela"],"emittingConcepts":[]}
+{"concept":"france","rel":"AtLocation","emittingConcepts":["alemannic german","alpine","ardennes","battle of ivry","battle of poitiers","battle of verdun","beaujolais"],"receivingConcepts":[]}
+{"concept":"italy","rel":"AtLocation","emittingConcepts":["alemannic german","austrian german","battle of magenta","battle of solferino"],"receivingConcepts":[]}
+{"concept":"aletschhorn","rel":"AtLocation","receivingConcepts":["switzerland","valais"],"emittingConcepts":[]}
+{"concept":"aleutian islands","rel":"AtLocation","receivingConcepts":["bering sea","pacific ocean"],"emittingConcepts":[]}
+{"concept":"pacific ocean","rel":"AtLocation","emittingConcepts":["aleutian islands","anuta","austral islands"],"receivingConcepts":[]}
+{"concept":"alkaloid","rel":"AtLocation","receivingConcepts":["republic of macedonia","skopje"],"emittingConcepts":[]}
+{"concept":"alpine","rel":"AtLocation","receivingConcepts":["dieppe","france"],"emittingConcepts":[]}
+{"concept":"alta","rel":"AtLocation","receivingConcepts":["athens","greece"],"emittingConcepts":[]}
+{"concept":"ethiopia","rel":"AtLocation","emittingConcepts":["alu","amharic","arabic"],"receivingConcepts":[]}
+{"concept":"amdo tibetan","rel":"AtLocation","receivingConcepts":["china","gansu","qinghai","sichuan","tibet"],"emittingConcepts":[]}
+{"concept":"american civil war","rel":"AtLocation","receivingConcepts":["atlantic ocean","northeastern united states","southern united states","western united states"],"emittingConcepts":[]}
+{"concept":"american revolutionary war","rel":"AtLocation","receivingConcepts":["atlantic ocean","balearic islands","caribbean sea","gibraltar","indian subcontinent"],"emittingConcepts":[]}
+{"concept":"american sign language","rel":"AtLocation","receivingConcepts":["central africa","north america","west africa"],"emittingConcepts":[]}
+{"concept":"amway","rel":"AtLocation","receivingConcepts":["michigan","united states"],"emittingConcepts":[]}
+{"concept":"anarchy","rel":"AtLocation","receivingConcepts":["england","normandy"],"emittingConcepts":[]}
+{"concept":"anfield","rel":"AtLocation","receivingConcepts":["england","liverpool"],"emittingConcepts":[]}
+{"concept":"aon","rel":"AtLocation","receivingConcepts":["london","united kingdom"],"emittingConcepts":[]}
+{"concept":"aqua","rel":"AtLocation","receivingConcepts":["chicago","illinois"],"emittingConcepts":[]}
+{"concept":"arabic","rel":"AtLocation","receivingConcepts":["arab league","chad","eritrea","ethiopia","israel","kenya","madagascar","mali","mesopotamian arabic","mozambique","niger","senegal","south sudan","tanzania","turkey"],"emittingConcepts":[]}
+{"concept":"israel","rel":"AtLocation","emittingConcepts":["arabic","gulf war"],"receivingConcepts":[]}
+{"concept":"turkey","rel":"AtLocation","emittingConcepts":["arabic","battle of issus"],"receivingConcepts":[]}
+{"concept":"aral sea","rel":"AtLocation","receivingConcepts":["central asia","kazakhstan"],"emittingConcepts":[]}
+{"concept":"arcadocypriot greek","rel":"AtLocation","receivingConcepts":["arcadia","cyprus"],"emittingConcepts":[]}
+{"concept":"arches national park","rel":"AtLocation","receivingConcepts":["united states","utah"],"emittingConcepts":[]}
+{"concept":"arctic","rel":"AtLocation","receivingConcepts":["hong kong","switzerland"],"emittingConcepts":[]}
+{"concept":"ardennes","rel":"AtLocation","receivingConcepts":["ardennes","belgium","champagne ardenne","france","luxembourg","wallonia"],"emittingConcepts":["ardennes","battle of bulge"]}
+{"concept":"belgium","rel":"AtLocation","emittingConcepts":["ardennes","battle of fontenoy","c"],"receivingConcepts":[]}
+{"concept":"luxembourg","rel":"AtLocation","emittingConcepts":["ardennes","battle of bulge"],"receivingConcepts":[]}
+{"concept":"aria","rel":"AtLocation","receivingConcepts":["japan","nagoya"],"emittingConcepts":[]}
+{"concept":"arvanitika","rel":"AtLocation","receivingConcepts":["andros","attica","euboea","greece","peloponnese","saronic islands"],"emittingConcepts":[]}
+{"concept":"attica","rel":"AtLocation","emittingConcepts":["arvanitika","attic greek"],"receivingConcepts":[]}
+{"concept":"indian ocean","rel":"AtLocation","emittingConcepts":["ashmore and cartier islands","barrow island"],"receivingConcepts":[]}
+{"concept":"moon","rel":"AtLocation","emittingConcepts":["atlas","banting"],"receivingConcepts":[]}
+{"concept":"attic greek","rel":"AtLocation","receivingConcepts":["attica","lemnos"],"emittingConcepts":[]}
+{"concept":"aura","rel":"AtLocation","receivingConcepts":["ontario","toronto"],"emittingConcepts":[]}
+{"concept":"aurora","rel":"AtLocation","receivingConcepts":["florida","miami","new york city"],"emittingConcepts":[]}
+{"concept":"austrian german","rel":"AtLocation","receivingConcepts":["austria","italy"],"emittingConcepts":[]}
+{"concept":"automatic data processing","rel":"AtLocation","receivingConcepts":["new jersey","united states"],"emittingConcepts":[]}
+{"concept":"new jersey","rel":"AtLocation","emittingConcepts":["automatic data processing","bayonne bridge"],"receivingConcepts":[]}
+{"concept":"avision","rel":"AtLocation","receivingConcepts":["hsinchu","taiwan"],"emittingConcepts":[]}
+{"concept":"badlands national park","rel":"AtLocation","receivingConcepts":["south dakota","united states"],"emittingConcepts":[]}
+{"concept":"baker street","rel":"AtLocation","receivingConcepts":["london","united kingdom","westminster"],"emittingConcepts":[]}
+{"concept":"bankia","rel":"AtLocation","receivingConcepts":["madrid","valencia"],"emittingConcepts":[]}
+{"concept":"battle of austerlitz","rel":"AtLocation","receivingConcepts":["czech republic","moravia"],"emittingConcepts":[]}
+{"concept":"battle of bulge","rel":"AtLocation","receivingConcepts":["ardennes","luxembourg"],"emittingConcepts":[]}
+{"concept":"battle of caporetto","rel":"AtLocation","receivingConcepts":["austria hungary","slovenia"],"emittingConcepts":[]}
+{"concept":"battle of coral sea","rel":"AtLocation","receivingConcepts":["coral sea","new guinea","solomon islands"],"emittingConcepts":[]}
+{"concept":"battle of fontenoy","rel":"AtLocation","receivingConcepts":["belgium","tournai"],"emittingConcepts":[]}
+{"concept":"battle of hohenlinden","rel":"AtLocation","receivingConcepts":["hohenlinden","munich"],"emittingConcepts":[]}
+{"concept":"battle of ivry","rel":"AtLocation","receivingConcepts":["eure","france","ivry la bataille"],"emittingConcepts":[]}
+{"concept":"battle of jutland","rel":"AtLocation","receivingConcepts":["denmark","north sea"],"emittingConcepts":[]}
+{"concept":"battle of minden","rel":"AtLocation","receivingConcepts":["germany","minden"],"emittingConcepts":[]}
+{"concept":"battle of pharsalus","rel":"AtLocation","receivingConcepts":["farsala","farsala","greece"],"emittingConcepts":[]}
+{"concept":"farsala","rel":"AtLocation","emittingConcepts":["battle of pharsalus","battle of pharsalus"],"receivingConcepts":[]}
+{"concept":"battle of philippi","rel":"AtLocation","receivingConcepts":["macedonia","philippi"],"emittingConcepts":[]}
+{"concept":"battle of plataea","rel":"AtLocation","receivingConcepts":["greece","plataea"],"emittingConcepts":[]}
+{"concept":"battle of poitiers","rel":"AtLocation","receivingConcepts":["france","poitiers"],"emittingConcepts":[]}
+{"concept":"battle of solferino","rel":"AtLocation","receivingConcepts":["italy","lombardy","solferino"],"emittingConcepts":[]}
+{"concept":"battle of somme","rel":"AtLocation","receivingConcepts":["pas de calais","somme"],"emittingConcepts":[]}
+{"concept":"battle of tannenberg","rel":"AtLocation","receivingConcepts":["east prussia","olsztyn","poland"],"emittingConcepts":[]}
+{"concept":"battle of thermopylae","rel":"AtLocation","receivingConcepts":["thermopylae","greece","thermopylae"],"emittingConcepts":[]}
+{"concept":"thermopylae","rel":"AtLocation","emittingConcepts":["battle of thermopylae","battle of thermopylae"],"receivingConcepts":[]}
+{"concept":"battle of verdun","rel":"AtLocation","receivingConcepts":["verdun","france","verdun"],"emittingConcepts":[]}
+{"concept":"verdun","rel":"AtLocation","emittingConcepts":["battle of verdun","battle of verdun"],"receivingConcepts":[]}
+{"concept":"bayonne bridge","rel":"AtLocation","receivingConcepts":["new jersey","new york","staten island"],"emittingConcepts":[]}
+{"concept":"bellona foundation","rel":"AtLocation","receivingConcepts":["norway","oslo"],"emittingConcepts":[]}
+{"concept":"bell tower","rel":"AtLocation","receivingConcepts":["alberta","edmonton"],"emittingConcepts":[]}
+{"concept":"blue line","rel":"AtLocation","receivingConcepts":["boston","yokohama"],"emittingConcepts":[]}
+{"concept":"c","rel":"AtLocation","receivingConcepts":["belgium","düsseldorf"],"emittingConcepts":[]}
+{"concept":"gulf war","rel":"AtLocation","receivingConcepts":["israel","kuwait"],"emittingConcepts":[]}
+{"concept":"kokborok","rel":"AtLocation","receivingConcepts":["india","mizoram"],"emittingConcepts":[]}
