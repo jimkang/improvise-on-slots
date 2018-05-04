@@ -5,10 +5,9 @@
 {"concept":"a normal human body","rel":"PartOf","emittingConcepts":["an anus","10 fingers","10 toes","1 abdomen","1 back","1 belly button","1 chest","1 head","1 neck","1 torso","2 feet","2 legs","2 shoulders","2 thighs"],"receivingConcepts":[]}
 {"concept":"An arm","rel":"PartOf","receivingConcepts":["a body","a person"],"emittingConcepts":[]}
 {"concept":"a body","rel":"PartOf","emittingConcepts":["An arm","an anus","an appendange","an arse","an artery"],"receivingConcepts":[]}
-{"concept":"Austin","rel":"PartOf","receivingConcepts":["Texas","Texas"],"emittingConcepts":[]}
-{"concept":"Texas","rel":"PartOf","emittingConcepts":["Austin","Abilene","Amarillo","Arlington","Austin","Beaumont","The Alamo"],"receivingConcepts":[]}
+{"concept":"Texas","rel":"PartOf","emittingConcepts":["Austin","Abilene","Amarillo","Arlington","Beaumont","The Alamo"],"receivingConcepts":[]}
 {"concept":"September","rel":"PartOf","emittingConcepts":["9 11","American Indian Day","autumnal equinox"],"receivingConcepts":[]}
-{"concept":"Germany","rel":"PartOf","emittingConcepts":["Aachen","Bavaria","Berlin","Bavaria"],"receivingConcepts":[]}
+{"concept":"Germany","rel":"PartOf","emittingConcepts":["Aachen","Bavaria","Berlin"],"receivingConcepts":[]}
 {"concept":"Denmark","rel":"PartOf","emittingConcepts":["Aalborg","Arhus"],"receivingConcepts":[]}
 {"concept":"Switzerland","rel":"PartOf","emittingConcepts":["Aare","Alps","Basel"],"receivingConcepts":[]}
 {"concept":"Iran","rel":"PartOf","emittingConcepts":["Abadan","Bam"],"receivingConcepts":[]}
@@ -27,7 +26,7 @@
 {"concept":"Italy","rel":"PartOf","emittingConcepts":["Abruzzi","Adige","Alps","Anzio","Apennines","Appian Way","Arno","Basilicata","Bay of Naples"],"receivingConcepts":[]}
 {"concept":"Mediterranean","rel":"PartOf","emittingConcepts":["Abukir","Adriatic","Aegean"],"receivingConcepts":[]}
 {"concept":"Turkey","rel":"PartOf","emittingConcepts":["Abydos","Adana","Aegospotami","Ankara","Antalya","Antioch","Ararat","Aras"],"receivingConcepts":[]}
-{"concept":"Maine","rel":"PartOf","emittingConcepts":["Acadia National Park","Augusta","Bangor","Bangor"],"receivingConcepts":[]}
+{"concept":"Maine","rel":"PartOf","emittingConcepts":["Acadia National Park","Augusta","Bangor"],"receivingConcepts":[]}
 {"concept":"Mexico","rel":"PartOf","emittingConcepts":["Acapulco","Ahuehuete","Bay of Campeche"],"receivingConcepts":[]}
 {"concept":"monster","rel":"PartOf","emittingConcepts":["acardia","acephalia"],"receivingConcepts":[]}
 {"concept":"accelerator","rel":"PartOf","receivingConcepts":["airplane","car","fuel system"],"emittingConcepts":[]}
@@ -38,18 +37,15 @@
 {"concept":"Aconcagua","rel":"PartOf","receivingConcepts":["Andes","Argentina"],"emittingConcepts":[]}
 {"concept":"Andes","rel":"PartOf","emittingConcepts":["Aconcagua","Ancohuma"],"receivingConcepts":["Argentina","Bolivia","Chile","Colombia","Ecuador","Peru"]}
 {"concept":"Argentina","rel":"PartOf","emittingConcepts":["Aconcagua","Andes"],"receivingConcepts":["South America"]}
-{"concept":"acorn","rel":"PartOf","receivingConcepts":["oak","oak","oak"],"emittingConcepts":[]}
-{"concept":"oak","rel":"PartOf","emittingConcepts":["acorn","acorn","acorn"],"receivingConcepts":[]}
 {"concept":"auditory system","rel":"PartOf","emittingConcepts":["acoustic nerve","auditory apparatus"],"receivingConcepts":[]}
 {"concept":"Acre","rel":"PartOf","receivingConcepts":["Brazil","Israel"],"emittingConcepts":[]}
 {"concept":"Brazil","rel":"PartOf","emittingConcepts":["Acre","Amazon","Araguaia","Belem","Belo Horizonte"],"receivingConcepts":[]}
 {"concept":"action","rel":"PartOf","receivingConcepts":["gun","keyboard"],"emittingConcepts":[]}
 {"concept":"gun","rel":"PartOf","emittingConcepts":["action","barrel"],"receivingConcepts":[]}
 {"concept":"active site","rel":"PartOf","receivingConcepts":["antibody","enzyme"],"emittingConcepts":[]}
-{"concept":"act","rel":"PartOf","receivingConcepts":["ballet","opera","play","play"],"emittingConcepts":[]}
+{"concept":"act","rel":"PartOf","receivingConcepts":["ballet","opera","play"],"emittingConcepts":[]}
 {"concept":"ballet","rel":"PartOf","emittingConcepts":["act","ballet shoes"],"receivingConcepts":[]}
 {"concept":"opera","rel":"PartOf","emittingConcepts":["act","aria"],"receivingConcepts":[]}
-{"concept":"play","rel":"PartOf","emittingConcepts":["act","act"],"receivingConcepts":[]}
 {"concept":"Adams","rel":"PartOf","receivingConcepts":["Cascades","Washington"],"emittingConcepts":[]}
 {"concept":"Apocrypha","rel":"PartOf","emittingConcepts":["Additions to Esther","Baruch","Bel and the Dragon","Ben Sira"],"receivingConcepts":["Old Testament"]}
 {"concept":"Antarctica","rel":"PartOf","emittingConcepts":["Adelie Coast","Admiralty Range","Antarctic Peninsula","Antarctica"],"receivingConcepts":["Antarctic","Antarctica"]}
@@ -84,8 +80,7 @@
 {"concept":"Alaska","rel":"PartOf","receivingConcepts":["United States","the United States","the U.S"],"emittingConcepts":["Alaskan pipeline","Alaska Peninsula","Alaska Range","Aleutian Islands","Alexander Archipelago","Anchorage"]}
 {"concept":"Balkan Peninsula","rel":"PartOf","emittingConcepts":["Albania","Balkan country","Balkans","Balkan Wars"],"receivingConcepts":["Europe"]}
 {"concept":"Albany","rel":"PartOf","receivingConcepts":["Georgia","New York"],"emittingConcepts":[]}
-{"concept":"Alberta","rel":"PartOf","receivingConcepts":["Canada","Canada"],"emittingConcepts":["Banff"]}
-{"concept":"Canada","rel":"PartOf","emittingConcepts":["Alberta","Alberta","Arctic Archipelago","Baffin Island"],"receivingConcepts":[]}
+{"concept":"Canada","rel":"PartOf","emittingConcepts":["Alberta","Arctic Archipelago","Baffin Island"],"receivingConcepts":[]}
 {"concept":"Syria","rel":"PartOf","emittingConcepts":["Aleppo","Al Ladhiqiyah"],"receivingConcepts":[]}
 {"concept":"Aleutian Islands","rel":"PartOf","receivingConcepts":["Alaska","Pacific"],"emittingConcepts":[]}
 {"concept":"Pacific","rel":"PartOf","emittingConcepts":["Aleutian Islands","Antarctic Ocean","Arafura Sea","Australasia","Austronesia","Bering Sea"],"receivingConcepts":[]}
@@ -118,7 +113,7 @@
 {"concept":"Netherlands","rel":"PartOf","emittingConcepts":["Amsterdam","Apeldoorn","Arnhem"],"receivingConcepts":[]}
 {"concept":"Amur","rel":"PartOf","receivingConcepts":["China","Russia"],"emittingConcepts":[]}
 {"concept":"China","rel":"PartOf","emittingConcepts":["Amur","Beijing","Anhui"],"receivingConcepts":[]}
-{"concept":"Russia","rel":"PartOf","emittingConcepts":["Amur","Astrakhan","Astrakhan"],"receivingConcepts":[]}
+{"concept":"Russia","rel":"PartOf","emittingConcepts":["Amur","Astrakhan"],"receivingConcepts":[]}
 {"concept":"amygdala","rel":"PartOf","receivingConcepts":["brain","limbic system","temporal lobe"],"emittingConcepts":[]}
 {"concept":"California","rel":"PartOf","emittingConcepts":["Anaheim","Bakersfield","Barstow","Berkeley"],"receivingConcepts":[]}
 {"concept":"anaphase","rel":"PartOf","receivingConcepts":["meiosis","mitosis"],"emittingConcepts":[]}
@@ -129,7 +124,7 @@
 {"concept":"Chile","rel":"PartOf","emittingConcepts":["Andes","Antofagasta","Atacama Desert"],"receivingConcepts":[]}
 {"concept":"Colombia","rel":"PartOf","emittingConcepts":["Andes","Arauca","Barranquilla","Cali"],"receivingConcepts":[]}
 {"concept":"Andorra","rel":"PartOf","receivingConcepts":["Europe","Iberian Peninsula"],"emittingConcepts":[]}
-{"concept":"Europe","rel":"PartOf","emittingConcepts":["Andorra","Austria-Hungary","Austria","Balkan Peninsula","Baltic State","Belarus","Belgium","Belgium"],"receivingConcepts":[]}
+{"concept":"Europe","rel":"PartOf","emittingConcepts":["Andorra","Austria-Hungary","Austria","Balkan Peninsula","Baltic State","Belarus","Belgium"],"receivingConcepts":[]}
 {"concept":"Venezuela","rel":"PartOf","emittingConcepts":["Angel","Arauca"],"receivingConcepts":[]}
 {"concept":"West Indies","rel":"PartOf","emittingConcepts":["Anguilla","Antilles","Bahamas"],"receivingConcepts":[]}
 {"concept":"an animal","rel":"PartOf","receivingConcepts":["an ecology","nature"],"emittingConcepts":[]}
@@ -145,7 +140,6 @@
 {"concept":"Antigua and Barbuda","rel":"PartOf","receivingConcepts":["Caribbean","Leeward Islands"],"emittingConcepts":["Antigua","Barbuda"]}
 {"concept":"Caribbean","rel":"PartOf","emittingConcepts":["Antigua and Barbuda","Bahamas","Barbados"],"receivingConcepts":[]}
 {"concept":"an antler","rel":"PartOf","receivingConcepts":["a deer","a moose"],"emittingConcepts":[]}
-{"concept":"Belgium","rel":"PartOf","emittingConcepts":["Antwerpen"],"receivingConcepts":["Europe","Europe"]}
 {"concept":"aperture","rel":"PartOf","receivingConcepts":["camera","eye","telescope"],"emittingConcepts":[]}
 {"concept":"arthropod","rel":"PartOf","emittingConcepts":["apodeme","arthromere"],"receivingConcepts":[]}
 {"concept":"endoskeleton","rel":"PartOf","emittingConcepts":["appendicular skeleton","arm bone","axial skeleton"],"receivingConcepts":[]}
@@ -166,11 +160,10 @@
 {"concept":"Oklahoma","rel":"PartOf","emittingConcepts":["Arkansas","Bartlesville"],"receivingConcepts":[]}
 {"concept":"armature","rel":"PartOf","receivingConcepts":["electric motor","electromagnet"],"emittingConcepts":[]}
 {"concept":"arm bone","rel":"PartOf","receivingConcepts":["arm","endoskeleton"],"emittingConcepts":[]}
-{"concept":"arm","rel":"PartOf","emittingConcepts":["arm bone"],"receivingConcepts":["armchair","body","homo","armchair","chair"]}
+{"concept":"arm","rel":"PartOf","emittingConcepts":["arm bone"],"receivingConcepts":["armchair","body","homo","chair"]}
 {"concept":"Transcaucasia","rel":"PartOf","emittingConcepts":["Armenia","Azerbaijan"],"receivingConcepts":[]}
 {"concept":"body armor","rel":"PartOf","emittingConcepts":["armet","basinet"],"receivingConcepts":[]}
 {"concept":"garment","rel":"PartOf","emittingConcepts":["armhole","band"],"receivingConcepts":[]}
-{"concept":"armchair","rel":"PartOf","emittingConcepts":["arm","arm"],"receivingConcepts":[]}
 {"concept":"body","rel":"PartOf","emittingConcepts":["arm","articulatory system"],"receivingConcepts":["address","narration","buffy vampire slayer"]}
 {"concept":"homo","rel":"PartOf","emittingConcepts":["arm","hand"],"receivingConcepts":[]}
 {"concept":"United States Army","rel":"PartOf","emittingConcepts":["Army High Performance Computing Research Center","Army Intelligence","Army National Guard"],"receivingConcepts":[]}
@@ -183,12 +176,10 @@
 {"concept":"Assyria","rel":"PartOf","emittingConcepts":["Assur"],"receivingConcepts":["Iraq","Mesopotamia"]}
 {"concept":"Iraq","rel":"PartOf","emittingConcepts":["Assur","Assyria","Babylonia","Baghdad","Basra","Al-Anbar"],"receivingConcepts":[]}
 {"concept":"Mesopotamia","rel":"PartOf","emittingConcepts":["Assyria","Babylonia","Babylon"],"receivingConcepts":[]}
-{"concept":"Astrakhan","rel":"PartOf","receivingConcepts":["Russia","Russia"],"emittingConcepts":[]}
 {"concept":"Atlanta","rel":"PartOf","receivingConcepts":["American Civil War","Georgia"],"emittingConcepts":[]}
 {"concept":"New Jersey","rel":"PartOf","emittingConcepts":["Atlantic City","Bayonne"],"receivingConcepts":[]}
 {"concept":"Atlas Mountains","rel":"PartOf","receivingConcepts":["Algeria","Morocco","Tunisia"],"emittingConcepts":[]}
-{"concept":"atom","rel":"PartOf","receivingConcepts":["chemical element","molecule","molecule"],"emittingConcepts":[]}
-{"concept":"molecule","rel":"PartOf","emittingConcepts":["atom","atom"],"receivingConcepts":[]}
+{"concept":"atom","rel":"PartOf","receivingConcepts":["chemical element","molecule"],"emittingConcepts":[]}
 {"concept":"a house","rel":"PartOf","emittingConcepts":["an attic","a basement"],"receivingConcepts":[]}
 {"concept":"external ear","rel":"PartOf","emittingConcepts":["auditory meatus","auricle"],"receivingConcepts":[]}
 {"concept":"Augusta","rel":"PartOf","receivingConcepts":["Georgia","Maine"],"emittingConcepts":[]}
@@ -197,28 +188,24 @@
 {"concept":"Austerlitz","rel":"PartOf","receivingConcepts":["Czech Republic","Napoleonic Wars"],"emittingConcepts":[]}
 {"concept":"Australian Alps","rel":"PartOf","receivingConcepts":["Australia","Great Dividing Range"],"emittingConcepts":[]}
 {"concept":"Australia","rel":"PartOf","emittingConcepts":["Australian Alps","Australia","Australian Desert","Australian state"],"receivingConcepts":["Australia","eastern hemisphere","southern hemisphere"]}
-{"concept":"autonomic nervous system","rel":"PartOf","emittingConcepts":["autonomic ganglion"],"receivingConcepts":["nervous system","peripheral nervous system","peripheral nervous system"]}
+{"concept":"autonomic nervous system","rel":"PartOf","emittingConcepts":["autonomic ganglion"],"receivingConcepts":["nervous system","peripheral nervous system"]}
 {"concept":"autumnal equinox","rel":"PartOf","receivingConcepts":["fall","September"],"emittingConcepts":[]}
 {"concept":"avoirdupois unit","rel":"PartOf","receivingConcepts":["avoirdupois","British Imperial System"],"emittingConcepts":[]}
 {"concept":"ax","rel":"PartOf","emittingConcepts":["ax handle","ax head"],"receivingConcepts":[]}
 {"concept":"axletree","rel":"PartOf","receivingConcepts":["carriage","cart","wagon"],"emittingConcepts":[]}
 {"concept":"Babylonia","rel":"PartOf","receivingConcepts":["Iraq","Mesopotamia"],"emittingConcepts":[]}
 {"concept":"backbone","rel":"PartOf","receivingConcepts":["book","net"],"emittingConcepts":[]}
-{"concept":"back","rel":"PartOf","receivingConcepts":["car seat","chair","torso","cello","chair"],"emittingConcepts":[]}
-{"concept":"chair","rel":"PartOf","emittingConcepts":["back","arm","back"],"receivingConcepts":[]}
+{"concept":"back","rel":"PartOf","receivingConcepts":["car seat","chair","torso","cello"],"emittingConcepts":[]}
+{"concept":"chair","rel":"PartOf","emittingConcepts":["back","arm"],"receivingConcepts":[]}
 {"concept":"Bad Lands","rel":"PartOf","receivingConcepts":["Nebraska","South Dakota"],"emittingConcepts":[]}
 {"concept":"Baffin Island","rel":"PartOf","receivingConcepts":["Arctic Ocean","Canada"],"emittingConcepts":[]}
 {"concept":"Arctic Ocean","rel":"PartOf","emittingConcepts":["Baffin Island","Barents Sea","Beaufort Sea"],"receivingConcepts":[]}
 {"concept":"Bahamas","rel":"PartOf","receivingConcepts":["Caribbean","West Indies"],"emittingConcepts":[]}
 {"concept":"Bahrain","rel":"PartOf","receivingConcepts":["Asia","Gulf States","Persian Gulf"],"emittingConcepts":[]}
-{"concept":"Bali","rel":"PartOf","receivingConcepts":["Indonesia","Indonesia"],"emittingConcepts":[]}
-{"concept":"Indonesia","rel":"PartOf","emittingConcepts":["Bali","Bali"],"receivingConcepts":[]}
 {"concept":"ball","rel":"PartOf","receivingConcepts":["hand","sole"],"emittingConcepts":[]}
 {"concept":"hand","rel":"PartOf","emittingConcepts":["ball","nagel"],"receivingConcepts":["homo"]}
 {"concept":"banana","rel":"PartOf","receivingConcepts":["dwarf banana","edible banana"],"emittingConcepts":[]}
-{"concept":"Bandung","rel":"PartOf","receivingConcepts":["Java","Java"],"emittingConcepts":[]}
-{"concept":"Java","rel":"PartOf","emittingConcepts":["Bandung","Bandung"],"receivingConcepts":[]}
-{"concept":"Bangor","rel":"PartOf","receivingConcepts":["Maine","Northern Ireland","Wales","Maine"],"emittingConcepts":[]}
+{"concept":"Bangor","rel":"PartOf","receivingConcepts":["Maine","Northern Ireland","Wales"],"emittingConcepts":[]}
 {"concept":"Northern Ireland","rel":"PartOf","emittingConcepts":["Bangor","Belfast"],"receivingConcepts":[]}
 {"concept":"Barbados","rel":"PartOf","receivingConcepts":["Barbados","Caribbean","Lesser Antilles"],"emittingConcepts":["Barbados"]}
 {"concept":"barb","rel":"PartOf","receivingConcepts":["arrowhead","barbed wire","hook","spear","vane"],"emittingConcepts":[]}
@@ -234,12 +221,10 @@
 {"concept":"World War II","rel":"PartOf","emittingConcepts":["Bataan","Battle of the Ardennes Bulge","Battle of Britain","Battle of Wake"],"receivingConcepts":[]}
 {"concept":"dwelling","rel":"PartOf","emittingConcepts":["bathroom","bedroom"],"receivingConcepts":[]}
 {"concept":"batter's box","rel":"PartOf","receivingConcepts":["baseball diamond","baseball field"],"emittingConcepts":[]}
-{"concept":"Bavaria","rel":"PartOf","receivingConcepts":["Germany","Germany"],"emittingConcepts":[]}
 {"concept":"bay","rel":"PartOf","receivingConcepts":["aircraft","sea","ship"],"emittingConcepts":[]}
 {"concept":"ship","rel":"PartOf","emittingConcepts":["bay","fin","log"],"receivingConcepts":[]}
 {"concept":"Bay of Campeche","rel":"PartOf","receivingConcepts":["Gulf of Mexico","Mexico"],"emittingConcepts":[]}
-{"concept":"Beacon Hill","rel":"PartOf","receivingConcepts":["Boston","Boston"],"emittingConcepts":[]}
-{"concept":"Boston","rel":"PartOf","emittingConcepts":["Beacon Hill","Back Bay","Beacon Hill"],"receivingConcepts":[]}
+{"concept":"Boston","rel":"PartOf","emittingConcepts":["Beacon Hill","Back Bay"],"receivingConcepts":[]}
 {"concept":"beard","rel":"PartOf","receivingConcepts":["adult male body","face","goat"],"emittingConcepts":[]}
 {"concept":"goat","rel":"PartOf","emittingConcepts":["beard","horn"],"receivingConcepts":[]}
 {"concept":"bed","rel":"PartOf","receivingConcepts":["bedroom","press"],"emittingConcepts":["bedstead"]}
@@ -257,8 +242,7 @@
 {"concept":"horn","rel":"PartOf","receivingConcepts":["bull","goat","ram"],"emittingConcepts":[]}
 {"concept":"taji","rel":"PartOf","emittingConcepts":["esansi","peterɔli"],"receivingConcepts":[]}
 {"concept":"echedoù","rel":"PartOf","emittingConcepts":["furlukin","gwerin","marcʼheg","rouanez"],"receivingConcepts":[]}
-{"concept":"arna","rel":"PartOf","receivingConcepts":["apiari","apiari"],"emittingConcepts":[]}
-{"concept":"apiari","rel":"PartOf","emittingConcepts":["arna","arna","buc","casera","rusc"],"receivingConcepts":[]}
+{"concept":"apiari","rel":"PartOf","emittingConcepts":["arna","buc","casera","rusc"],"receivingConcepts":[]}
 {"concept":"hlediště","rel":"PartOf","receivingConcepts":["divadlo","koncertní","kino","stadion"],"emittingConcepts":[]}
 {"concept":"divadlo","rel":"PartOf","emittingConcepts":["hlediště","jeviště"],"receivingConcepts":[]}
 {"concept":"luk","rel":"PartOf","emittingConcepts":["lučiště","tětiva"],"receivingConcepts":[]}
@@ -268,13 +252,9 @@
 {"concept":"eu","rel":"PartOf","emittingConcepts":["belgien","dänemark","deutschland","estland","finnland","frankreich","griechenland","grossbritannien","irland","italien","lettland","litauen","luxemburg","malta","niederlande","österreich","polen","portugal","schweden","slowakei","slowenien","spanien","tschechien","ungarn","zypern"],"receivingConcepts":[]}
 {"concept":"grubengas","rel":"PartOf","emittingConcepts":["carban","methangas","methan","methylwasserstoff"],"receivingConcepts":[]}
 {"concept":"grosse seen","rel":"PartOf","emittingConcepts":["eriesee","huronsee","michigansee","oberer see","ontariosee"],"receivingConcepts":[]}
-{"concept":"finger","rel":"PartOf","receivingConcepts":["körper"],"emittingConcepts":["nagel","nagel"]}
 {"concept":"körper","rel":"PartOf","emittingConcepts":["finger","herz"],"receivingConcepts":[]}
-{"concept":"nagel","rel":"PartOf","receivingConcepts":["finger","finger","hand"],"emittingConcepts":[]}
-{"concept":"skuld","rel":"PartOf","receivingConcepts":["norne","norne"],"emittingConcepts":[]}
-{"concept":"norne","rel":"PartOf","emittingConcepts":["skuld","skuld","urd","urd","werdandi","werdandi"],"receivingConcepts":[]}
-{"concept":"urd","rel":"PartOf","receivingConcepts":["norne","norne"],"emittingConcepts":[]}
-{"concept":"werdandi","rel":"PartOf","receivingConcepts":["norne","norne"],"emittingConcepts":[]}
+{"concept":"nagel","rel":"PartOf","receivingConcepts":["finger","hand"],"emittingConcepts":[]}
+{"concept":"norne","rel":"PartOf","emittingConcepts":["skuld","urd","werdandi"],"receivingConcepts":[]}
 {"concept":"χέρι","rel":"PartOf","emittingConcepts":["δαχτυλο","πηχησ"],"receivingConcepts":[]}
 {"concept":"a head","rel":"PartOf","emittingConcepts":["1 mouth","1 nose","2 ears","2 eyes","2 faces"],"receivingConcepts":[]}
 {"concept":"a patent","rel":"PartOf","emittingConcepts":["an abstract","an assignee"],"receivingConcepts":[]}
@@ -285,26 +265,20 @@
 {"concept":"rhyme","rel":"PartOf","emittingConcepts":["alliteration","assonance"],"receivingConcepts":[]}
 {"concept":"an ecosystem","rel":"PartOf","emittingConcepts":["All life","An animal"],"receivingConcepts":[]}
 {"concept":"amanda","rel":"PartOf","receivingConcepts":["danilo","pedros heart"],"emittingConcepts":[]}
-{"concept":"amino acid","rel":"PartOf","receivingConcepts":["protein","protein"],"emittingConcepts":[]}
-{"concept":"protein","rel":"PartOf","emittingConcepts":["amino acid","amino acid"],"receivingConcepts":[]}
 {"concept":"california","rel":"PartOf","emittingConcepts":["amrin county","bakersfield california"],"receivingConcepts":[]}
 {"concept":"angleterre","rel":"PartOf","emittingConcepts":["angleterre de l’ est","angleterre du nord est","angleterre du nord ouest","angleterre du sud est","angleterre du sud ouest"],"receivingConcepts":[]}
 {"concept":"protestant","rel":"PartOf","emittingConcepts":["anglican","baptist"],"receivingConcepts":[]}
-{"concept":"antecedent","rel":"PartOf","receivingConcepts":["conditional","conditional"],"emittingConcepts":[]}
-{"concept":"conditional","rel":"PartOf","emittingConcepts":["antecedent","antecedent"],"receivingConcepts":[]}
 {"concept":"a human","rel":"PartOf","emittingConcepts":["An asshold","An asshole","An attitude"],"receivingConcepts":[]}
 {"concept":"ice hockey","rel":"PartOf","emittingConcepts":["assist","backhand"],"receivingConcepts":[]}
 {"concept":"authorization","rel":"PartOf","receivingConcepts":["access control","budgeting"],"emittingConcepts":[]}
 {"concept":"automatic transmission","rel":"PartOf","emittingConcepts":["auto","automatic gearbox"],"receivingConcepts":[]}
-{"concept":"peripheral nervous system","rel":"PartOf","emittingConcepts":["autonomic nervous system","autonomic nervous system"],"receivingConcepts":[]}
-{"concept":"axiom","rel":"PartOf","receivingConcepts":["formal system","theory","formal system"],"emittingConcepts":[]}
-{"concept":"formal system","rel":"PartOf","emittingConcepts":["axiom","axiom"],"receivingConcepts":[]}
+{"concept":"axiom","rel":"PartOf","receivingConcepts":["formal system","theory"],"emittingConcepts":[]}
 {"concept":"gymnastics","rel":"PartOf","emittingConcepts":["bars","beam"],"receivingConcepts":[]}
 {"concept":"bumper","rel":"PartOf","receivingConcepts":["automobile","auto"],"emittingConcepts":[]}
 {"concept":"south park","rel":"PartOf","emittingConcepts":["200","201","4th grade"],"receivingConcepts":[]}
 {"concept":"samtskhe javakheti","rel":"PartOf","emittingConcepts":["abastumani","akhalkalaki","akhaltsikhe"],"receivingConcepts":[]}
 {"concept":"castile and león","rel":"PartOf","emittingConcepts":["acebedo","burgos"],"receivingConcepts":[]}
-{"concept":"asturias","rel":"PartOf","emittingConcepts":["aces","avilés","avilés","ballota","bayas","grandas"],"receivingConcepts":[]}
+{"concept":"asturias","rel":"PartOf","emittingConcepts":["aces","avilés","ballota","bayas","grandas"],"receivingConcepts":[]}
 {"concept":"afrihili","rel":"PartOf","receivingConcepts":["constructed language","international auxiliary language"],"emittingConcepts":[]}
 {"concept":"new york","rel":"PartOf","emittingConcepts":["afton","amenia","amsterdam","hurley"],"receivingConcepts":[]}
 {"concept":"rhône alpes","rel":"PartOf","emittingConcepts":["ain","ardèche"],"receivingConcepts":[]}
@@ -333,7 +307,7 @@
 {"concept":"england","rel":"PartOf","emittingConcepts":["ashfield","aylesbury vale","basingstoke and deane","bassetlaw"],"receivingConcepts":[]}
 {"concept":"nottinghamshire","rel":"PartOf","emittingConcepts":["ashfield","bassetlaw"],"receivingConcepts":[]}
 {"concept":"austrian german","rel":"PartOf","receivingConcepts":["german language","standard german"],"emittingConcepts":[]}
-{"concept":"avilés","rel":"PartOf","receivingConcepts":["asturias","avilés","asturias","avilés"],"emittingConcepts":["avilés","avilés"]}
+{"concept":"avilés","rel":"PartOf","receivingConcepts":["asturias","avilés"],"emittingConcepts":["avilés"]}
 {"concept":"aylesbury vale","rel":"PartOf","receivingConcepts":["aylesbury","buckinghamshire","england"],"emittingConcepts":[]}
 {"concept":"buffy vampire slayer","rel":"PartOf","emittingConcepts":["bad eggs","bad girls","becoming","body"],"receivingConcepts":[]}
 {"concept":"bairiki","rel":"PartOf","receivingConcepts":["gilbert islands","tarawa"],"emittingConcepts":[]}

@@ -1,3 +1,5 @@
+GETOFFSETS = node_modules/.bin/get-file-line-offsets-in-json 
+
 test:
 	node tests/improvise-tests.js
 
@@ -7,23 +9,15 @@ pushall:
 prettier:
 	prettier --single-quote --write "**/*.js"
 
-build-category-file-offsets:
-	node node_modules/.bin/get-file-line-offsets-in-json data/categories.txt > data/categories-line-offsets.json
-	node node_modules/.bin/get-file-line-offsets-in-json data/parts-categories.txt > data/parts-categories-line-offsets.json
+build-file-offsets:
+	node $(GETOFFSETS) data/categories.txt > data/categories-line-offsets.json
+	node $(GETOFFSETS) data/parts-categories.txt > data/parts-categories-line-offsets.json
+	node $(GETOFFSETS) data/conceptnet/atlocation-relmaps.ndjson > data/conceptnet/atlocation-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/capableof-relmaps.ndjson > data/conceptnet/capableof-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/causes-relmaps.ndjson > data/conceptnet/causes-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/hasa-relmaps.ndjson > data/conceptnet/hasa-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/partof-relmaps.ndjson > data/conceptnet/partof-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/usedfor-relmaps.ndjson > data/conceptnet/usedfor-relmaps-offsets.json
 
-save-part-of-relationships:
-	node tools/get-conceptnet-relationship.js PartOf > data/conceptnet/partof-relationships.json
-
-save-has-a-relationships:
-	node tools/get-conceptnet-relationship.js HasA > data/conceptnet/hasa-relationships.json
-
-save-used-for-relationships:
-	node tools/get-conceptnet-relationship.js UsedFor > data/conceptnet/usedfor-relationships.json
-save-capable-of-relationships:
-	node tools/get-conceptnet-relationship.js CapableOf > data/conceptnet/capableof-relationships.json
-save-at-location-relationships:
-	node tools/get-conceptnet-relationship.js AtLocation > data/conceptnet/atlocation-relationships.json
-save-causes-relationships:
-	node tools/get-conceptnet-relationship.js Causes > data/conceptnet/causes-relationships.json
-
-# TODO: The rest.
+#save-part-of-relationships:
+#	node tools/get-conceptnet-relationship.js PartOf > data/conceptnet/partof-relationships.json

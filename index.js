@@ -9,7 +9,7 @@ var jsonfile = require('jsonfile');
 var GetASetOfWikipediaPages = require('./sets/get-a-set-of-wikipedia-pages');
 var GetASetOfRelatedWords = require('./sets/get-a-set-of-related-words');
 var GetASetOfRatings = require('./sets/get-a-set-of-ratings');
-var GetASetOfConcepts = require('./sets/get-a-set-of-concepts');
+var GetASetOfConceptRelationships = require('./sets/get-a-set-of-concept-relationships');
 
 var allCategoriesOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
@@ -105,14 +105,18 @@ function Improvise({ seed, wordnikAPIKey }) {
       fillSlots: fillSlotsInOrder,
       getTitleForSlots: getTitleForRankings,
       valueType: 'ranking'
-    },
-    'conceptnet-parts': {
-      getASet: GetASetOfConcepts({ probable, relationshipPath: 'r/PartOf' }),
-      fillSlots,
-      getTitleForSlots,
-      valueType: 'enum'
     }
   };
+
+  ['atlocation', 'capableof', 'causes', 'hasa', 'partof', 'usedfor'].forEach(
+    addToKitMap
+  );
+
+  function addToKitMap(relationship) {
+    improvMethodKits[`conceptnet-${relationship}`] = kitForConceptMethod(
+      relationship
+    );
+  }
 
   var methodTable = probable.createTableFromSizes([
     [4, 'wikipedia-categories'],
@@ -213,6 +217,15 @@ function Improvise({ seed, wordnikAPIKey }) {
     return `What are the most ${theme} ${
       canonicalizer.getSingularAndPluralForms(keyType)[1]
     }? Here they are ranked!`;
+  }
+
+  function kitForConceptMethod(relationship) {
+    return {
+      getASet: GetASetOfConceptRelationships({ probable, relationship }),
+      fillSlots,
+      getTitleForSlots,
+      valueType: 'enum'
+    };
   }
 }
 

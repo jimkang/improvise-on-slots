@@ -13,27 +13,32 @@ if (process.argv.length < 3) {
 var relationshipsByConcept = {};
 var relationshipsFile = process.argv[2];
 
-fs.createReadStream(relationshipsFile)
-// .pipe(process.stdout)
-   .pipe(ndjson.parse())
-   .on('data', storeRelationship)
-   .on('end', printDictEntries);
+fs
+  .createReadStream(relationshipsFile)
+  // .pipe(process.stdout)
+  .pipe(ndjson.parse())
+  .on('data', storeRelationship)
+  .on('end', printDictEntries);
 
 function storeRelationship(entry) {
   addValueToRelationshipMap(true, entry);
   addValueToRelationshipMap(false, entry);
-  debugger
+  debugger;
 }
 
 function addValueToRelationshipMap(useEmittingToReceivingDirection, entry) {
   const srcProp = useEmittingToReceivingDirection ? 'start' : 'end';
   const targetProp = useEmittingToReceivingDirection ? 'end' : 'start';
-  const sourcesProp = useEmittingToReceivingDirection ? 'emittingConcepts' : 'receivingConcepts';
-  const targetsProp = useEmittingToReceivingDirection ? 'receivingConcepts' : 'emittingConcepts';
-  
+  const sourcesProp = useEmittingToReceivingDirection
+    ? 'emittingConcepts'
+    : 'receivingConcepts';
+  const targetsProp = useEmittingToReceivingDirection
+    ? 'receivingConcepts'
+    : 'emittingConcepts';
+
   const src = entry[srcProp].label;
   const target = entry[targetProp].label;
-  
+
   var value = relationshipsByConcept[src];
   if (!value) {
     value = {
@@ -44,13 +49,18 @@ function addValueToRelationshipMap(useEmittingToReceivingDirection, entry) {
     value[sourcesProp] = [];
     relationshipsByConcept[src] = value;
   }
-  value[targetsProp].push(target);
+  if (value[targetsProp].indexOf(target) === -1) {
+    value[targetsProp].push(target);
+  }
 }
 
 function printDictEntries() {
   for (var concept in relationshipsByConcept) {
     let entry = relationshipsByConcept[concept];
-    if (entry.receivingConcepts.length > 1 || entry.emittingConcepts.length > 1) {
+    if (
+      entry.receivingConcepts.length > 1 ||
+      entry.emittingConcepts.length > 1
+    ) {
       console.log(JSON.stringify(entry));
     }
   }
