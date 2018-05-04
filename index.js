@@ -125,7 +125,14 @@ function Improvise({ seed, wordnikAPIKey }) {
     [2, 'verbal-rating-of-keys'],
     [7, 'verbal-rating-of-topic'],
     // [5, 'counts-of-topic'],
-    [1, 'ranking-of-keys']
+    [1, 'ranking-of-keys'],
+
+    [1, 'conceptnet-atlocation'],
+    [1, 'conceptnet-capableof'],
+    [1, 'conceptnet-causes'],
+    [1, 'conceptnet-hasa'],
+    [1, 'conceptnet-partof'],
+    [1, 'conceptnet-usedfor']
   ]);
 
   return improvise;

@@ -9,6 +9,7 @@ function poolConceptnetRequest(conceptNetPath, poolDone) {
   makeNextRequest(conceptNetPath);
 
   function makeNextRequest(nextPagePath) {
+    console.error(`Getting ${baseURL + nextPagePath}.`);
     request(
       { method: 'GET', json: true, url: baseURL + nextPagePath },
       processResponse
