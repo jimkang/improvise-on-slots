@@ -37,7 +37,13 @@ fs
 
 function passIfOK(line, enc, done) {
   var [uri, relation, start, end, info] = line.split('\t');
-  if (relation && start && end && unwantedTypes.indexOf(relation) === -1) {
+  if (
+    relation &&
+    start &&
+    end &&
+    (start.startsWith('/c/en/') || end.startsWith('/c/en/')) &&
+    unwantedTypes.indexOf(relation) === -1
+  ) {
     done(
       null,
       JSON.stringify({

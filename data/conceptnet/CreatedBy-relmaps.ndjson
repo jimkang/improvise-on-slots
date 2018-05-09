@@ -47,7 +47,6 @@
 {"concept":"Novel","rel":"CreatedBy","receivingConcepts":["Author","Writer"],"emittingConcepts":[]}
 {"concept":"Entering Into Contract","rel":"CreatedBy","emittingConcepts":["Obligation","Right"],"receivingConcepts":[]}
 {"concept":"Orphan","rel":"CreatedBy","receivingConcepts":["Giving Child Away","Killing Childs Parents"],"emittingConcepts":[]}
-{"concept":"Apple","rel":"CreatedBy","emittingConcepts":["Osx","De Ipod"],"receivingConcepts":[]}
 {"concept":"Oxygen","rel":"CreatedBy","receivingConcepts":["Plants","Trees"],"emittingConcepts":[]}
 {"concept":"Paper","rel":"CreatedBy","receivingConcepts":["Author","Cutting Down Trees"],"emittingConcepts":[]}
 {"concept":"Paper Airplane","rel":"CreatedBy","receivingConcepts":["Folding Piece of Paper","Human"],"emittingConcepts":[]}
@@ -57,7 +56,6 @@
 {"concept":"Program","rel":"CreatedBy","receivingConcepts":["Compiling Source Code","Programmer","Programmning"],"emittingConcepts":[]}
 {"concept":"Room","rel":"CreatedBy","receivingConcepts":["Building Walls","Subdividing Building"],"emittingConcepts":[]}
 {"concept":"Sensation","rel":"CreatedBy","receivingConcepts":["Brain","Nervous System","Stimulus"],"emittingConcepts":[]}
-{"concept":"Software","rel":"CreatedBy","receivingConcepts":["Programmer","Programmeurs"],"emittingConcepts":[]}
 {"concept":"Sometimes Design","rel":"CreatedBy","receivingConcepts":["Architect","Community","Concensus","Non Professional","Students"],"emittingConcepts":[]}
 {"concept":"Song","rel":"CreatedBy","receivingConcepts":["Composer","Song Writer","Songwriter"],"emittingConcepts":[]}
 {"concept":"Sound","rel":"CreatedBy","receivingConcepts":["By Vocal Cords","Vibrating Air","Vibration","Vibrations"],"emittingConcepts":[]}
@@ -65,16 +63,3 @@
 {"concept":"Theory","rel":"CreatedBy","receivingConcepts":["Scientist","Thinking"],"emittingConcepts":[]}
 {"concept":"Wine","rel":"CreatedBy","receivingConcepts":["Fermentation","Fermenting Grapes","Frementing Grapes"],"emittingConcepts":[]}
 {"concept":"Zygote","rel":"CreatedBy","receivingConcepts":["Fertilization","Sperm and Egg Cell","Union of Haploid Spermatozoon and Ovum"],"emittingConcepts":[]}
-{"concept":"Az Ember","rel":"CreatedBy","emittingConcepts":["A Fegyvert","A Háborúkat","A Műholdat","A Számítógépet","Az Állatkertet"],"receivingConcepts":[]}
-{"concept":"A Nap","rel":"CreatedBy","emittingConcepts":["A Fényt","A Meleget"],"receivingConcepts":[]}
-{"concept":"A Föld Forgása","rel":"CreatedBy","emittingConcepts":["A Gravitációt","A Nappalokat És Az Éjszakákat"],"receivingConcepts":[]}
-{"concept":"A Hangokat","rel":"CreatedBy","receivingConcepts":["A Levegő Rezgése","Rezgés"],"emittingConcepts":[]}
-{"concept":"A Ruhát","rel":"CreatedBy","receivingConcepts":["A Gyár","A Szabó"],"emittingConcepts":[]}
-{"concept":"A Valóságot","rel":"CreatedBy","receivingConcepts":["A Tudat","A Tudatunk"],"emittingConcepts":[]}
-{"concept":"Een Kok","rel":"CreatedBy","emittingConcepts":["Bloem","Bomen","Bouwvakker","Carnivoor","De Zee","Dier","Een Fiets","Eten","Gebouw","Hond","Huisdier","Kat","Koe","Kok","Leer","Mens","Stenen","Timmerman","Vaas","Zoogdier"],"receivingConcepts":[]}
-{"concept":"Een Fiets","rel":"CreatedBy","receivingConcepts":["Een Fietsenmaker","Een Kok"],"emittingConcepts":["Eten"]}
-{"concept":"Een Gebouw","rel":"CreatedBy","receivingConcepts":["Mens","Mensen"],"emittingConcepts":[]}
-{"concept":"Mens","rel":"CreatedBy","emittingConcepts":["Een Gebouw","Eten"],"receivingConcepts":["Een Kok"]}
-{"concept":"Mensen","rel":"CreatedBy","emittingConcepts":["Een Gebouw","Eten","Liefde"],"receivingConcepts":[]}
-{"concept":"Eten","rel":"CreatedBy","receivingConcepts":["Bloem","Bomen","Bouwvakker","Carnivoor","De Zee","Een Fiets","Een Huis","Een Kok","Gebouw","Hond","Huisdier","Kat","Koe","Leer","Mens","Mensen","Metaal","Stenen","Timmerman","Vaas","Vogels","Zoogdier"],"emittingConcepts":[]}
-{"concept":"Leer","rel":"CreatedBy","emittingConcepts":["Eten"],"receivingConcepts":["Een Kok","Een Leerlooier"]}

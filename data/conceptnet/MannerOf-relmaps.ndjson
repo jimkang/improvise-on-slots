@@ -1796,7 +1796,6 @@
 {"concept":"Fade","rel":"MannerOf","receivingConcepts":["Disappear","Weaken"],"emittingConcepts":[]}
 {"concept":"Faggot","rel":"MannerOf","receivingConcepts":["Tie Down","Embroider"],"emittingConcepts":[]}
 {"concept":"Zonk Out","rel":"MannerOf","emittingConcepts":["Faint"],"receivingConcepts":["Change State","Fall Asleep"]}
-{"concept":"Eszik","rel":"MannerOf","emittingConcepts":["Fal","Dézsmál","Ebédel","Lakmározik","Majszol","Nyalakodik","Reggelizik","Uzsonnázik","Vacsorázik","Zabál"],"receivingConcepts":[]}
 {"concept":"Yield","rel":"MannerOf","emittingConcepts":["Fall","Leave","Net","Open","Pay Off","Submit","Surrender","Truckle"],"receivingConcepts":["Accept","Gain","Supply"]}
 {"concept":"Leave Office","rel":"MannerOf","emittingConcepts":["Fall","Retire","Top Out","Vacate"],"receivingConcepts":["Leave"]}
 {"concept":"Fall Back","rel":"MannerOf","receivingConcepts":["Regress","Lean Back","Use"],"emittingConcepts":[]}
@@ -3112,26 +3111,3 @@
 {"concept":"X Ray","rel":"MannerOf","receivingConcepts":["Examine","Photograph"],"emittingConcepts":[]}
 {"concept":"Zap","rel":"MannerOf","receivingConcepts":["Kill","Affect"],"emittingConcepts":[]}
 {"concept":"Zoom","rel":"MannerOf","receivingConcepts":["Travel","Travel Rapidly"],"emittingConcepts":[]}
-{"concept":"Bleki","rel":"MannerOf","emittingConcepts":["Boji","Kokeriki","Miaŭi"],"receivingConcepts":[]}
-{"concept":"Sketi","rel":"MannerOf","emittingConcepts":["Glitkuri"],"receivingConcepts":["Glitkuri","Glitumi"]}
-{"concept":"Bretaro","rel":"MannerOf","emittingConcepts":["Librobretaro","Telerbretaro"],"receivingConcepts":[]}
-{"concept":"Tuer","rel":"MannerOf","emittingConcepts":["Abattre","Arroser","Asphyxier","Assaisonner","Assassiner","Assommer","Décapiter","Empoisonner","Escoffier","Exécuter","Flinguer","Fusiller","Guillotiner","Immoler","Lapider","Lyncher","Massacrer","Mitrailler","Noyer","Pendre","Poignarder","Pourfendre","Saigner","Suicider","Échiner","Écraser","Égorger","Électrocuter","Étouffer","Étrangler"],"receivingConcepts":[]}
-{"concept":"Mettre Bas","rel":"MannerOf","emittingConcepts":["Agneler","Biqueter","Chatonner","Chevroter","Chienner","Cochonner","Faonner","Goronner","Lapiner","Levreter","Louveter","Pouliner","Vêler","Ânonner"],"receivingConcepts":[]}
-{"concept":"Manger","rel":"MannerOf","emittingConcepts":["Avaler","Déjeuner","Dîner","Faire Bombance","Faire Bonne Chère","Faire Ripaille","Festoyer","Ingurgiter","Ingérer","Pique Niquer","Ripailler","Se Bâfrer","Se Goinfrer","Se Réfecter","Souper","S’ Empiffrer"],"receivingConcepts":[]}
-{"concept":"Parler","rel":"MannerOf","emittingConcepts":["Bafouiller","Balbutier","Baragouiner","Bredouiller","Bégayer","Chuchoter","Marmonner","Marmotter","Murmurer","Souffler","Susurrer","Zézayer","À Voix Basse"],"receivingConcepts":[]}
-{"concept":"Assainir","rel":"MannerOf","emittingConcepts":["Désintoxiquer","Laver","Nettoyer"],"receivingConcepts":[]}
-{"concept":"Faire Faire La Course À L’ Échalote","rel":"MannerOf","receivingConcepts":["Chasser","Expulser","Mettre À La Porte","Virer"],"emittingConcepts":[]}
-{"concept":"Faire La Course À L’ Échalote","rel":"MannerOf","receivingConcepts":["Poursuivre","Surenchérir"],"emittingConcepts":[]}
-{"concept":"Rire","rel":"MannerOf","emittingConcepts":["Glousser","Petit Rire","Pouffer","Ricaner","Rioter","Rire Aux Larmes","Rire Aux Éclats","Rire De Bon Cœur","Rire Jaune","Rire Sous Cape","Rire À Gorge Déployée","Rire Étouffé","Se Boyauter","Se Désopiler","Se Fendre La Gueule","Se Fendre La Pipe","Se Fendre La Pêche","Se Tordre","S’ Esclaffer","Éclater De Rire"],"receivingConcepts":[]}
-{"concept":"Voter","rel":"MannerOf","emittingConcepts":["Plébisciter","Élire"],"receivingConcepts":[]}
-{"concept":"Ír","rel":"MannerOf","emittingConcepts":["Firkant","Firkál"],"receivingConcepts":[]}
-{"concept":"盗み","rel":"MannerOf","emittingConcepts":["スリ","万引き","強盗","窃盗","置き引き"],"receivingConcepts":[]}
-{"concept":"会釈","rel":"MannerOf","receivingConcepts":["お辞儀","礼"],"emittingConcepts":[]}
-{"concept":"お辞儀","rel":"MannerOf","emittingConcepts":["会釈","叩頭","最敬礼","目礼","黙礼"],"receivingConcepts":[]}
-{"concept":"礼","rel":"MannerOf","emittingConcepts":["会釈","叩頭","最敬礼","目礼","黙礼"],"receivingConcepts":[]}
-{"concept":"叩頭","rel":"MannerOf","receivingConcepts":["お辞儀","礼"],"emittingConcepts":[]}
-{"concept":"座る","rel":"MannerOf","emittingConcepts":["座り込む","腰掛ける"],"receivingConcepts":[]}
-{"concept":"最敬礼","rel":"MannerOf","receivingConcepts":["お辞儀","礼"],"emittingConcepts":[]}
-{"concept":"目礼","rel":"MannerOf","receivingConcepts":["お辞儀","礼"],"emittingConcepts":[]}
-{"concept":"黙礼","rel":"MannerOf","receivingConcepts":["お辞儀","礼"],"emittingConcepts":[]}
-{"concept":"Döda","rel":"MannerOf","emittingConcepts":["Dränka","Förgifta","Gasa","Halshugga","Hänga","Nacka","Slå Ihjäl","Stena","Strypa"],"receivingConcepts":[]}
