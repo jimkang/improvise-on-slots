@@ -13,15 +13,12 @@ prettier:
 build-relmaps:
 	node tools/make-relationship-maps.js data/conceptnet/conceptnet-assertions-5.6.0-subset.ndjson data/conceptnet
 
-build-file-offsets:
+build-file-offsets: build-conceptnet-file-offsets
 	node $(GETOFFSETS) data/categories.txt > data/categories-line-offsets.json
 	node $(GETOFFSETS) data/parts-categories.txt > data/parts-categories-line-offsets.json
-	node $(GETOFFSETS) data/conceptnet/AtLocation-relmaps.ndjson > data/conceptnet/AtLocation-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/CapableOf-relmaps.ndjson > data/conceptnet/CapableOf-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/Causes-relmaps.ndjson > data/conceptnet/Causes-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/HasA-relmaps.ndjson > data/conceptnet/HasA-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/PartOf-relmaps.ndjson > data/conceptnet/PartOf-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/UsedFor-relmaps.ndjson > data/conceptnet/UsedFor-relmaps-offsets.json
+
+build-conceptnet-file-offsets:
+	./build-conceptnet-file-offsets.sh
 
 #save-part-of-relationships:
 #	node tools/get-conceptnet-relationship.js PartOf > data/conceptnet/PartOf-relationships.json
