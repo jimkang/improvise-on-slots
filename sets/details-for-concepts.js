@@ -44,5 +44,34 @@ module.exports = {
     formatTheme(concept, useReceivers) {
       return useReceivers ? `uses of ${concept}` : `things used for ${concept}`;
     }
-  }
+  },
+  CausesDesire: {
+    lineCount: 962,
+    chance: 2,
+    formatTheme(concept, useReceivers) {
+      return useReceivers ? `things ${concept} makes you want` : `things that make you want to ${concept.toLowerCase()}`;
+    }
+  },
+  CreatedBy: {
+    lineCount: 65,
+    chance: 1,
+    formatTheme(concept, useReceivers) {
+      return useReceivers ? `creators of ${concept}` : `creations of ${concept}`;
+    }
+  },
+  DefinedAs: {
+    lineCount: 277,
+    chance: 1,
+    formatTheme(concept, useReceivers) {
+      return useReceivers ? `definitions of ${concept}` : `things defined as ${concept}`;
+    }
+  },
+  DistinctFrom: {
+    lineCount: 277,
+    chance: 2,
+    formatTheme(concept, useReceivers) {
+      return useReceivers ? `things distinct from ${concept}` : `huh ${concept}`;
+    }
+  },
+
 };
