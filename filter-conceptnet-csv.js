@@ -1,32 +1,35 @@
 /* global __dirname, process */
 
 var fs = require('fs');
-var ndjson = require('ndjson');
+var split = require('split');
 
-if (process.argv.length < 3) {
+if (process.argv.length < 4) {
   console.log(
-    'Usage: node tools/sort-relationships-by-concept.js <relationships.ndjson> > relationships-by-concept.ndjson'
+    'Usage: node tools/sort-csv-by-concept.js <conceptnet-assertions-5.6.0.csv> <relationship type, e.g. /r/PartOf> > relmap.ndjson'
   );
   process.exit();
 }
 
 var relationshipsByConcept = {};
 var relationshipsFile = process.argv[2];
+var relationshipType = process.argv[3];
 
 fs
   .createReadStream(relationshipsFile)
-  // .pipe(process.stdout)
-  .pipe(ndjson.parse())
+  .pipe(split())
   .on('data', storeRelationship)
   .on('end', printDictEntries);
 
-function storeRelationship(entry) {
-  addValueToRelationshipMap(true, entry);
-  addValueToRelationshipMap(false, entry);
-  debugger;
+function storeRelationship(line) {
+  var [uri, relation, start, end, info] = line.split('\t');
+  if (relation === relationshipType) {
+    debugger;
+    // addValueToRelationshipMap(start, end);
+    // addValueToRelationshipMap(end, start);
+  }
 }
 
-function addValueToRelationshipMap(useEmittingToReceivingDirection, entry) {
+function addValueToRelationshipMap(start, end) {
   const srcProp = useEmittingToReceivingDirection ? 'start' : 'end';
   const targetProp = useEmittingToReceivingDirection ? 'end' : 'start';
   const sourcesProp = useEmittingToReceivingDirection
@@ -36,7 +39,7 @@ function addValueToRelationshipMap(useEmittingToReceivingDirection, entry) {
     ? 'receivingConcepts'
     : 'emittingConcepts';
 
-  const src = entry[srcProp].label;
+  const src = start;
   const target = entry[targetProp].label;
 
   var value = relationshipsByConcept[src];

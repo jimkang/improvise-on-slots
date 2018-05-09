@@ -19,9 +19,12 @@
   "homepage": "https://github.com/jimkang/improvise-on-slots",
   "devDependencies": {
     "assert-no-error": "^1.0.0",
+    "d3-queue": "^3.0.7",
     "get-file-line-offsets-in-json": "^1.0.2",
     "ndjson": "^1.5.0",
-    "tape": "^4.9.0"
+    "split": "^1.0.1",
+    "tape": "^4.9.0",
+    "titlecase": "^1.1.2"
   },
   "dependencies": {
     "async-waterfall": "^0.1.5",

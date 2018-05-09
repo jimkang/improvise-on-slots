@@ -9,6 +9,9 @@ pushall:
 prettier:
 	prettier --single-quote --write "**/*.js"
 
+build-relmaps:
+	node tools/make-relationship-maps.js data/conceptnet/conceptnet-assertions-5.6.0-subset.ndjson data/conceptnet
+
 build-file-offsets:
 	node $(GETOFFSETS) data/categories.txt > data/categories-line-offsets.json
 	node $(GETOFFSETS) data/parts-categories.txt > data/parts-categories-line-offsets.json
@@ -21,3 +24,8 @@ build-file-offsets:
 
 #save-part-of-relationships:
 #	node tools/get-conceptnet-relationship.js PartOf > data/conceptnet/partof-relationships.json
+#
+
+data/conceptnet/conceptnet-assertions-5.6.0-subset.ndjson:
+	# Assertions file can be downloaded from here: https://github.com/commonsense/conceptnet5/wiki/Downloads
+	node tools/filter-conceptnet-csv.js ~/Downloads/conceptnet-assertions-5.6.0.csv > data/conceptnet/conceptnet-assertions-5.6.0-subset.ndjson
