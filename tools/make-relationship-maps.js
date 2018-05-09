@@ -43,7 +43,7 @@ function addValueToRelationshipMap(useEmittingToReceivingDirection, entry) {
 
   var relsByConcept = relsByConceptByRelType[entry.rel];
   if (!relsByConcept) {
-    relsByConcept= {};
+    relsByConcept = {};
     relsByConceptByRelType[entry.rel] = relsByConcept;
   }
   var value = relsByConcept[src];
@@ -72,7 +72,11 @@ function writeDictEntries() {
 function writeConceptEntries(rel, done) {
   var relsByConcept = relsByConceptByRelType[rel];
   var ndjsonWriteStream = ndjson.stringify();
-  ndjsonWriteStream.pipe(fs.createWriteStream(`${outputDir}/${rel.replace(slashRegex, '_')}-relmap.ndjson`));
+  ndjsonWriteStream.pipe(
+    fs.createWriteStream(
+      `${outputDir}/${rel.replace(slashRegex, '_')}-relmaps.ndjson`
+    )
+  );
 
   for (var concept in relsByConcept) {
     let entry = relsByConcept[concept];
@@ -91,4 +95,3 @@ function writeConceptEntries(rel, done) {
 function handleError(error) {
   console.error(error);
 }
-
