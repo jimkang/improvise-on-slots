@@ -2,6 +2,7 @@ GETOFFSETS = node_modules/.bin/get-file-line-offsets-in-json
 
 test:
 	node tests/improvise-tests.js
+	node tests/concept-tests.js
 
 pushall:
 	git push origin master && npm publish

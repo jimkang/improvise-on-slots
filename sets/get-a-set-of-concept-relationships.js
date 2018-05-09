@@ -6,38 +6,10 @@ var curry = require('lodash.curry');
 var lineChomper = require('line-chomper');
 var fs = require('fs');
 var iscool = require('iscool')({
-  customBlacklist: [
-    'massacre',
-    'massacres'
-  ]
+  customBlacklist: ['massacre', 'massacres']
 });
 var detailsForConcepts = require('./details-for-concepts');
 var splitToWords = require('split-to-words');
-
-var topicFormattersForRelationships = {
-  AtLocation(concept, useReceivers) {
-    return useReceivers ? `locations of ${concept}` : `things at ${concept}`;
-  },
-  CapableOf(concept, useReceivers) {
-    return useReceivers
-      ? `capabilities of ${concept}`
-      : `things that can ${concept}`;
-  },
-  Causes(concept, useReceivers) {
-    return useReceivers ? `results of ${concept}` : `causes of ${concept}`;
-  },
-  HasA(concept, useReceivers) {
-    return useReceivers ? `aspects of ${concept}` : `havers of ${concept}`;
-  },
-  PartOf(concept, useReceivers) {
-    return useReceivers
-      ? `things ${concept} is a part of`
-      : `part of ${concept}`;
-  },
-  UsedFor(concept, useReceivers) {
-    return useReceivers ? `uses of ${concept}` : `things used for ${concept}`;
-  }
-};
 
 function GetASetOfConceptRelationships({ probable, relationship }) {
   return getASetOfConceptRelationships;
@@ -65,7 +37,7 @@ function GetASetOfConceptRelationships({ probable, relationship }) {
         let useReceivers =
           probable.rollDie(chanceOfUsingReceivers) >=
           probable.rollDie(chanceOfUsingEmitters);
-        let theme = topicFormattersForRelationships[relationship](
+        let theme = detailsForConcepts[relationship].formatTheme(
           relmap.concept,
           useReceivers
         );
