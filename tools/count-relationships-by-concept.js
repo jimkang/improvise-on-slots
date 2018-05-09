@@ -53,4 +53,3 @@ function processCounts() {
   console.log('Counts by starting letter:');
   console.log(JSON.stringify(countsByStartingLetter, null, 2));
 }
-

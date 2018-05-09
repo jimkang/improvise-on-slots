@@ -38,7 +38,14 @@ fs
 function passIfOK(line, enc, done) {
   var [uri, relation, start, end, info] = line.split('\t');
   if (relation && start && end && unwantedTypes.indexOf(relation) === -1) {
-    done(null, JSON.stringify({rel: relation.substr(3), start: deriveLabel(start), end: deriveLabel(end) }) + '\n');
+    done(
+      null,
+      JSON.stringify({
+        rel: relation.substr(3),
+        start: deriveLabel(start),
+        end: deriveLabel(end)
+      }) + '\n'
+    );
   } else {
     done();
   }
@@ -47,4 +54,3 @@ function passIfOK(line, enc, done) {
 function deriveLabel(path) {
   return toTitleCase(path.split('/')[3].replace(underscoreRegex, ' '));
 }
-
