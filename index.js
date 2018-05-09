@@ -10,6 +10,7 @@ var GetASetOfWikipediaPages = require('./sets/get-a-set-of-wikipedia-pages');
 var GetASetOfRelatedWords = require('./sets/get-a-set-of-related-words');
 var GetASetOfRatings = require('./sets/get-a-set-of-ratings');
 var GetASetOfConceptRelationships = require('./sets/get-a-set-of-concept-relationships');
+var detailsForConcepts = require('./sets/details-for-concepts');
 
 var allCategoriesOffsets = jsonfile.readFileSync(
   __dirname + '/data/categories-line-offsets.json'
@@ -108,9 +109,7 @@ function Improvise({ seed, wordnikAPIKey }) {
     }
   };
 
-  ['atlocation', 'capableof', 'causes', 'hasa', 'partof', 'usedfor'].forEach(
-    addToKitMap
-  );
+  Object.keys(detailsForConcepts).forEach(addToKitMap);
 
   function addToKitMap(relationship) {
     improvMethodKits[`conceptnet-${relationship}`] = kitForConceptMethod(
@@ -118,22 +117,24 @@ function Improvise({ seed, wordnikAPIKey }) {
     );
   }
 
-  var methodTable = probable.createTableFromSizes([
+  var methodProbSizes = [
     [4, 'wikipedia-categories'],
     [1, 'wikipedia-parts-categories'],
     [4, 'related-words'],
     [2, 'verbal-rating-of-keys'],
     [7, 'verbal-rating-of-topic'],
     // [5, 'counts-of-topic'],
-    [1, 'ranking-of-keys'],
+    [1, 'ranking-of-keys']
+  ];
 
-    [1, 'conceptnet-atlocation'],
-    [1, 'conceptnet-capableof'],
-    [1, 'conceptnet-causes'],
-    [1, 'conceptnet-hasa'],
-    [1, 'conceptnet-partof'],
-    [1, 'conceptnet-usedfor']
-  ]);
+  for (var concept in detailsForConcepts) {
+    methodProbSizes.push([
+      detailsForConcepts[concept].chance,
+      'conceptnet-' + concept
+    ]);
+  }
+
+  var methodTable = probable.createTableFromSizes(methodProbSizes);
 
   return improvise;
 

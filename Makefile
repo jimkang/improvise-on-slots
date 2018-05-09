@@ -15,15 +15,15 @@ build-relmaps:
 build-file-offsets:
 	node $(GETOFFSETS) data/categories.txt > data/categories-line-offsets.json
 	node $(GETOFFSETS) data/parts-categories.txt > data/parts-categories-line-offsets.json
-	node $(GETOFFSETS) data/conceptnet/atlocation-relmaps.ndjson > data/conceptnet/atlocation-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/capableof-relmaps.ndjson > data/conceptnet/capableof-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/causes-relmaps.ndjson > data/conceptnet/causes-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/hasa-relmaps.ndjson > data/conceptnet/hasa-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/partof-relmaps.ndjson > data/conceptnet/partof-relmaps-offsets.json
-	node $(GETOFFSETS) data/conceptnet/usedfor-relmaps.ndjson > data/conceptnet/usedfor-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/AtLocation-relmaps.ndjson > data/conceptnet/AtLocation-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/CapableOf-relmaps.ndjson > data/conceptnet/CapableOf-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/Causes-relmaps.ndjson > data/conceptnet/Causes-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/HasA-relmaps.ndjson > data/conceptnet/HasA-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/PartOf-relmaps.ndjson > data/conceptnet/PartOf-relmaps-offsets.json
+	node $(GETOFFSETS) data/conceptnet/UsedFor-relmaps.ndjson > data/conceptnet/UsedFor-relmaps-offsets.json
 
 #save-part-of-relationships:
-#	node tools/get-conceptnet-relationship.js PartOf > data/conceptnet/partof-relationships.json
+#	node tools/get-conceptnet-relationship.js PartOf > data/conceptnet/PartOf-relationships.json
 #
 
 data/conceptnet/conceptnet-assertions-5.6.0-subset.ndjson:

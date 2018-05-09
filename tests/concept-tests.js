@@ -11,13 +11,13 @@ var testCases = [
     opts: {
       keyType: 'state',
       keys: ['IL', 'MA', 'CA'],
-      method: 'conceptnet-partof'
+      method: 'conceptnet-PartOf'
     },
     expected: {
-      theme: 'part of Bolivia',
-      title: 'Favorite part of Bolivia by state',
+      theme: 'part of Sao Tome and Principe',
+      title: 'Favorite part of Sao Tome and Principe by state',
       valueType: 'enum',
-      slots: { IL: 'Ancohuma', MA: 'Ancohuma', CA: 'Andes' }
+      slots: { IL: 'Principe', MA: 'Principe', CA: 'Sao Tome' }
     }
   }
 ];

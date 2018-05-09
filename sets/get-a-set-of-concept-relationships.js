@@ -6,37 +6,29 @@ var curry = require('lodash.curry');
 var lineChomper = require('line-chomper');
 var fs = require('fs');
 var iscool = require('iscool')();
-
-var lineCountsForRelmaps = {
-  atlocation: 619,
-  capableof: 414,
-  causes: 250,
-  hasa: 460,
-  partof: 346,
-  usedfor: 328
-};
+var detailsForConcepts = require('./details-for-concepts');
 
 var topicFormattersForRelationships = {
-  atlocation(concept, useReceivers) {
+  AtLocation(concept, useReceivers) {
     return useReceivers ? `locations of ${concept}` : `things at ${concept}`;
   },
-  capableof(concept, useReceivers) {
+  CapableOf(concept, useReceivers) {
     return useReceivers
       ? `capabilities of ${concept}`
       : `things that can ${concept}`;
   },
-  causes(concept, useReceivers) {
+  Causes(concept, useReceivers) {
     return useReceivers ? `results of ${concept}` : `causes of ${concept}`;
   },
-  hasa(concept, useReceivers) {
+  HasA(concept, useReceivers) {
     return useReceivers ? `aspects of ${concept}` : `havers of ${concept}`;
   },
-  partof(concept, useReceivers) {
+  PartOf(concept, useReceivers) {
     return useReceivers
       ? `things ${concept} is a part of`
       : `part of ${concept}`;
   },
-  usedfor(concept, useReceivers) {
+  UsedFor(concept, useReceivers) {
     return useReceivers ? `uses of ${concept}` : `things used for ${concept}`;
   }
 };
@@ -78,7 +70,7 @@ function GetASetOfConceptRelationships({ probable, relationship }) {
   }
 
   function pickRandomRelationshipMap(pickDone) {
-    var fromLine = probable.roll(lineCountsForRelmaps[relationship]);
+    var fromLine = probable.roll(detailsForConcepts[relationship].lineCount);
 
     waterfall(
       [
