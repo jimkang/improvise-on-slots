@@ -5,7 +5,12 @@ var waterfall = require('async-waterfall');
 var curry = require('lodash.curry');
 var lineChomper = require('line-chomper');
 var fs = require('fs');
-var iscool = require('iscool')();
+var iscool = require('iscool')({
+  customBlacklist: [
+    'massacre',
+    'massacres'
+  ]
+});
 var detailsForConcepts = require('./details-for-concepts');
 var splitToWords = require('split-to-words');
 

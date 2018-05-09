@@ -14,10 +14,10 @@ var testCases = [
       method: 'conceptnet-PartOf'
     },
     expected: {
-      theme: 'part of Sao Tome and Principe',
-      title: 'Favorite part of Sao Tome and Principe by state',
+      theme: 'things South Hams is a part of',
+      title: 'Favorite things South Hams is a part of by state',
       valueType: 'enum',
-      slots: { IL: 'Principe', MA: 'Principe', CA: 'Sao Tome' }
+      slots: { IL: 'Devon', MA: 'Devon', CA: 'England' }
     }
   }
 ];
