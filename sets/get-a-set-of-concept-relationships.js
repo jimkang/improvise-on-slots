@@ -7,6 +7,7 @@ var lineChomper = require('line-chomper');
 var fs = require('fs');
 var iscool = require('iscool')();
 var detailsForConcepts = require('./details-for-concepts');
+var splitToWords = require('split-to-words');
 
 var topicFormattersForRelationships = {
   AtLocation(concept, useReceivers) {
@@ -40,8 +41,8 @@ function GetASetOfConceptRelationships({ probable, relationship }) {
     waterfall([pickRandomRelationshipMap, passSet], getDone);
 
     function passSet(relmap, done) {
-      var receivers = relmap.receivingConcepts.filter(iscool);
-      var emitters = relmap.emittingConcepts.filter(iscool);
+      var receivers = relmap.receivingConcepts.filter(eachWordIsCool);
+      var emitters = relmap.emittingConcepts.filter(eachWordIsCool);
       if (receivers.length < 2 && emitters.length < 2) {
         // TODO: These should be filtered out in the data files ahead of time.
         callNextTick(
@@ -106,6 +107,10 @@ function GetASetOfConceptRelationships({ probable, relationship }) {
       }
     }
   }
+}
+
+function eachWordIsCool(phrase) {
+  return splitToWords(phrase).every(iscool);
 }
 
 module.exports = GetASetOfConceptRelationships;
