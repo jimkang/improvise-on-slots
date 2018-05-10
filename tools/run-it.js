@@ -60,7 +60,9 @@ if (process.argv.length > 2) {
   var method = process.argv[2];
 }
 
-console.log('Usage: node tools/run-it.js <method name, e.g. conceptnet-PartOf>');
+console.log(
+  'Usage: node tools/run-it.js <method name, e.g. conceptnet-PartOf>'
+);
 
 var improvise = Improvise({ wordnikAPIKey: config.wordnik.apiKey });
 

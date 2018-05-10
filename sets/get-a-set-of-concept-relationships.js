@@ -20,6 +20,8 @@ function GetASetOfConceptRelationships({ probable, relationship }) {
     function passSet(relmap, done) {
       var receivers = relmap.receivingConcepts.filter(eachWordIsCool);
       var emitters = relmap.emittingConcepts.filter(eachWordIsCool);
+      var disallowUseEmitters =
+        detailsForConcepts[relationship].disallowUseEmitters;
       if (receivers.length < 2 && emitters.length < 2) {
         // TODO: These should be filtered out in the data files ahead of time.
         callNextTick(
@@ -30,13 +32,23 @@ function GetASetOfConceptRelationships({ probable, relationship }) {
             }.`
           )
         );
+      } else if (disallowUseEmitters && receivers.length < 1) {
+        callNextTick(
+          done,
+          new Error(
+            `No receivers for relationship ${relationship} and concept ${
+              relmap.concept
+            }.`
+          )
+        );
       } else {
         let chanceOfUsingReceivers =
           receivers.length > 1 ? receivers.length : 0;
         let chanceOfUsingEmitters = emitters.length > 1 ? emitters.length : 0;
         let useReceivers =
+          disallowUseEmitters ||
           probable.rollDie(chanceOfUsingReceivers) >=
-          probable.rollDie(chanceOfUsingEmitters);
+            probable.rollDie(chanceOfUsingEmitters);
         let theme = detailsForConcepts[relationship].formatTheme(
           relmap.concept,
           useReceivers
