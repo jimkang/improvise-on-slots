@@ -119,10 +119,10 @@ function Improvise({ seed, wordnikAPIKey }) {
 
   var methodProbSizes = [
     [4, 'wikipedia-categories'],
-    [1, 'wikipedia-parts-categories'],
-    [4, 'related-words'],
-    [2, 'verbal-rating-of-keys'],
-    [7, 'verbal-rating-of-topic'],
+    // [1, 'wikipedia-parts-categories'],
+    [2, 'related-words'],
+    [1, 'verbal-rating-of-keys'],
+    [3, 'verbal-rating-of-topic'],
     // [5, 'counts-of-topic'],
     [1, 'ranking-of-keys']
   ];
