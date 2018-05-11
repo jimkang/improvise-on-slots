@@ -108,6 +108,7 @@ module.exports = {
   HasPrerequisite: {
     lineCount: 3268,
     chance: 2,
+    disallowUseEmitters: true,
     formatTheme(concept, useReceivers) {
       return useReceivers
         ? `prequisites of ${concept}`
