@@ -107,11 +107,11 @@ module.exports = {
   },
   HasPrerequisite: {
     lineCount: 3268,
-    chance: 2,
+    chance: 1,
     disallowUseEmitters: true,
     formatTheme(concept, useReceivers) {
       return useReceivers
-        ? `prequisites of ${concept}`
+        ? `prerequisites of ${concept}`
         : `things that ${concept} is a prerequisite for`;
     }
   },
