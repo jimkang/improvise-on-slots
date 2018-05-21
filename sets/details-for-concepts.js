@@ -88,7 +88,7 @@ module.exports = {
   // }
   HasFirstSubevent: {
     lineCount: 816,
-    chance: 2,
+    chance: 1,
     formatTheme(concept, useReceivers) {
       return useReceivers
         ? `first steps of ${concept}`
