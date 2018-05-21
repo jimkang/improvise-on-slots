@@ -195,8 +195,13 @@ function Improvise({ seed, wordnikAPIKey }) {
   }
 
   function getTitleForSlots(keyType, theme) {
-    // TODO: Probable table. Adjectives, "what are" "which ___ do ___ love the most?"
-    return `Favorite ${theme} by ${keyType}`;
+    return probable
+      .createTableFromSizes([
+        [5, `Favorite ${theme} by ${keyType}`],
+        [2, `Which ${theme} does your ${keyType} love the most?`],
+        [2, `Which ${theme} does your ${keyType} hate the most?`]
+      ])
+      .roll();
   }
 
   function getTitleForRelatedWords(keyType, theme) {

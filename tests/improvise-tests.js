@@ -15,7 +15,7 @@ var testCases = [
     },
     expected: {
       theme: 'Works about the military',
-      title: 'Favorite Works about the military by state',
+      title: 'Which Works about the military does your state love the most?',
       valueType: 'enum',
       slots: {
         IL: 'American Heroes Channel',
