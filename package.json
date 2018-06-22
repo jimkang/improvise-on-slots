@@ -29,7 +29,8 @@
   "dependencies": {
     "async-waterfall": "^0.1.5",
     "call-next-tick": "^2.0.1",
-    "canonicalizer": "^1.0.2",
+    "canonicalizer": "^1.0.3",
+    "conceptnet-relationship-cache": "^1.0.0",
     "d3-array": "^1.2.1",
     "iscool": "^1.1.61",
     "jsonfile": "^4.0.0",
@@ -39,13 +40,13 @@
     "lodash.pick": "^4.4.0",
     "lodash.pluck": "^3.1.2",
     "lodash.values": "^4.3.0",
-    "nodemw": "^0.12.0",
+    "nodemw": "^0.12.1",
     "probable": "^2.1.1",
     "request": "^2.85.0",
     "seedrandom": "^2.4.3",
     "split-to-words": "^1.0.2",
     "standard-bail": "^2.0.1",
     "verror": "^1.10.0",
-    "wordnok": "^3.3.1"
+    "wordnok": "^3.3.5"
   }
 }
