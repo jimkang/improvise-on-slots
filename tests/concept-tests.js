@@ -13,12 +13,7 @@ var testCases = [
       keys: ['IL', 'MA', 'CA'],
       method: 'conceptnet-PartOf'
     },
-    expected: {
-      theme: 'things South Hams is a part of',
-      title: 'Favorite things South Hams is a part of by state',
-      valueType: 'enum',
-      slots: { IL: 'Devon', MA: 'Devon', CA: 'England' }
-    }
+    expected: 'randomized'
   }
 ];
 

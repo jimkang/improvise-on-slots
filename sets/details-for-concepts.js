@@ -1,13 +1,11 @@
 module.exports = {
   AtLocation: {
-    lineCount: 15835,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers ? `locations of ${concept}` : `things at ${concept}`;
     }
   },
   CapableOf: {
-    lineCount: 10102,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -16,21 +14,18 @@ module.exports = {
     }
   },
   Causes: {
-    lineCount: 13252,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers ? `results of ${concept}` : `causes of ${concept}`;
     }
   },
   HasA: {
-    lineCount: 3636,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers ? `aspects of ${concept}` : `havers of ${concept}`;
     }
   },
   PartOf: {
-    lineCount: 8406,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -39,14 +34,12 @@ module.exports = {
     }
   },
   UsedFor: {
-    lineCount: 14171,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers ? `uses of ${concept}` : `things used for ${concept}`;
     }
   },
   CausesDesire: {
-    lineCount: 962,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -55,7 +48,6 @@ module.exports = {
     }
   },
   CreatedBy: {
-    lineCount: 65,
     chance: 1,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -64,7 +56,6 @@ module.exports = {
     }
   },
   DefinedAs: {
-    lineCount: 277,
     chance: 1,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -73,21 +64,18 @@ module.exports = {
     }
   },
   // DistinctFrom: {
-  // lineCount: 277,
   // chance: 2,
   // formatTheme(concept, useReceivers) {
   // return useReceivers ? `things distinct from ${concept}` : `huh ${concept}`;
   // }
   // },
   // Entails: {
-  // lineCount: 92,
   // chance: 1,
   // formatTheme(concept, useReceivers) {
   // return useReceivers ? `things that ${concept} entails` : `things entailed in ${concept}`;
   // }
   // }
   HasFirstSubevent: {
-    lineCount: 816,
     chance: 1,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -96,7 +84,6 @@ module.exports = {
     }
   },
   HasLastSubevent: {
-    lineCount: 770,
     chance: 2,
     disallowUseEmitters: true, // Only works in the `concept =relation=> receivers` direction
     formatTheme(concept, useReceivers) {
@@ -106,7 +93,6 @@ module.exports = {
     }
   },
   HasPrerequisite: {
-    lineCount: 3268,
     chance: 1,
     disallowUseEmitters: true,
     formatTheme(concept, useReceivers) {
@@ -116,14 +102,12 @@ module.exports = {
     }
   },
   HasProperty: {
-    lineCount: 1685,
     chance: 2,
     formatTheme(concept, useReceivers) {
       return useReceivers ? `properties of ${concept}` : `${concept} things`;
     }
   },
   HasSubevent: {
-    lineCount: 3219,
     chance: 2,
     disallowUseEmitters: true,
     formatTheme(concept, useReceivers) {
@@ -133,7 +117,6 @@ module.exports = {
     }
   },
   InstanceOf: {
-    lineCount: 219,
     chance: 1,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -142,14 +125,12 @@ module.exports = {
     }
   },
   // IsA: {
-  // lineCount: 52153,
   // chance: 2,
   // formatTheme(concept, useReceivers) {
   // return useReceivers ? `${concept}` : `${concept} things`;
   // }
   // }
   MadeOf: {
-    lineCount: 131,
     chance: 1,
     formatTheme(concept, useReceivers) {
       return useReceivers
@@ -158,14 +139,12 @@ module.exports = {
     }
   },
   // MannerOf: {
-  // lineCount: 3113,
   // chance: 2,
   // formatTheme(concept, useReceivers) {
   // return useReceivers ? `way to ${concept}` : `things is a way to ${concept}`;
   // }
   // }
   MotivatedByGoal: {
-    lineCount: 1313,
     chance: 2,
     disallowUseEmitters: true,
     formatTheme(concept, useReceivers) {
@@ -175,14 +154,12 @@ module.exports = {
     }
   },
   // NotCapableOf: {
-  // lineCount: 46,
   // chance: 1,
   // formatTheme(concept, useReceivers) {
   // return useReceivers ? `things that ${concept} can't do` : `things that can't ${concept}`;
   // }
   // },
   // ReceivesAction: {
-  // lineCount: 1245,
   // chance: 2,
   // formatTheme(concept, useReceivers) {
   // return useReceivers ? `things done with ${concept}` : `things ${concept}`;
@@ -198,7 +175,6 @@ module.exports = {
   // }
   // },
   dbpedia_influencedBy: {
-    lineCount: 369,
     chance: 1,
     formatTheme(concept, useReceivers) {
       return useReceivers
