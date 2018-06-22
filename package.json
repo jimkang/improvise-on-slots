@@ -1,6 +1,6 @@
 {
   "name": "improvise-on-slots",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Given slots, fill each in with pieces of text that relate to each other.",
   "main": "index.js",
   "scripts": {
