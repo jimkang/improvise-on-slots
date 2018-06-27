@@ -1,6 +1,5 @@
 var test = require('tape');
 var Improvise = require('../index');
-var assertNoError = require('assert-no-error');
 var values = require('lodash.values');
 var config = require('../config');
 
@@ -12,6 +11,14 @@ var testCases = [
       keyType: 'state',
       keys: ['IL', 'MA', 'CA'],
       method: 'conceptnet-PartOf'
+    },
+    expected: 'randomized'
+  },
+  {
+    opts: {
+      keyType: 'state',
+      keys: ['IL', 'MA', 'CA'],
+      method: 'conceptnet-HasLastSubevent'
     },
     expected: 'randomized'
   }
@@ -30,10 +37,16 @@ function runTest(testCase) {
     improvise(testCase.opts, checkResult);
 
     function checkResult(error, dict) {
-      assertNoError(t.ok, error, 'No error while improvising.');
+      if (error) {
+        console.log('Error', error);
+        // Errors are OK; sometimes slots just cannot be filled.
+        t.end();
+        return;
+      }
       console.log('Result:', dict);
       t.ok(dict.theme, 'Result has theme.');
       t.ok(dict.slots, 'Result has slots.');
+      t.ok(dict.valueType, 'Result valueType.');
       t.equal(
         Object.keys(dict.slots).length,
         testCase.opts.keys.length,

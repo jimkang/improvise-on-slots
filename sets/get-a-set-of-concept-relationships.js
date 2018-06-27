@@ -35,7 +35,11 @@ function GetASetOfConceptRelationships({ probable, relationship }) {
       let values = useReceivers
         ? relmap.receivingConcepts
         : relmap.emittingConcepts;
-      callNextTick(done, null, { theme, values });
+      if (values.length < 1) {
+        callNextTick(done, new Error(`Could not get values for ${theme}.`));
+      } else {
+        callNextTick(done, null, { theme, values });
+      }
     }
   }
 }
